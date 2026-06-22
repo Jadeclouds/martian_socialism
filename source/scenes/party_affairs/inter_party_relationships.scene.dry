@@ -15,7 +15,7 @@ The {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} cannot, and sh
 - @left: Work towards repairing relationships with the {!<span style="color: #540808;"><strong>People's Liberation Front for Mars</strong></span>!}.
 - @right: Perhaps we could reach out to the {!<span style="color: #5C3F1A;"><strong>Front for Mars</strong></span>!}...
 - @futurist: What if we worked with {!<span style="color: #12DB95;"><strong>Phobos</strong></span>!}?
-- @spd_alone: The {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} can stand alone for now.
+- @spm_alone: The {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} can stand alone for now.
 - @easy_discard
 
 @liberals
@@ -30,25 +30,28 @@ The {!<span style="color: #D3C24D;"><strong>Martian National Liberal Party</stro
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; mlnp_relation += 5*(1 - dissent)
-go-to: mlnp_goodwill if  mlnp_not_friendly if   mlnp_coalition_partner
+on-arrival: resources -= 1; plfm_relation += 5*(1 - dissent)
+go-to: plfm_goodwill if mlnp_relation > 40 or plfm_in_government = 1; plfm_not_friendly if plfm_relation < 41  
 
-@mlnp_coalition_partner
-on-arrival: mlnp_relation += 3*(1 - dissent)
-
-We are currently coalition partners with them, so improving relations comes naturally.
-
-@mlnp_goodwill
+@plfm_goodwill
 
 The {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} considers us a moderate partner, but, even if radical fringes are worried about their policies getting toned down, the party overall considers cooperation inevitable.
 
-@mlnp_not_friendly
+@plfm_not_friendly
 
 The {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} considers us traitors to both the Marsist and Socialist cause. Perhaps this will change if we try harder...
 
+@right
+subtitle: -1 resources. Our party will not like this
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1; ffm_relation += 5*(1 - dissent) left_dissent += 10 left_dissent += 10
 
-@spd_alone
+The {!<span style="color: #5C3F1A;"><strong>Front for Mars</strong></span>!} is a fascist party, and most of our base is vehemently opposed to the idea of working with them. Nonthenless, syndacalism and marsism are shared concepts between the parties, if anything.
 
-Whether it is because we *cannot* or *will not*, we do not make ties with other parties at this moment.
+
+@spm_alone
+
+Whether it is because we cannot or will not, we do not make ties with other parties at this moment.
 
 - @return: Continue...
