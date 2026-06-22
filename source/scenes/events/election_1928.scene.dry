@@ -181,7 +181,7 @@ There are some potential coalition arrangements.
 title: We can form a Marsist Coalition.
 subtitle: {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} + {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}): [+ marsist_coalition +]%
 view-if: marsist_coalition >= 50
-on-arrival: leverage += 5; in_marsist_coalition = 1; spm_in_government = 1; marsists_govern = 0;
+on-arrival: leverage += 5; in_marsist_coalition = 1; spm_in_government = 1; marsists_govern = 1;
 
 We have enough votes to form a Marsist Coalition! It consists of the SPM and the MNLP. This is the historic moderate Marsist front.
 
