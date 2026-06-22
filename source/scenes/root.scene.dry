@@ -504,7 +504,7 @@ Q.stampfer_advisor = 0; // Friedrich Stampfer
 set-bg: img/map_2.jpg
 new-page: true
 
-This is the story of a far future, about the future of humanity, and, of course, about the future of {!<span style="color: #F2F266;"><strong>Social Democracy</strong></span>!}. Our political current has faultered several times over time, but we never gave up. There is no reason to believe that the fine particulate fields of Mars will be its grave.
+This is the story of a far future, about the future of humanity, and, of course, about the future of {!<span style="color: #ED7158;"><strong>Social Democracy</strong></span>!}. Our political current has faultered several times over time, but we never gave up. There is no reason to believe that the fine particulate fields of Mars will be its grave.
 
 For more information about the game, see the "Library" page on the top left. If this is your first time playing the game, it is strongly recommended that you read at least some of this information.
 
@@ -525,8 +525,8 @@ go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
 = 2442
 
-It's a great period for the Marsist cause. After the imposition of a water tax, the {!<span style="color: ###22275C;"><strong>PEC</strong></span>!} is bound to loose the elections for the first time, while the {!<span style="color: #F2F266;"><strong>SPM</strong></span>!} and the {!<span style="color: #C0A054;"><strong>MNLP</strong></span>!} are expected to form a governing majority. This is not the end of the struggle, but merely its start.
+It's a great period for the Marsist cause. After the imposition of a water tax, the {!<span style="color: #22275C;"><strong>PEC</strong></span>!} is bound to lose its majority for the first time in martian history, while the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} and the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} are expected to form a governing majority. This is not the end of the struggle, but merely its start.
 
-Now, the task of Social Democracy is to prepare for the next election. Should we get a majority, we will be able to prove that democracy is a tool for radical reforms too, should these be wanted from the people.
+Now, the task of {!<span style="color: #ED7158;"><strong>Social Democracy</strong></span>!} is to prepare for the next election. Should we get a majority, we will be able to prove that democracy is a tool for radical reforms too, should these be wanted from the people.
 
 
