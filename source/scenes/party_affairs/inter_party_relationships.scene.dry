@@ -42,12 +42,12 @@ The {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} considers us 
 The {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} considers us traitors to both the Marsist and Socialist cause. Perhaps this will change if we try harder...
 
 @right
-subtitle: -1 resources. Our party will not like this
+subtitle: -1 resources. Our party will not like this...
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; ffm_relation += 5*(1 - dissent); left_dissent += 10; romanticist_dissent += 10; reformist_dissent += 5; progressist_dissent += 5
 
-The {!<span style="color: #5C3F1A;"><strong>Front for Mars</strong></span>!} is a fascist party, and most of our base is vehemently opposed to the idea of working with them. Nonthenless, syndacalism and marsism are shared concepts between the parties, if anything.
+The {!<span style="color: #5C3F1A;"><strong>Front for Mars</strong></span>!} is a fascist party, and most of our base is vehemently opposed to the idea of working with them, causing widspread unrest in the party. Nonthenless, syndacalism and marsism are shared concepts between the parties, if anything.
 
 @futurist
 subtitle: -1 resources
