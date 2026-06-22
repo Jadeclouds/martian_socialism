@@ -42,13 +42,13 @@ Reichstag composition:
 # MNLP
 {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}: [+ mnlp_r +]%
 # PLFM
-{!<span style="color: ##540808;"><strong>PLFM</strong></span>!}: [+ plfm_r +]%
+{!<span style="color: #540808;"><strong>PLFM</strong></span>!}: [+ plfm_r +]%
 # FfM
-{!<span style="color: ###5C3F1A;"><strong>FfM</strong></span>!}: [+ ffm_r +]%
+{!<span style="color: #5C3F1A;"><strong>FfM</strong></span>!}: [+ ffm_r +]%
 # P
-{!<span style="color: ##12DB95;"><strong>P</strong></span>!}: [+ p_r +]%
+{!<span style="color: #12DB95;"><strong>P</strong></span>!}: [+ p_r +]%
 # PEC
-{!<span style="color: ###22275C;"><strong>PEC</strong></span>!}: [+ pec_r +]%
+{!<span style="color: #22275C;"><strong>PEC</strong></span>!}: [+ pec_r +]%
 # Others
 Others: [+ other_r +]%
 
@@ -64,25 +64,23 @@ Next election: [+ next_election_month : month +] [+ next_election_year +]
 
 {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}: [+ mnlp_relation : relationships +]
 
-{!<span style="color: ##540808;"><strong>PLFM</strong></span>!}: [+ plfm_relation : relationships +]
+{!<span style="color: #540808;"><strong>PLFM</strong></span>!}: [+ plfm_relation : relationships +]
 
-{!<span style="color: ###5C3F1A;"><strong>FfM</strong></span>!}: [+ ffm_relation : relationships +]
+{!<span style="color: #5C3F1A;"><strong>FfM</strong></span>!}: [+ ffm_relation : relationships +]
 
-{!<span style="color: ###22275C;"><strong>PEC</strong></span>!}: [+ pec_relation : relationships +]
+{!<span style="color: #22275C;"><strong>PEC</strong></span>!}: [+ pec_relation : relationships +]
 
-{!<span style="color: ##12DB95;"><strong>P</strong></span>!}: [+ p_relation : relationships +]
+{!<span style="color: #12DB95;"><strong>P</strong></span>!}: [+ p_relation : relationships +]
 
-= Internal Factions of the SPD
+= Internal Factions of the SPM
 
-{!<span class="tooltip-text" title="The Left is interested in radical, transformative policies and cooperation with the KPD.">Left</span>!} strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
+Leftists strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
 
-{!<span class="tooltip-text" title="The Center is a faction of Center Marxists, between reform and revolution.">Center</span>!} strength: [+ center_strength : strength +], dissent: [+ center_dissent : dissent +]
+Progressists strength: [+ progressist_strength : strength +], dissent: [+ progressist_dissent : dissent +]
 
-{!<span class="tooltip-text" title="Labor's goal is economic reform and benefits for organized workers.">Labor</span>!} strength: [+ labor_strength : strength +], dissent: [+ labor_dissent : dissent +]
+Romanticists strength: [+ romanticist_strength : strength +], dissent: [+ romanticist_dissent : dissent +]
 
-{!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
-
-[? if neorevisionism > 0 : Neorevisionist strength: [+ neorevisionist_strength : strength +], dissent: [+ neorevisionist_dissent : dissent +] ?]
+Reformists strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
 
 @polls
 on-arrival: {!
