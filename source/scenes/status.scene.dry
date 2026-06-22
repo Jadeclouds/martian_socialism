@@ -20,7 +20,7 @@ if (Q.economic_growth) {
 
 Resources available: [+ resources +]
 
-SPD position: [? if spd_toleration : toleration ?][? if spd_in_government : in government - ?][? if spd_toleration == 0 and spd_in_government == 0 and spd_caretaker == 0 : opposition ?][? if spd_caretaker : caretaker government ?]
+SPM position: [? if spd_toleration : toleration ?][? if spd_in_government : in government - ?][? if spd_toleration == 0 and spd_in_government == 0 and spd_caretaker == 0 : opposition ?][? if spd_caretaker : caretaker government ?]
 [? if in_weimar_coalition and spd_in_government: Weimar Coalition ?][? if in_grand_coalition and spd_in_government: Grand Coalition ?][? if in_popular_front and spd_in_government: Popular Front ?][? if in_left_front and spd_in_government: Left Front ?][? if in_spd_majority and spd_in_government: SPD majority ?][? if in_minority_government and spd_in_government: minority government ?][? if in_emergency_government and spd_in_government: emergency government ?]
 
 [? if spd_in_government and not in_spd_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
@@ -35,7 +35,7 @@ President: [+ president +]
 
 Chancellor: [+ chancellor +] ([+ chancellor_party +])
 
-Reichstag composition:
+Martian Parliament composition:
 
 # SPM
 {!<span style="color: #ED7158;"><strong>SPM</strong></span>!}: [+ spm_r +]%
@@ -93,21 +93,21 @@ Q.socialism_disp = Math.round(Q.socialism);
 
 (if the election were to be held now):
 
-SPM: [+ spm_votes +]%
+{!<span style="color: #ED7158;"><strong>SPM</strong></span>!}: [+ spm_votes +]%
 
 # [? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
 
-MNLP: [+ mnlp_votes +]%
+{!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}: [+ mnlp_votes +]%
 
-PLFM: [+ plfm_votes +]%
+{!<span style="color: #540808;"><strong>PLFM</strong></span>!}: [+ plfm_votes +]%
 
 # [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ ddp_votes +]%
 
-FfM: [+ ffm_votes +]%
+{!<span style="color: #5C3F1A;"><strong>FfM</strong></span>!}: [+ ffm_votes +]%
 
-PEC: [+ pec_votes +]%
+{!<span style="color: #12DB95;"><strong>P</strong></span>!}: [+ p_votes +]%
 
-P: [+ p_votes +]%
+{!<span style="color: #22275C;"><strong>PEC</strong></span>!} : [+ pec_votes +]%
 
 Others: [+ other_votes +]%
 
