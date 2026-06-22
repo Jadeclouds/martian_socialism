@@ -38,9 +38,9 @@ Chancellor: [+ chancellor +] ([+ chancellor_party +])
 Reichstag composition:
 
 # SPM
-{!<span style="color: #F2F266;"><strong>SPM</strong></span>!}: [+ spm_r +]%
+{!<span style="color: #ED7158;"><strong>SPM</strong></span>!}: [+ spm_r +]%
 # MNLP
-{!<span style="color: #C0A054;"><strong>MNLP</strong></span>!}: [+ mnlp_r +]%
+{!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}: [+ mnlp_r +]%
 # PLFM
 {!<span style="color: ##540808;"><strong>PLFM</strong></span>!}: [+ plfm_r +]%
 # FfM
@@ -62,7 +62,7 @@ Next election: [+ next_election_month : month +] [+ next_election_year +]
 
 = Inter-party Relations
 
-{!<span style="color: #C0A054;"><strong>MNLP</strong></span>!}: [+ mnlp_relation : relationships +]
+{!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}: [+ mnlp_relation : relationships +]
 
 {!<span style="color: ##540808;"><strong>PLFM</strong></span>!}: [+ plfm_relation : relationships +]
 
@@ -97,13 +97,13 @@ Q.socialism_disp = Math.round(Q.socialism);
 
 SPM: [+ spm_votes +]%
 
-// [? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
+# [? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
 
 MNLP: [+ mnlp_votes +]%
 
 PLFM: [+ plfm_votes +]%
 
-// [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ ddp_votes +]%
+# [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ ddp_votes +]%
 
 FfM: [+ ffm_votes +]%
 
