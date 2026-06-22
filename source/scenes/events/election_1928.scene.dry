@@ -9,31 +9,31 @@ face-image: img/Rothe_Wahlen_1903.jpg
 
 = Elections, [+ month : month +] [+ year +]
 
-The Reichstag elections are to be held now.
+The Planetary Elections elections are to be held now.
 
 - @election_algorithm: May we do our best...
 
 @post_election_1928
 on-arrival: {!
 Q.largest_party = 'PEC';
-if (Q.spm_r >= Q.pec_r && Q.spm_r >= Q.mlnp_r) {
+if (Q.spm_r >= Q.mnlp_r && Q.spm_r >= Q.mnlp_r) {
     Q.largest_party = 'SPM';
 }
-if (Q.mlnp_r >= Q.pec_r && Q.mlnp_r >= Q.spm_r) {
-    Q.largest_party = 'MLNP';
+if (Q.mnlp_r >= Q.pec_r && Q.mnlp_r >= Q.spm_r) {
+    Q.largest_party = 'MNLP';
 }
 
-Q.largest_marsist_party = 'MLNP';
-if (Q.spm_r >= Q.mlnp_r) {
-    Q.largest_party = 'SPM';
+Q.largest_marsist_party = 'MNLP';
+if (Q.spm_r >= Q.mnlp_r) {
+    Q.largest_marsist_party = 'SPM';
 }
 
 // coalitions
-Q.marsist_coalition = Q.spm_r + Q.mlnp_r;
-Q.grand_marsist_coalition = Q.spm_r + Q.mnlp_r + Q.mnlp_r + Q.ffm_r + Q.p_r;
-Q.left_marsist_coalition = Q.spm_r + Q.mnlp_r;
+Q.marsist_coalition = Q.spm_r + Q.mnlp_r;
+Q.grand_marsist_coalition = Q.spm_r + Q.mnlp_r + Q.plfm_r + Q.ffm_r + Q.p_r;
+Q.left_marsist_coalition = Q.spm_r + Q.plfm_r;
 Q.earth_coalition = Q.pec_r;
-Q.earth_toleration_coalition = Q.mlnp_r + Q.pec_r;
+Q.earth_toleration_coalition = Q.mnlp_r + Q.pec_r;
 
 if (Q.p_lrx_charge = 1) {
     Q.left_marsist_coalition += Q.p_r;
@@ -83,7 +83,7 @@ data = data.concat([
         "id": "spm",
         "legend": "SPM",
         "name": "SPM",
-        "seats": Math.round(Q.spd_r*2),
+        "seats": Math.round(Q.spm_r*2),
     },
     {
         "id": "p",
@@ -179,14 +179,13 @@ There are some potential coalition arrangements.
 
 @marsist_coalition
 title: We can form a Marsist Coalition.
-subtitle: {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} + {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}): [+ marsist_coalition +]%
+subtitle: {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} + {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}: [+ marsist_coalition +]%
 view-if: marsist_coalition >= 50
 on-arrival: leverage += 5; in_marsist_coalition = 1; spm_in_government = 1; marsists_govern = 1;
 
 We have enough votes to form a Marsist Coalition! It consists of the SPM and the MNLP. This is the historic moderate Marsist front.
 
 Who should be the chancellor?
-
 
 
 
