@@ -42,7 +42,7 @@ The {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} considers us 
 The {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} considers us traitors to both the Marsist and Socialist cause. Perhaps this will change if we try harder...
 
 @right
-subtitle: -1 resources. Our party will not like this...
+subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; ffm_relation += 5*(1 - dissent); left_dissent += 10; romanticist_dissent += 10; reformist_dissent += 5; progressist_dissent += 5
