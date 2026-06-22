@@ -72,13 +72,15 @@ Q.election_records.push(election_result);
 !}
 
 on-display: {!
-data = data.concat([
+data = [
     {
         "id": "plfm",
         "legend": "PLFM",
         "name": "PLFM",
         "seats": Math.round(Q.plfm_r*2),
-    },
+    }
+];
+data = data.concat([
     {
         "id": "spm",
         "legend": "SPM",
