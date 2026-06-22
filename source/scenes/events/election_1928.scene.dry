@@ -72,7 +72,7 @@ Q.election_records.push(election_result);
 !}
 
 on-display: {!
-data = [
+data = data.concat([
     {
         "id": "plfm",
         "legend": "PLFM",
@@ -133,9 +133,7 @@ if (window && d3) {
     parliament.exit.toCenter(false).bigToSmall(true);
     d3.select("#reichstag").datum(data).call(parliament);
 }
-
 !}
-
 go-to: coalition_menu
 
 = Election results
