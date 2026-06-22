@@ -1,6 +1,6 @@
 title: 2443
 subtitle: A new year
-on-arrival: {}
+# on-arrival: 
 tags: event
 view-if: year = 2443 and month = 1
 priority: 2
