@@ -175,16 +175,15 @@ Others: [+ other_votes +]%
 
 **Detailed results for each demographic**
 
-Workers: SPD: [+ workers_spd_display +]%, Z: [+ workers_z_display +]%, KPD: [+ workers_kpd_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ workers_ddp_display +]%, DVP: [+ workers_dvp_display +]%; DNVP: [+ workers_dnvp_display +]%, NSDAP: [+ workers_nsdap_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
+Miners: SPM: [+ miners_spm_display +]%, MNLP: [+ miners_mnlp_display +]%, PLFM: [+ miners_plfm_display +]%, PEC: [+ miners_pec_display +]%, FFM: [+ miners_ffm_display +]%, P: [+ miners_p_display +]%, Other: [+ miners_other_display +]%
 
-New Middle Class: SPD: [+ new_middle_spd_display +]%, Z: [+ new_middle_z_display +]%, KPD: [+ new_middle_kpd_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ new_middle_ddp_display +]%, DVP: [+ new_middle_dvp_display +]%; DNVP: [+ new_middle_dnvp_display +]%, NSDAP: [+ new_middle_nsdap_display +]%, Others: [+ new_middle_other_display +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_display +]% ?]
+Technicians: SPM: [+ technicians_spm_display +]%, MNLP: [+ technicians_mnlp_display +]%, PLFM: [+ technicians_plfm_display +]%, PEC: [+ technicians_pec_display +]%, FFM: [+ technicians_ffm_display +]%, P: [+ technicians_p_display +]%, Other: [+ technicians_other_display +]%
 
-Old Middle Class: SPD: [+ old_middle_spd_display +]%, Z: [+ old_middle_z_display +]%, KPD: [+ old_middle_kpd_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ old_middle_ddp_display +]%, DVP: [+ old_middle_dvp_display +]%; DNVP: [+ old_middle_dnvp_display +]%, NSDAP: [+ old_middle_nsdap_display +]%, Others: [+ old_middle_other_display +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_display +]% ?]
+Researchers: SPM: [+ researchers_spm_display +]%, MNLP: [+ researchers_mnlp_display +]%, PLFM: [+ researchers_plfm_display +]%, PEC: [+ researchers_pec_display +]%, FFM: [+ researchers_ffm_display +]%, P: [+ researchers_p_display +]%, Other: [+ researchers_other_display +]%
 
-Rural: SPD: [+ rural_spd_display +]%, Z: [+ rural_z_display +]%, KPD: [+ rural_kpd_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ rural_ddp_display +]%, DVP: [+ rural_dvp_display +]%; DNVP: [+ rural_dnvp_display +]%, NSDAP: [+ rural_nsdap_display +]%, Others: [+ rural_other_display +]% [? if sapd_formed: SAPD: [+ rural_sapd_display +]% ?]
+Bureaucrats: SPM: [+ bureaucrats_spm_display +]%, MNLP: [+ bureaucrats_mnlp_display +]%, PLFM: [+ bureaucrats_plfm_display +]%, PEC: [+ bureaucrats_pec_display +]%, FFM: [+ bureaucrats_ffm_display +]%, P: [+ bureaucrats_p_display +]%, Other: [+ bureaucrats_other_display +]%
 
-Unemployed: SPD: [+ unemployed_spd_display +]%, Z: [+ unemployed_z_display +]%, KPD: [+ unemployed_kpd_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ unemployed_ddp_display +]%, DVP: [+ unemployed_dvp_display +]%; DNVP: [+ unemployed_dnvp_display +]%, NSDAP: [+ unemployed_nsdap_display +]%, Others: [+ unemployed_other_display +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_display +]% ?]
+Independent Capitalist Class: SPM: [+ indipendent_capitalist_class_spm_display +]%, MNLP: [+ indipendent_capitalist_class_mnlp_display +]%, PLFM: [+ indipendent_capitalist_class_plfm_display +]%, PEC: [+ indipendent_capitalist_class_pec_display +]%, FFM: [+ indipendent_capitalist_class_ffm_display +]%, P: [+ indipendent_capitalist_class_p_display +]%, Other: [+ indipendent_capitalist_class_other_display +]%
 
-Catholics: SPD: [+ catholics_spd_display +]%, Z: [+ catholics_z_display +]%, KPD: [+ catholics_kpd_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ catholics_ddp_display +]%, DVP: [+ catholics_dvp_display +]%; DNVP: [+ catholics_dnvp_display +]%, NSDAP: [+ catholics_nsdap_display +]%, Others: [+ catholics_other_display +]% [? if sapd_formed: SAPD: [+ catholics_sapd_display +]% ?]
-
+Capitalist Class: SPM: [+ capitalist_class_spm_display +]%, MNLP: [+ capitalist_class_mnlp_display +]%, PLFM: [+ capitalist_class_plfm_display +]%, PEC: [+ capitalist_class_pec_display +]%, FFM: [+ capitalist_class_ffm_display +]%, P: [+ capitalist_class_p_display +]%, Other: [+ capitalist_class_other_display +]%
 Support for the Republic: [+ pro_republic_disp +]%
