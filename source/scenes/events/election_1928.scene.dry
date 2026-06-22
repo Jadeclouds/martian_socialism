@@ -35,7 +35,7 @@ Q.left_marsist_coalition = Q.spm_r + Q.plfm_r;
 Q.earth_coalition = Q.pec_r;
 Q.earth_toleration_coalition = Q.mnlp_r + Q.pec_r;
 
-if (Q.p_lrx_charge = 1) {
+if (Q.p_lrx_charge == 1) {
     Q.left_marsist_coalition += Q.p_r;
 }
 
@@ -136,6 +136,7 @@ if (window && d3) {
     d3.select("#reichstag").datum(data).call(parliament);
 }
 !}
+
 go-to: coalition_menu
 
 = Election results
