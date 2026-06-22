@@ -38,17 +38,17 @@ Chancellor: [+ chancellor +] ([+ chancellor_party +])
 Reichstag composition:
 
 # SPM
-{!<span>SPM</span>!}: [+ spm_r +]%
+{!<span style="color: #F2F266;"><strong>SPM</strong></span>!}: [+ spm_r +]%
 # MNLP
-{!<span >MNLP</span>!}: [+ mnlp_r +]%
+{!<span style="color: #C0A054;"><strong>MNLP</strong></span>!}: [+ mnlp_r +]%
 # PLFM
-{!<span >PLFM</span>!}: [+ plfm_r +]%
+{!<span style="color: ##540808;"><strong>PLFM</strong></span>!}: [+ plfm_r +]%
 # FfM
-{!<span >FfM</span>!}: [+ ffm_r +]%
+{!<span style="color: ###5C3F1A;"><strong>FfM</strong></span>!}: [+ ffm_r +]%
 # P
-{!<span >Phobos</span>!}: [+ p_r +]%
+{!<span style="color: ##12DB95;"><strong>P</strong></span>!}: [+ p_r +]%
 # PEC
-{!<span >PEC</span>!}: [+ pec_r +]%
+{!<span style="color: ###22275C;"><strong>PEC</strong></span>!}: [+ pec_r +]%
 # Others
 Others: [+ other_r +]%
 
@@ -62,18 +62,15 @@ Next election: [+ next_election_month : month +] [+ next_election_year +]
 
 = Inter-party Relations
 
-
 {!<span style="color: #C0A054;"><strong>MNLP</strong></span>!}: [+ mnlp_relation : relationships +]
 
-{!<span class="tooltip-text" title="German Democratic Party">!}[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]{!</span>!}: [+ ddp_relation : relationships +]
+{!<span style="color: ##540808;"><strong>PLFM</strong></span>!}: [+ plfm_relation : relationships +]
 
-{!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_relation : relationships +]
+{!<span style="color: ###5C3F1A;"><strong>FfM</strong></span>!}: [+ ffm_relation : relationships +]
 
-{!<span class="tooltip-text" title="Communist Party of Germany">KPD</span>!}: [+ kpd_relation : relationships +]
+{!<span style="color: ###22275C;"><strong>PEC</strong></span>!}: [+ pec_relation : relationships +]
 
-{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_relation : relationships +]
-
-{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_relation : relationships +]
+{!<span style="color: ##12DB95;"><strong>P</strong></span>!}: [+ p_relation : relationships +]
 
 = Internal Factions of the SPD
 
