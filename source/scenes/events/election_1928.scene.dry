@@ -78,9 +78,7 @@ data = [
         "legend": "PLFM",
         "name": "PLFM",
         "seats": Math.round(Q.plfm_r*2),
-    }
-];
-data = data.concat([
+    },
     {
         "id": "spm",
         "legend": "SPM",
@@ -145,7 +143,6 @@ go-to: coalition_menu
 
 {!<table>!} 
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#ED7158; outline: 2px; outline-style: solid;'> </div> !} **SPM:** {!</td><td>!} **[+ spm_r +]%** {!</td><td>!} **[+ str_change_spm +]** {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#ED7158; outline: 2px; outline-style: solid;'> </div> !} **SPM:** {!</td><td>!} **[+ spm_r +]%** {!</td><td>!} **[+ str_change_spm +]** {!</td></tr>!}
 
