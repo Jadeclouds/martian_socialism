@@ -126,39 +126,6 @@ Q.spd_prussia = 1;
 // Options: spd, z, dnvp, papen, nsdap
 Q.prussian_government = "SPD";
 
-// The array of forces - paramilitary groups
-// Number of members in 1928 (in thousands)
-// Reichsbanner, stahlhelm, SA, rotfrontkämpferbund
-Q.rb_strength = 2000;
-Q.rb_militancy = 0.01;
-Q.women_in_rb = 0;
-Q.rb_banned = 0;
-Q.sh_strength = 500;
-Q.sh_militancy = 0.5;
-Q.sh_banned = 0;
-Q.sh_banned_prussia = 0;
-Q.sa_strength = 80;
-Q.sa_militancy = 0.5;
-Q.sa_banned = 0;
-Q.sa_banned_prussia = 0;
-Q.rfb_strength = 130;
-Q.rfb_militancy = 0.5;
-Q.rfb_banned = 0;
-Q.rfb_banned_prussia = 0;
-
-Q.interior_police_strength = 50;
-Q.interior_police_militancy = 1;
-Q.interior_police_loyalty = 0.45;
-
-Q.prussian_police_strength = 90;
-Q.prussian_police_militancy = 1;
-Q.prussian_police_loyalty = 0.5;
-
-// strength includes actual military and de facto reserves?
-Q.reichswehr_strength = 100;
-Q.reichswehr_militancy = 5;
-Q.reichswehr_loyalty = 0.2;
-
 // The state of the country
 
 // popular opinion
@@ -192,13 +159,14 @@ Q.capital_strike_progress = 0;
 
 Q.budget = 4;
 
-// Proportion of different social groups
-Q.miners = 10
+// Proportion of different social groups 
+//This is their political representation. not their actual numbers!!! Should the system become more democratic, these are bound to change
+Q.miners = 5
 Q.technicians = 20
 Q.researchers = 5
 Q.bureaucrats = 15
 Q.indipendent_capitalist_class = 15
-Q.capitalist_class = 25
+Q.capitalist_class = 30
 
 // economic expansion timer
 Q.economic_expansion = 0;
@@ -211,8 +179,8 @@ Q.parties = ['spm', 'mnlp', 'pec', 'plfm', 'ffm', 'p'];
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.miners_spm = 30;
-Q.miners_plfm = 50;
+Q.miners_spm = 40;
+Q.miners_plfm = 40;
 Q.miners_ffm = 10;
 Q.miners_mnlp = 0;
 Q.miners_pec = 0;
