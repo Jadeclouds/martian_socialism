@@ -96,7 +96,7 @@ data = data.concat([
         "id": "ffm",
         "legend": "FfM",
         "name": "FfM",
-        "seats": Math.round((Q.ffm_r*2),
+        "seats": Math.round(Q.ffm_r*2),
     },
     {
         "id": "mnlp",
@@ -163,7 +163,7 @@ go-to: coalition_menu
 
 **Potential coalitions:**
 
-Marsist Coalition ({!<span style="color: #ED7158;"><strong>SPM</strong></span>!} + {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}): [+ marsist_coalition +]%
+Marsist Coalition ({!<span style="color: #ED7158;"><strong>SPM</strong></span>!} + {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}: [+ marsist_coalition +]%
 
 Grand Marsist Coalition ({!<span style="color: #ED7158;"><strong>SPM</strong></span>!} + {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} + {!<span style="color: #540808;"><strong>PLFM</strong></span>!} + {!<span style="color: #5C3F1A;"><strong>FfM</strong></span>!} + {!<span style="color: #12DB95;"><strong>P</strong></span>!}): [+ grand_marsist_coalition +]%
 
