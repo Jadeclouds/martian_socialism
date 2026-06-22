@@ -56,16 +56,6 @@ Others: [+ other_r +]%
 
 Next election: [+ next_election_month : month +] [+ next_election_year +]
 
-= Economics
-
-Inflation: [+ inflation_2 +]%
-
-[? if black_thursday_seen = 1 : Unemployment: [+ unemployed_2 +]% ?]
-
-Economic growth: [+ economic_growth_2 +]%
-
-
-
 # = Public Opinion
 
 @politics
@@ -73,7 +63,7 @@ Economic growth: [+ economic_growth_2 +]%
 = Inter-party Relations
 
 
-{!<span class="tooltip-text" title="Center Party">Z</span>!}: [+ z_relation : relationships +]
+{!<span style="color: #C0A054;"><strong>MNLP</strong></span>!}: [+ mnlp_relation : relationships +]
 
 {!<span class="tooltip-text" title="German Democratic Party">!}[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]{!</span>!}: [+ ddp_relation : relationships +]
 
@@ -97,53 +87,6 @@ Economic growth: [+ economic_growth_2 +]%
 
 [? if neorevisionism > 0 : Neorevisionist strength: [+ neorevisionist_strength : strength +], dissent: [+ neorevisionist_dissent : dissent +] ?]
 
-
-@paramilitaries
-on-arrival: {!
-if (Q.rb_strength) {
-    Q.rb_strength_2 = Q.rb_strength.toFixed(1);
-}
-if (Q.rfb_strength) {
-    Q.rfb_strength_2 = Q.rfb_strength.toFixed(1);
-}
-if (Q.sh_strength) {
-    Q.sh_strength_2 = Q.sh_strength.toFixed(1);
-}
-if (Q.sa_strength) {
-    Q.sa_strength_2 = Q.sa_strength.toFixed(1);
-}
-!}
-
-= Paramilitaries
-
-{!<span class="tooltip-text" title="The Reichsbanner Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the SPD.">Reichsbanner</span>!} Strength: [+ rb_strength_2 +] thousand
-
-Reichsbanner Militarization: [+ rb_militancy : militancy +]
-
-{!<span class="tooltip-text" title="The RFB (Rotfrontkämpferbund) is a communist group associated with the KPD.">RFB</span>!} Strength: [+ rfb_strength_2 +] thousand
-
-RFB Militarization: [+ rfb_militancy : militancy +]
-
-{!<span class="tooltip-text" title="The Stahlhelm is a right-wing organization of war veterans associated with the DNVP.">Stahlhelm</span>!} Strength: [+ sh_strength_2 +] thousand
-
-Stahlhelm Militarization: [+ sh_militancy : militancy +]
-
-{!<span class="tooltip-text" title="The SA (Sturmabteilung) is the Nazi paramilitary.">SA</span>!} Strength: [+ sa_strength_2 +] thousand
-
-SA Militarization: [+ sa_militancy : militancy +]
-
-= Official military/paramilitaries
-
-Reichswehr: [+ reichswehr_strength +] thousand troops.
-
-Reichswehr Loyalty: [+ reichswehr_loyalty : loyalty +]
-
-Prussian police: [+ prussian_police_strength +] thousand members.
-
-Prussian police loyalty: [+ prussian_police_loyalty : loyalty +]
-
-[? if spd_in_government : Interior police loyalty: [+ interior_police_loyalty : loyalty +] ?]
-
 @polls
 on-arrival: {!
 Q.pro_republic_disp = Math.round(Q.pro_republic);
@@ -155,35 +98,34 @@ Q.socialism_disp = Math.round(Q.socialism);
 
 (if the election were to be held now):
 
-SPD: [+ spd_votes +]%
+SPM: [+ spm_votes +]%
 
-[? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
+// [? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
 
-Z + BVP: [+ z_votes +]%
+MNLP: [+ mnlp_votes +]%
 
-KPD: [+ kpd_votes +]%
+PLFM: [+ plfm_votes +]%
 
-[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ ddp_votes +]%
+// [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ ddp_votes +]%
 
-DVP: [+ dvp_votes +]%
+FfM: [+ ffm_votes +]%
 
-DNVP: [+ dnvp_votes +]%
+PEC: [+ pec_votes +]%
 
-NSDAP: [+ nsdap_votes +]%
+P: [+ p_votes +]%
 
 Others: [+ other_votes +]%
 
 **Detailed results for each demographic**
 
-Miners: SPM: [+ miners_spm_display +]%, MNLP: [+ miners_mnlp_display +]%, PLFM: [+ miners_plfm_display +]%, PEC: [+ miners_pec_display +]%, FFM: [+ miners_ffm_display +]%, P: [+ miners_p_display +]%, Other: [+ miners_other_display +]%
+Miners: SPM: [+ miners_spm_display +]%, MNLP: [+ miners_mnlp_display +]%, PLFM: [+ miners_plfm_display +]%, FFM: [+ miners_ffm_display +]%, PEC: [+ miners_pec_display +]%, P: [+ miners_p_display +]%, Other: [+ miners_other_display +]%
 
-Technicians: SPM: [+ technicians_spm_display +]%, MNLP: [+ technicians_mnlp_display +]%, PLFM: [+ technicians_plfm_display +]%, PEC: [+ technicians_pec_display +]%, FFM: [+ technicians_ffm_display +]%, P: [+ technicians_p_display +]%, Other: [+ technicians_other_display +]%
+Technicians: SPM: [+ technicians_spm_display +]%, MNLP: [+ technicians_mnlp_display +]%, PLFM: [+ technicians_plfm_display +]%, FFM: [+ technicians_ffm_display +]%, PEC: [+ technicians_pec_display +]%, P: [+ technicians_p_display +]%, Other: [+ technicians_other_display +]%
 
-Researchers: SPM: [+ researchers_spm_display +]%, MNLP: [+ researchers_mnlp_display +]%, PLFM: [+ researchers_plfm_display +]%, PEC: [+ researchers_pec_display +]%, FFM: [+ researchers_ffm_display +]%, P: [+ researchers_p_display +]%, Other: [+ researchers_other_display +]%
+Researchers: SPM: [+ researchers_spm_display +]%, MNLP: [+ researchers_mnlp_display +]%, PLFM: [+ researchers_plfm_display +]%, FFM: [+ researchers_ffm_display +]%, PEC: [+ researchers_pec_display +]%, P: [+ researchers_p_display +]%, Other: [+ researchers_other_display +]%
 
-Bureaucrats: SPM: [+ bureaucrats_spm_display +]%, MNLP: [+ bureaucrats_mnlp_display +]%, PLFM: [+ bureaucrats_plfm_display +]%, PEC: [+ bureaucrats_pec_display +]%, FFM: [+ bureaucrats_ffm_display +]%, P: [+ bureaucrats_p_display +]%, Other: [+ bureaucrats_other_display +]%
+Bureaucrats: SPM: [+ bureaucrats_spm_display +]%, MNLP: [+ bureaucrats_mnlp_display +]%, PLFM: [+ bureaucrats_plfm_display +]%, FFM: [+ bureaucrats_ffm_display +]%, PEC: [+ bureaucrats_pec_display +]%, P: [+ bureaucrats_p_display +]%, Other: [+ bureaucrats_other_display +]%
 
-Independent Capitalist Class: SPM: [+ indipendent_capitalist_class_spm_display +]%, MNLP: [+ indipendent_capitalist_class_mnlp_display +]%, PLFM: [+ indipendent_capitalist_class_plfm_display +]%, PEC: [+ indipendent_capitalist_class_pec_display +]%, FFM: [+ indipendent_capitalist_class_ffm_display +]%, P: [+ indipendent_capitalist_class_p_display +]%, Other: [+ indipendent_capitalist_class_other_display +]%
+Independent Capitalist Class: SPM: [+ indipendent_capitalist_class_spm_display +]%, MNLP: [+ indipendent_capitalist_class_mnlp_display +]%, PLFM: [+ indipendent_capitalist_class_plfm_display +]%, FFM: [+ indipendent_capitalist_class_ffm_display +]%, PEC: [+ indipendent_capitalist_class_pec_display +]%, P: [+ indipendent_capitalist_class_p_display +]%, Other: [+ indipendent_capitalist_class_other_display +]%
 
-Capitalist Class: SPM: [+ capitalist_class_spm_display +]%, MNLP: [+ capitalist_class_mnlp_display +]%, PLFM: [+ capitalist_class_plfm_display +]%, PEC: [+ capitalist_class_pec_display +]%, FFM: [+ capitalist_class_ffm_display +]%, P: [+ capitalist_class_p_display +]%, Other: [+ capitalist_class_other_display +]%
-Support for the Republic: [+ pro_republic_disp +]%
+Capitalist Class: SPM: [+ capitalist_class_spm_display +]%, MNLP: [+ capitalist_class_mnlp_display +]%, PLFM: [+ capitalist_class_plfm_display +]%, FFM: [+ capitalist_class_ffm_display +]%, PEC: [+ capitalist_class_pec_display +]%, P: [+ capitalist_class_p_display +]%, Other: [+ capitalist_class_other_display +]%
