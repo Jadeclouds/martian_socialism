@@ -244,7 +244,7 @@ Q.economic_records = [];
 Q.president = "Alexander";
 // starting commissioner: Marina Yabula
 Q.chancellor = "Yabula";
-Q.chancellor_party = '{!<span style="color: #22275C;"><strong>PEC</strong></span>!}';
+Q.chancellor_party = 'PEC';
 Q.spm_in_government = 0;
 Q.plfm_in_government = 0;
 Q.ffm_in_government = 0;
