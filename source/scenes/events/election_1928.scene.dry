@@ -74,48 +74,68 @@ Q.election_records.push(election_result);
 on-display: {!
 data = [
     {
-        "id": "plfm",
-        "legend": "PLFM",
-        "name": "PLFM",
-        "seats": Math.round(Q.plfm_r*2),
+        "id": "kpd",
+        "legend": "KPD",
+        "name": "KPD",
+        "seats": Math.round(Q.kpd_r*5),
     }
 ];
+if (Q.sapd_formed && Q.sapd_r) {
+    data.push({
+            "id": "sapd",
+            "legend": "SAPD",
+            "name": "SAPD",
+            "seats": Math.round(Q.sapd_r*5),
+            });
+}
 data = data.concat([
     {
-        "id": "spm",
-        "legend": "SPM",
-        "name": "SPM",
-        "seats": Math.round(Q.spm_r*2),
+        "id": "spd",
+        "legend": "SPD",
+        "name": "SPD",
+        "seats": Math.round(Q.spd_r*5),
     },
     {
-        "id": "p",
-        "legend": "Phobos",
-        "name": "Phobos",
-        "seats": Math.round(Q.p_r*2),
+        "id": "ddp",
+        "legend": Q.ddp_name,
+        "name": Q.ddp_name,
+        "seats": Math.round(Q.ddp_r*5),
     },
     {
-        "id": "ffm",
-        "legend": "FfM",
-        "name": "FfM",
-        "seats": Math.round(Q.ffm_r*2),
+        "id": "z",
+        "legend": "Center",
+        "name": "Center",
+        "seats": Math.round((Q.z_r - 3)*5),
     },
     {
-        "id": "mnlp",
-        "legend": "MNLP",
-        "name": "MNLP",
-        "seats": Math.round(Q.mnlp_r*2),
+        "id": "bvp",
+        "legend": "BVP",
+        "name": "BVP",
+        "seats": Math.round(3*5),
+    },
+    {
+        "id": "dvp",
+        "legend": "DVP",
+        "name": "DVP",
+        "seats": Math.round(Q.dvp_r*5),
     },
     {
         "id": "other",
         "legend": "Other",
         "name": "Other",
-        "seats": Math.round(Q.other_r*2),
+        "seats": Math.round(Q.other_r*5),
     },
     {
-        "id": "pec",
-        "legend": "PEC",
-        "name": "PEC",
-        "seats": Math.round(Q.pec_r*2),
+        "id": "dnvp",
+        "legend": "DNVP",
+        "name": "DNVP",
+        "seats": Math.round(Q.dnvp_r*5),
+    },
+    {
+        "id": "nsdap",
+        "legend": "NSDAP",
+        "name": "NSDAP",
+        "seats": Math.round(Q.nsdap_r*5),
     },
 ]);
 
@@ -136,6 +156,8 @@ if (window && d3) {
     d3.select("#reichstag").datum(data).call(parliament);
 }
 !}
+go-to: coalition_menu
+
 
 go-to: coalition_menu
 
