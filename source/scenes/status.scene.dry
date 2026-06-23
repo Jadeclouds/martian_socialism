@@ -75,19 +75,27 @@ Next election: [+ next_election_month : month +] [+ next_election_year +]
 = Internal Factions of the SPM
 
 Leftists 
+
 - Strength: [+ left_strength : strength +]
+
 - Dissent: [+ left_dissent : dissent +]
 
 Progressists
+
 - Strength: [+ progressist_strength : strength +]
+
 - Dissent: [+ progressist_dissent : dissent +]
 
 Romanticists 
+
 - Strength: [+ romanticist_strength : strength +]
+
 - Dissent: [+ romanticist_dissent : dissent +]
 
 Reformists 
+
 - Strength: [+ reformist_strength : strength +]
+
 - Dissent: [+ reformist_dissent : dissent +]
 
 @polls
