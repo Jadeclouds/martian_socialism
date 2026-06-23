@@ -47,7 +47,6 @@ Q.dissent_percent = 5;
 
 // factions
 Q.factions = ['left', 'progressist', 'romanticist', 'reformist' ];
-// should this be normalized to 100%?
 Q.left_strength = 15;
 Q.left_dissent = 15;
 Q.progressist_strength = 30;
@@ -57,7 +56,7 @@ Q.romanticist_dissent = 15;
 Q.reformist_strength = 25;
 Q.reformist_dissent = 0;
 
-// secret events...
+// factions split
 Q.unions_independent = 0;
 Q.centrists_resign = 0;
 Q.left_split = 0;
@@ -116,11 +115,6 @@ Q.hindenburg_relation = 25;
 Q.hindenburg_enabled = 0;
 
 
-// Does the SPD lead in Prussia?
-Q.spd_prussia = 1;
-// Options: spd, z, dnvp, papen, nsdap
-Q.prussian_government = "SPD";
-
 // The state of the country
 
 // popular opinion
@@ -155,7 +149,7 @@ Q.capital_strike_progress = 0;
 Q.budget = 4;
 
 // Proportion of different social groups 
-//This is their political representation. not their actual numbers!!! Should the system become more democratic, these are bound to change
+//This is their political representation. Not their actual numbers!!! Should the system become more democratic, these are bound to change
 Q.miners = 5
 Q.technicians = 20
 Q.researchers = 5
@@ -168,9 +162,6 @@ Q.economic_expansion = 0;
 
 Q.classes = ['miners', 'technicians', 'researchers', 'bureaucrats', 'indipendent_capitalist_class', 'capitalist_class'];
 Q.parties = ['spm', 'mnlp', 'pec', 'plfm', 'ffm', 'p'];
-
-// TODO: add 'sapd' later on
-// Q.sapd_formed = 0;
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
@@ -224,13 +215,13 @@ Q.capitalist_class_other = 0;
 
 
 // Current Martian Parliament composition
-Q.spm_r = 22;
-Q.plfm_r = 3;
+Q.spm_r = 23;
+Q.plfm_r = 4;
 Q.ffm_r = 2;
-Q.mnlp_r = 20;
-Q.p_r = 1;
-Q.pec_r = 49;
-Q.other_r = 2;
+Q.mnlp_r = 27;
+Q.p_r = 2;
+Q.pec_r = 42;
+Q.other_r = 0;
 
 // diff from prev
 Q.old_spm_r = 22;
@@ -240,13 +231,6 @@ Q.old_mnlp_r = 20;
 Q.old_p_r = 1;
 Q.old_pec_r = 49;
 Q.old_other_r = 2;
-
-// sapd isn't formed yet, but it may be formed
-// Q.sapd_r = 0;
-// Q.old_sapd_r = 0;
-
-// for changing the DDP's name to the DStP
-// Q.ddp_name = "DDP";
 
 // array of objects of the form {date: Date(), spd: 10, kpd: 12, ...} for each election
 Q.election_records = [];
@@ -260,7 +244,7 @@ Q.economic_records = [];
 Q.president = "Alexander";
 // starting commissioner: Marina Yabula
 Q.chancellor = "Yabula";
-Q.chancellor_party = 'PEC';
+Q.chancellor_party = '{!<span style="color: #22275C;"><strong>PEC</strong></span>!}';
 Q.spm_in_government = 0;
 Q.plfm_in_government = 0;
 Q.ffm_in_government = 0;
@@ -274,8 +258,6 @@ marsists_govern = 0;
 
 // if you're in a coalition, this is an incremental counter for how many times dissent has happened from the right.
 Q.coalition_dissent = 0;
-// dissent from the KPD, in a popular front or left front government
-Q.kpd_coalition_dissent = 0;
 
 // does the SPD tolerate the government even if it is not a participant?
 Q.spd_toleration = 0;
@@ -284,24 +266,22 @@ Q.spd_toleration = 0;
 Q.minority_government = 0;
 
 // ministries - which parties control the ministries?
-// starting with the 4th Marx cabinet https://en.wikipedia.org/wiki/Fourth_Marx_cabinet
-// is the agricultural ministry useful at all?
-Q.foreign_minister = 'Streseman';
-Q.foreign_minister_party = 'DVP';
-Q.interior_minister = 'von Keudell';
-Q.interior_minister_party = 'DNVP';
-Q.justice_minister = 'Hergt';
-Q.justice_minister_party = 'DNVP';
-Q.labor_minister = 'Brauns';
-Q.labor_minister_party = 'Z';
-Q.reichswehr_minister = 'Groener';
+Q.foreign_minister = 'XXX';
+Q.foreign_minister_party = 'I';
+Q.interior_minister = 'XXX';
+Q.interior_minister_party = 'I';
+Q.justice_minister = 'XXX';
+Q.justice_minister_party = 'I';
+Q.labor_minister = 'XXX';
+Q.labor_minister_party = 'I';
+Q.reichswehr_minister = 'XXX';
 Q.reichswehr_minister_party = 'I';
-Q.economic_minister = 'Curtius';
-Q.economic_minister_party = 'DVP';
-Q.finance_minister = 'Köhler';
-Q.finance_minister_party = 'Z';
-Q.agriculture_minister = 'Schiele';
-Q.agriculture_minister_party = 'DNVP';
+Q.economic_minister = 'XXX';
+Q.economic_minister_party = 'I';
+Q.finance_minister = 'XXX';
+Q.finance_minister_party = 'I';
+Q.agriculture_minister = 'XXX';
+Q.agriculture_minister_party = 'I';
 
 // Events: what has occurred?
 Q.panzerkreuzer_seen = 0;
