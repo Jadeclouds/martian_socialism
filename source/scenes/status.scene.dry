@@ -31,9 +31,9 @@ Internal dissent: [+ dissent_percent : dissent +]
 
 = Government
 
-Observer: [+ president +]
+Commissioner: [+ president +]
 
-Commissioner: [+ chancellor +] ([+ chancellor_party +])
+Prime Minister: [+ chancellor +] ([+ chancellor_party +])
 
 Martian Parliament composition:
 
