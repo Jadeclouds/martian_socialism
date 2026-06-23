@@ -39,7 +39,7 @@ if (Q.ideology && Q.ideology != "progressist") {
 go-to: changed if changed = 1
 on-departure: ideology = "progressist"; progressist_strength += 10; progressist_dissent -= 10; left_dissent -= 3; reformist_dissent -= 3
 
-The progressists support classical democratic-socialist views. They are skeptical about cooperating too closely with both the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>! and the {!<span style="color: #540808;"><strong>PLFM</strong></span>!}, but are pragmatically ready to work with either. They also are the great reconcilers between the party wings.
+The progressists support classical democratic-socialist views. They are skeptical about cooperating too closely with both the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} and the {!<span style="color: #540808;"><strong>PLFM</strong></span>!}, but are pragmatically ready to work with either. They also are the great reconcilers between the party wings.
 
 @romanticist_view
 on-arrival: {!
