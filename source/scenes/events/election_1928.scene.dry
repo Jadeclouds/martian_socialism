@@ -14,8 +14,8 @@ The Planetary Elections elections are to be held now.
 - @election_algorithm: May we do our best...
 
 @post_election_1928
-on-arrival: {!
 
+on-arrival: {!
 var new_party_sum = 0;
 for (var party of Q.parties) {
     Q['old_' + party + '_r'] = Q[party + '_r'];
