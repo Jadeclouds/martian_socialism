@@ -7,8 +7,8 @@ max-visits: 1
 With the unpopular water tax shattering the {!<span style="color: #22275C;"><strong>PEC</strong></span>!}'s historic majority, the upcoming 2442 election offers an unprecedented occasion for the Marsist cause. The {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} and {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} are poised to reshape the planet's future, but ensuring that Social Democracy emerges as a true tool for radical reform requires a flawless opening move. As the campaign kicks off in earnest, we must decide how to leverage this political instability to secure our vision for Mars.
 
 - @focus_on_alliances: We will focus on bettering our relationships with other parties.
-- @focus_on_party_stability: We should focus on rallying the full strenght of the party.
-- @focus_on_campaign: Intensifying our camapign efforts shall be our focus!
+- @focus_on_party_stability: We should focus on rallying the full strength of the party.
+- @focus_on_campaign: Intensifying our campaign efforts shall be our focus!
 
 @focus_on_alliances
 on-arrival: plfm_relation += 5*(1 - dissent); mnlp_relation += 5*(1 - dissent)
