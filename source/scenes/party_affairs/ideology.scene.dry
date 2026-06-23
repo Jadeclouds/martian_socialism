@@ -1,70 +1,69 @@
-title: Questions of Ideology
+title: Setting the Party's Course
 new-page: true
 is-card: true
 tags: party_affairs
 view-if: ideology_timer = 0
 on-arrival: month_actions += 1; old_ideology = ideology; ideology_timer = 18
-card-image: img/arbeiterbew.jpg
-max-visits: 3
+card-image: img/spm_party_course.jpg
 #subtitle: Setting the party's ideological direction.
 
-= Questions of Ideology
+= Setting the Party's Course
 
-The SPD is torn between many different ideological currents. What should be our primary ideological guidance for now?
+The {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} is a large party, and as such, different currents and wings of the party have sometimes different or even contradictory views and positions. What should be our primary ideological guidance for now?
 
 [? if ideology != 0 : We have previously chosen a [+ ideology +] ideology. Changing it will likely have drawbacks. ?]
 
-- @class_struggle: Class struggle and preparing the proletariat for the revolution are our primary goals.
-- @centrist: The Center Marxism of Karl Kautsky remains the best way to resolve our internal contradictions.
-- @labor: We should work with the trade unions to improve the lives of workers.
-- @reform: Following Eduard Bernstein, we should work for ethical socialism, strengthen democracy, and expand the party's electorate.
+- @left_view: Preparing the Marsians for a planetary revolution is our main goal.
+- @progressist_view: The SPM will continue the progressive tradition of Social Democrats before us.
+- @romanticist_view: Working for a radically different and better version of humanity on Mars is our goal.
+- @reformist_view: We should work with other moderate marsists towards a democratic republic.
 - @easy_discard
 
-@class_struggle
+@left_view
 on-arrival: {!
 if (Q.ideology && Q.ideology != "left") {
     Q.changed = 1;
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "left"; left_strength += 10; communist_coalition += 1; left_dissent -= 5; z_relation -= 3; dvp_relation -= 5; nationalization_support += 1; kpd_relation += 3
+on-departure: ideology = "left"; left_strength += 10; left_dissent -= 10; mnlp_relation -= 3; plfm_relation += 3
 
-The radical left of the party supports a course of class struggle, and potentially a reconcilliation with the Communists.
+The radical left of the party argues that true systemic change cannot be achieved through mere electoral politics or compromises with the earth ruling class, and supports a course of class struggle and armed marsism, towards reconciliation with the {!<span style="color: #540808;"><strong>PLFM</strong></span>!}.
 
-@centrist
+@progressist_view
 on-arrival: {!
-if (Q.ideology && Q.ideology != "centrist") {
+if (Q.ideology && Q.ideology != "progressist") {
     Q.changed = 1;
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "centrist"; center_strength += 10; center_dissent -= 10; left_dissent -= 5; reformist_dissent -= 5
+on-departure: ideology = "progressist"; progressist_strength += 10; progressist_dissent -= 10; left_dissent -= 3; reformist_dissent -= 3
 
-The Center Marxists, represented by Kautsky and Hilferding, support a middle course of preparing for revolution while building up the consciousness of the working class.
+The progressists support classical democratic-socialist views. They are skeptical about cooperating too closely with both the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>! and the {!<span style="color: #540808;"><strong>PLFM</strong></span>!}, but are pragmatically ready to work with either. They also are the great reconcilers between the party wings.
 
-@labor
+@romanticist_view
 on-arrival: {!
-if (Q.ideology && Q.ideology != "labor") {
+if (Q.ideology && Q.ideology != "romanticist") {
     Q.changed = 1;
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "labor"; labor_strength += 10; wtb_support += 1; labor_dissent -= 5; kpd_relation -= 3
+on-departure: ideology = "romanticist"; romanticist_strength += 10; romanticist_dissent -= 10; p_relation = 3
 
-The labor wing of the party supports continued particpation in government in order to provide benefits to the workers, and the creation of public works programs for employment.
+The romanticists are an intellectual wing of the party that sees Mars as the laboratory of a new humanty. They focus on the concepts of cultural hegemony, active revolution, socio-organic metamorphosis and capitalist realism. Romanticists envision Mars as the perfect home for true utopian communism.
 
-@reform
+@reformist_view
 on-arrival: {!
 if (Q.ideology && Q.ideology != "reformist") {
     Q.changed = 1;
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "reformist"; reformist_strength += 10; democratization += 1; reformist_dissent -= 5; z_relation += 5; dvp_relation += 5; kpd_relation -= 8; moderate_plan_support += 1
+on-departure: ideology = "reformist"; reformist_strength += 10; reformist_dissent -= 10; mnlp_relation += 3
 
-The reformist wing of the party seeks to preserve the Republic and the democratic system of government, and is most supportive of coalitions with the other pro-democracy parties.
+The reformist wing of the party seeks to work with the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} to organize a bipartisan republic, believing that long-term stability can only be achieved by building durable, shared institutions rather than pursuing ideological dominance. By seeking common ground with Liberals, they hope to establish a stable constitutional framework that moves past revolutionary friction.
 
 @changed
-on-arrival: left_dissent += 5; center_dissent += 5; labor_dissent += 5; reformist_dissent += 5
+on-arrival: left_dissent += 5; progressist_dissent += 5; romanticist_dissent += 5; reformist_dissent += 5
 
 We have changed ideologies. Many in the party feel unmoored.
