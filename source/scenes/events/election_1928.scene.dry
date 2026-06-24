@@ -124,37 +124,37 @@ data = data.concat([
         "id": "spm",
         "legend": "SPM",
         "name": "SPM",
-        "seats": Math.round(Q.spm_r*5),
+        "seats": Math.round(Q.spm_r*3),
     },
     {
         "id": "p",
         "legend": "Phobos",
         "name": "Phobos",
-        "seats": Math.round(Q.p_r*5),
+        "seats": Math.round(Q.p_r*3),
     },
     {
         "id": "ffm",
         "legend": "FfM",
         "name": "FfM",
-        "seats": Math.round(Q.ffm_r*5),
+        "seats": Math.round(Q.ffm_r*3),
     },
     {
         "id": "mnlp",
         "legend": "MNLP",
         "name": "MNLP",
-        "seats": Math.round(Q.mnlp_r*5),
+        "seats": Math.round(Q.mnlp_r*3),
     },
     {
         "id": "other",
         "legend": "Other",
         "name": "Other",
-        "seats": Math.round(Q.other_r*5),
+        "seats": Math.round(Q.other_r*3),
     },
     {
         "id": "pec",
         "legend": "PEC",
         "name": "PEC",
-        "seats": Math.round(Q.pec_r*5),
+        "seats": Math.round(Q.pec_r*3),
     },
 ]);
 
