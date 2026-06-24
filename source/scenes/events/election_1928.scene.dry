@@ -199,7 +199,7 @@ go-to: coalition_menu
 
 **Potential coalitions:**
 
-Marsist Coalition ({!<span style="color: #ED7158;"><strong>SPM</strong></span>!} + {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}: [+ marsist_coalition +]%
+Marsist Coalition ({!<span style="color: #ED7158;"><strong>SPM</strong></span>!} + {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}): [+ marsist_coalition +]%
 
 Grand Marsist Coalition ({!<span style="color: #ED7158;"><strong>SPM</strong></span>!} + {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} + {!<span style="color: #540808;"><strong>PLFM</strong></span>!} + {!<span style="color: #5C3F1A;"><strong>FfM</strong></span>!} + {!<span style="color: #12DB95;"><strong>P</strong></span>!}): [+ grand_marsist_coalition +]%
 
@@ -234,10 +234,10 @@ Who should be the new Prime Minister?
 
 @grand_marsist_coalition
 title: Organize a Grand Marsist Coalition.
-subtitle: {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} + {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} + {!<span style="color: #540808;"><strong>PLFM</strong></span>!} + {!<span style="color: #5C3F1A;"><strong>FfM</strong></span>!} + {!<span style="color: #12DB95;"><strong>P</strong></span>!}
+subtitle: {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} + {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} + {!<span style="color: #540808;"><strong>PLFM</strong></span>!} + {!<span style="color: #5C3F1A;"><strong>FfM</strong></span>!} + {!<span style="color: #12DB95;"><strong>P</strong></span>!}: [+ grand_marsist_coalition +]%
 view-if: grand_marsist_coalition >= 50
 choose-if: mnlp_relation >= 40 and plfm_relation >= 40 
-unavailable-subtitle: !<span style="color: #ED7158;"><strong>SPM</strong></span>!} + {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} + {!<span style="color: #540808;"><strong>PLFM</strong></span>!} + {!<span style="color: #5C3F1A;"><strong>FfM</strong></span>!} + {!<span style="color: #12DB95;"><strong>P</strong></span>!} [? if mnlp_relation >= 40: We do not have good enough relations with the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}. ?] [? if plfm_relation >= 40: We do not have good enough relations with the {!<span style="color: #540808;"><strong>PLFM</strong></span>!}. ?]
+unavailable-subtitle: {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} + {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} + {!<span style="color: #540808;"><strong>PLFM</strong></span>!} + {!<span style="color: #5C3F1A;"><strong>FfM</strong></span>!} + {!<span style="color: #12DB95;"><strong>P</strong></span>!}: : [+ grand_marsist_coalition +]% [? if mnlp_relation >= 40: We do not have good enough relations with the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}. ?] [? if plfm_relation >= 40: We do not have good enough relations with the {!<span style="color: #540808;"><strong>PLFM</strong></span>!}. ?]
 on-arrival: leverage += 5; in_marsist_coalition = 1; spm_in_government = 1; marsists_govern = 1;
 
 We have enough votes to form a Marsist Coalition! It consists of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} and the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}. This is the historic moderate Marsist front.
