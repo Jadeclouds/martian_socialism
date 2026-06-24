@@ -31,9 +31,9 @@ for (var party of Q.parties) {
     Q['change' + party + '_r'] = Q[party + 'r'] - Q['old' + party + 'r'];
     var sign = Q['change_' + party + '_r'] > 0 
                 ? '<img src="img/arrowup.png"> ' 
-               : Q['change_' + party + '_r'] < 0 
-                 ? '<img src="img/arrowdown.png"> ' 
-                 : '<img src="img/steady.png"> ';
+                : Q['change_' + party + '_r'] < 0 
+                    ? '<img src="img/arrowdown.png"> ' 
+                    : '<img src="img/steady.png"> ';
     Q['strchange' + party] = sign + Q['change_' + party + '_r'];//.toFixed(1);
 } 
 
