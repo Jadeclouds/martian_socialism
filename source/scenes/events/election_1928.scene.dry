@@ -312,7 +312,7 @@ title: Justice Ministry
 unavailable-subtitle: Our coalition partners won't allow us to get more ministries.
 tags: mins_1928
 choose-if: leverage >= 8
-view-if: justice_minister_party != "SPD"
+view-if: justice_minister_party != "SPM"
 on-arrival: leverage -= 8; justice_minister_party = "SPM"; justice_minister = "Powell"
 go-to: ministries
 
@@ -324,7 +324,7 @@ subtitle: The Interior ministry is considered a natural fit for the {!<span styl
 unavailable-subtitle: Our coalition partners won't allow us to get more ministries.
 tags: mins_1928
 choose-if: leverage >= 12
-view-if: foreign_minister_party != "SPD"
+view-if: foreign_minister_party != "SPM"
 on-arrival: leverage -= 12; foreign_minister_party = "MSP"; foreign_minister = "Rookson"
 go-to: ministries
 
@@ -334,7 +334,7 @@ Licia Rookson of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>
 title: Infrastructure & Energy Ministry
 unavailable-subtitle: Our coalition partners won't allow us to get more ministries.
 choose-if: leverage >= 8 
-view-if: agriculture_minister_party != "SPD"
+view-if: agriculture_minister_party != "SPM"
 on-arrival: leverage -= 8; infrastructure_minister_party = "MSP"; infrastructure_minister = "Heson"
 go-to: ministries
 tags: mins_1928
@@ -346,7 +346,7 @@ title: Education & Culture Ministry
 unavailable-subtitle: Our coalition partners won't allow us to get more ministries.
 tags: mins_1928
 choose-if: leverage >= 8
-view-if: reichswehr_minister_party != "SPD"
+view-if: reichswehr_minister_party != "SPM"
 on-arrival: leverage -= 8; education_minister_party = "SPD"; education_minister = "Gonzal"
 go-to: ministries
 
@@ -357,7 +357,7 @@ title: Agriculture & Food Procurement Ministry
 unavailable-subtitle: Our coalition partners won't allow us to get more ministries.
 tags: mins_1928
 choose-if: leverage >= 8
-view-if: reichswehr_minister_party != "SPD"
+view-if: reichswehr_minister_party != "SPM"
 on-arrival: leverage -= 8; agriculture_minister_party = "SPD"; agriculture_minister = "Alell"
 go-to: ministries
 
