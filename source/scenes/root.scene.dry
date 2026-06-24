@@ -253,8 +253,11 @@ Q.p_in_government = 0;
 Q.pec_in_government = 1;
 
 in_marsist_coalition = 0;
-spm_in_government = 0;
+in_grand_marsist_coalition = 0;
 marsists_govern = 0;
+
+//Party opinions regarding issues
+mnlp_tolerate_nondemocrats = 0;
 
 // if you're in a coalition, this is an incremental counter for how many times dissent has happened from the right.
 Q.coalition_dissent = 0;
