@@ -215,12 +215,12 @@ Q.capitalist_class_other = 0;
 
 
 // Current Martian Parliament composition
-Q.spm_r = 24;
-Q.plfm_r = 4;
+Q.spm_r = 22;
+Q.plfm_r = 3;
 Q.ffm_r = 2;
-Q.mnlp_r = 27;
+Q.mnlp_r = 20;
 Q.p_r = 1;
-Q.pec_r = 42;
+Q.pec_r = 49;
 Q.other_r = 0;
 
 // diff from prev
