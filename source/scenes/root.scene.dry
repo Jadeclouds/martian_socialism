@@ -277,12 +277,12 @@ Q.justice_minister = 'XXX';
 Q.justice_minister_party = 'I';
 Q.labor_minister = 'XXX';
 Q.labor_minister_party = 'I';
-Q.reichswehr_minister = 'XXX';
-Q.reichswehr_minister_party = 'I';
+Q.infrastructure_minister = 'XXX';
+Q.infrastructure_minister_party = 'I';
 Q.economic_minister = 'XXX';
 Q.economic_minister_party = 'I';
-Q.finance_minister = 'XXX';
-Q.finance_minister_party = 'I';
+Q.education_minister = 'XXX';
+Q.education_minister_party = 'I';
 Q.agriculture_minister = 'XXX';
 Q.agriculture_minister_party = 'I';
 
