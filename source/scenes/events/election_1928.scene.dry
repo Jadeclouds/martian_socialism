@@ -290,7 +290,7 @@ unavailable-subtitle: Our coalition partners won't allow us to get more ministri
 tags: mins_1928
 choose-if: leverage >= 4
 view-if: interior_minister_party != "SPM"
-on-on-arrival: leverage -= 4; labor_minister_party = "SPM"; interior_minister = "Prichy"
+on-arrival: leverage -= 4; labor_minister_party = "SPM"; interior_minister = "Prichy"
 go-to: ministries
 
 Petev Prichy of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} has been appointed as Interior minister.
