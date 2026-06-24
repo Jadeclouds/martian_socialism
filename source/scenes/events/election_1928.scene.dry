@@ -242,18 +242,15 @@ Who should be the new Prime Minister?
 title: Berter Gerson from the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!}!
 subtitle: [? if largest_marsist_party == "MNLP": Since the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} is the larger party in this coalition, claiming this position will weaken our leverage when negotiating for other cabinet positions. ?]
 view-if: spm_r >= 20 
-on-arrival: chancellor = "Gerson"; chancellor_party = "MSP"; leverage -= 5 if largest_marsist_party == "MNLP";  mnlp_relation -= 3 if largest_marsist_party == "MNLP" 
+on-arrival: chancellor = "Gerson"; chancellor_party = "MSP"; leverage -= 8 if largest_marsist_party == "MNLP";  mnlp_relation -= 3 if largest_marsist_party == "MNLP" 
 go-to: ministries
 
 @mnlp_prime_minister
 title: Julie Meson from the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}!
 subtitle: [? if largest_marsist_party == "SPM": Since the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} is the larger party in this coalition, conceding this position will grant us greater leverage when negotiating for other cabinet positions. ?]
 view-if: mnlp_r >= 20 
-on-arrival: chancellor = "Meson"; chancellor_party = "MNLP"; leverage += 5 if largest_marsist_party == "SPM";  mnlp_relation += 3 if largest_marsist_party == "SPM" 
+on-arrival: chancellor = "Meson"; chancellor_party = "MNLP"; leverage += 8 if largest_marsist_party == "SPM";  mnlp_relation += 3 if largest_marsist_party == "SPM" 
 go-to: ministries
-
-
-
 
 @grand_marsist_coalition
 title: Organize a Grand Marsist Coalition.
@@ -269,173 +266,167 @@ Who should be the new Prime Minister?
 
 @ministries
 
-We can pick from any number of ministries. Controlling a ministry allows us to directly effect policy in that area. [? if in_left_front : Any ministry that we do not take will be given to the KPD. ?] [? if in_left_front and reichswehr_minister_party == "KPD" : If the KPD controls the Reichswehr Ministry, the army will most likely revolt. ?]
+We can pick from any number of ministries. Controlling a ministry allows us to directly effect policy in that area. Since certain ministries are viewed as natural fits for the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!}, negotiating for them will be easier. Likewise, ministries that naturally fit the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} will be harder to negotiate for. 
 
 - #mins_1928
 - #drop_mins_1928
 
 @labor
 title: Labor Ministry
-subtitle: Taking the Labor Ministry is expected of us.
-unavailable-subtitle: We do not have enough leverage.
+subtitle: The Labor ministry is considered a natural fit for the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!}.
+unavailable-subtitle: Our coalition partners won't allow us to get more ministries.
 tags: mins_1928
-choose-if: leverage >= 5
-view-if: labor_minister_party != "SPD"
-on-arrival: leverage -= 5; labor_minister_party = "SPD"; labor_minister = "Wissell"
+choose-if: leverage >= 4
+view-if: labor_minister_party != "SPM"
+on-arrival: leverage -= 4; labor_minister_party = "SPM"; labor_minister = "Bertson"
 go-to: ministries
 
-Rudolf Wissell of the SPD has been appointed labor minister.
+Lyna Bertson of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} has been appointed as Labor minister.
 
 @interior
 title: Interior Ministry
-subtitle: Taking the Interior Ministry is expected of us. The Interior Ministry controls domestic security.
-unavailable-subtitle: We do not have enough leverage.
+subtitle: The Interior ministry is considered a natural fit for the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!}.
+unavailable-subtitle: Our coalition partners won't allow us to get more ministries.
 tags: mins_1928
-choose-if: leverage >= 5
-view-if: interior_minister_party != "SPD"
-on-arrival: leverage -= 5; interior_minister_party = "SPD"; interior_minister = "Severing"
+choose-if: leverage >= 4
+view-if: interior_minister_party != "SPM"
+on-on-arrival: leverage -= 4; labor_minister_party = "SPM"; interior_minister = "Prichy"
 go-to: ministries
 
-Carl Severing of the SPD has been appointed Interior Minister.
-
-@finance
-title: Finance Ministry
-subtitle: The Finance Ministry controls the government budget and taxes.
-unavailable-subtitle: We do not have enough leverage.
-tags: mins_1928
-choose-if: leverage >= 10 
-view-if: finance_minister_party != "SPD"
-on-arrival: leverage -= 10; finance_minister_party = "SPD"; finance_minister = "Hilferding"
-go-to: ministries
-
-Rudolf Hilferding of the SPD has been appointed Finance Minister.
+Petev Prichy of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} has been appointed as Interior minister.
 
 @economic
-title: Economic Ministry
-subtitle: The Economic Ministry controls broader economic policy.
-unavailable-subtitle: We do not have enough leverage.
+title: Economic & Finance Ministry
+subtitle: The Interior ministry is considered a natural fit for the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}.
+unavailable-subtitle: Our coalition partners won't allow us to get more ministries.
 tags: mins_1928
-choose-if: leverage >= 10 
-view-if: economic_minister_party != "SPD"
-on-arrival: leverage -= 10; economic_minister_party = "SPD"; economic_minister = "Schmidt"
+choose-if: leverage >= 12
+view-if: economic_minister_party != "SPM"
+on-arrival: leverage -= 12; economic_minister_party = "SPM"; economic_minister = "Baking"
 go-to: ministries
 
-Robert Schmidt of the SPD has been appointed Economic Minister.
+Dave Baking of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} has been appointed as Economic minister.
 
 @justice
 title: Justice Ministry
-subtitle: The Justice Ministry controls the courts.
-unavailable-subtitle: We do not have enough leverage.
+unavailable-subtitle: Our coalition partners won't allow us to get more ministries.
 tags: mins_1928
-choose-if: leverage >= 10 
+choose-if: leverage >= 8
 view-if: justice_minister_party != "SPD"
-on-arrival: leverage -= 10; justice_minister_party = "SPD"; justice_minister = "Radbruch"
+on-arrival: leverage -= 8; justice_minister_party = "SPM"; justice_minister = "Powell"
 go-to: ministries
 
-Gustav Radbruch of the SPD has been appointed Justice Minister.
+Jamy Powell of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} has been appointed as Economic minister.
 
 @foreign
 title: Foreign Ministry
-subtitle: This is usually the domain of Gustav Stresemann of the DVP.
-unavailable-subtitle: We do not have enough leverage.
+subtitle: The Interior ministry is considered a natural fit for the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}.
+unavailable-subtitle: Our coalition partners won't allow us to get more ministries.
 tags: mins_1928
-choose-if: leverage >= 10 
+choose-if: leverage >= 12
 view-if: foreign_minister_party != "SPD"
-on-arrival: leverage -= 10; foreign_minister_party = "SPD"; foreign_minister = "Breitscheid"
+on-arrival: leverage -= 12; foreign_minister_party = "MSP"; foreign_minister = "Rookson"
 go-to: ministries
 
-Rudolf Breitscheid of the SPD has been appointed Foreign Minister.
+Licia Rookson of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} has been appointed as Economic minister.
 
+@infrastructure
+title: Infrastructure & Energy Ministry
+unavailable-subtitle: Our coalition partners won't allow us to get more ministries.
+choose-if: leverage >= 8 
+view-if: agriculture_minister_party != "SPD"
+on-arrival: leverage -= 8; infrastructure_minister_party = "MSP"; infrastructure_minister = "Heson"
+go-to: ministries
+tags: mins_1928
+
+Loria Heson of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} has been appointed as Infrastructure & Energy minister.
+
+@education
+title: Education & Culture Ministry
+unavailable-subtitle: Our coalition partners won't allow us to get more ministries.
+tags: mins_1928
+choose-if: leverage >= 8
+view-if: reichswehr_minister_party != "SPD"
+on-arrival: leverage -= 8; education_minister_party = "SPD"; education_minister = "Gonzal"
+go-to: ministries
+
+Fronio Gonzal of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} has been appointed as Education & Culture minister.
 
 @agriculture
-title: Agricultural Ministry
-subtitle: This is not our usual domain.
-unavailable-subtitle: We do not have enough leverage.
-choose-if: leverage >= 10 
-view-if: agriculture_minister_party != "SPD"
-on-arrival: leverage -= 10; agriculture_minister_party = "SPD"; agriculture_minister = "Baade"
-go-to: ministries
+title: Agriculture & Food Procurement Ministry
+unavailable-subtitle: Our coalition partners won't allow us to get more ministries.
 tags: mins_1928
-
-Fritz Baade of the SPD has been appointed Agriculture Minister.
-
-@reichswehr
-title: Reichswehr Ministry
-subtitle: The Ministry responsible for the armed forces is not typically our domain; General Groener and the bourgeois-conservatives will be displeased.
-unavailable-subtitle: We do not have enough leverage.
-tags: mins_1928
-choose-if: leverage >= 15 
+choose-if: leverage >= 8
 view-if: reichswehr_minister_party != "SPD"
-on-arrival: leverage -= 15; reichswehr_minister_party = "SPD"; reichswehr_minister = "Leber"
+on-arrival: leverage -= 8; agriculture_minister_party = "SPD"; agriculture_minister = "Alell"
 go-to: ministries
 
-Julius Leber of the SPD has been appointed Reichswehr Minister.
-
-
+Joshua Alell of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} has been appointed as Education & Culture minister.
 
 @no_more
 title: No more ministries.
-subtitle: [? if leverage >= 10 : We still have some more leverage to gain ministries. ?][? if leverage < 10 : We do not have much leverage left. ?]
+subtitle: [? if leverage >= 8 : We still have some more leverage to gain ministries. ?][? if leverage < 8 : We do not have much leverage left. ?]
 tags: mins_1928
 
 This coalition arrangement is tolerable to all.
 
+
+
 @drop_labor
 title: Drop the Labor Ministry.
-view-if: labor_minister_party = "SPD"
-on-arrival: labor_minister_party = "Z"; labor_minister = "Stegerwald"; leverage += 5;
+view-if: labor_minister_party = "SPM"
+on-arrival: labor_minister_party = "MNLP"; labor_minister = "Coopez"; leverage += 4;
 tags: drop_mins_1928
 go-to: ministries
 
 @drop_interior
 title: Drop the Interior Ministry.
-view-if: interior_minister_party = "SPD"
-on-arrival: interior_minister_party = "Z"; interior_minister = "Wirth"; leverage += 5;
-tags: drop_mins_1928
-go-to: ministries
-
-@drop_finance
-title: Drop the Finance Ministry.
-view-if: finance_minister_party = "SPD"
-on-arrival: finance_minister_party = "DVP"; finance_minister = "Moldenhauer"; leverage += 10; finance_minister_party = "Z" if in_weimar_coalition or in_popular_front; finance_minister = "Köhler" if in_weimar_coalition or in_popular_front
+view-if: interior_minister_party = "SPM"
+on-arrival: interior_minister_party = "MNLP"; interior_minister = "Marte"; leverage += 4;
 tags: drop_mins_1928
 go-to: ministries
 
 @drop_economic
-title: Drop the Economic Ministry.
-view-if: economic_minister_party = "SPD"
-on-arrival: economic_minister_party = "DVP"; economic_minister = "Curtius"; leverage += 10; economic_minister_party = ddp_name if in_weimar_coalition or in_popular_front; economic_minister = "Dietrich" if in_weimar_coalition or in_popular_front;
+title: Drop the Economic & Finance Ministry.
+view-if: economic_minister_party = "SPM"
+on-arrival: interior_minister_party = "MNLP"; interior_minister = "Jonels"; leverage += 12;
 tags: drop_mins_1928
 go-to: ministries
 
 @drop_justice
 title: Drop the Justice Ministry.
-view-if: justice_minister_party = "SPD"
-on-arrival: justice_minister_party = ddp_name; justice_minister = "Koch-Weser"; leverage += 10;
+view-if: justice_minister_party = "SPM"
+on-arrival: justice_minister_party = "MNLP"!; justice_minister = "Scotte"; leverage += 8;
 tags: drop_mins_1928
 go-to: ministries
 
 @drop_foreign
 title: Drop the Foreign Ministry.
-view-if: foreign_minister_party = "SPD"
-on-arrival: foreign_minister_party = "DVP"; foreign_minister = "Stresemann"; foreign_minister = "Curtius" if streseman_dead; leverage += 10; foreign_minister_party = "Z" if in_weimar_coalition or in_popular_front; foreign_minister = "Wirth" if in_weimar_coalition or in_popular_front;
+view-if: foreign_minister_party = "SPM"
+on-arrival: foreign_minister_party = "MNLP"; foreign_minister = "Wison"; leverage += 12;
+tags: drop_mins_1928
+go-to: ministries
+
+@drop_infrastructure
+title: Drop the Infrastructure & Energy Ministry.
+view-if: agriculture_minister_party = "SPM"
+on-arrival: infrastructure_minister_party = "MNLP"; infrastructure_minister = "Coxand"; leverage += 8;
+tags: drop_mins_1928
+go-to: ministries
+
+@drop_education
+title: Drop the Education & Culture Ministry.
+view-if: agriculture_minister_party = "SPM"
+on-arrival: education_minister_party = "MNLP"; education_minister = "Hallee"; leverage += 8;
 tags: drop_mins_1928
 go-to: ministries
 
 @drop_agriculture
-title: Drop the Agriculture Ministry.
-view-if: agriculture_minister_party = "SPD"
-on-arrival: agriculture_minister_party = ddp_name; agriculture_minister = "Dietrich"; leverage += 10; agriculture_minister_party = "Z" if in_weimar_coalition; agriculture_minister = "Hermes" if in_weimar_coalition
+title: Drop the Agriculture & Food Procurement Ministry.
+view-if: agriculture_minister_party = "SPM"
+on-arrival: agriculture_minister_party = "MNLP"; agriculture_minister = "Grobenn"; leverage += 8;
 tags: drop_mins_1928
 go-to: ministries
-
-@drop_reichswehr
-title: Drop the Reichswehr Ministry.
-view-if: reichswehr_minister_party = "SPD"
-on-arrival: reichswehr_minister_party = "I"; reichswehr_minister = "Groener"; leverage += 15;
-tags: drop_mins_1928
-go-to: ministries
-
 
 
 
