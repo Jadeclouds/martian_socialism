@@ -343,7 +343,7 @@ div.blank-card {
   width: 120px;
   height: 150px;
   background-color: var(--card-bg-color);
-  border: 10px solid var(--card-border-color);
+  border: 3px solid var(--card-border-color);
   margin-bottom: 0.5em;
 }
 
