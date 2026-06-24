@@ -396,7 +396,7 @@ go-to: ministries
 @drop_justice
 title: Drop the Justice Ministry.
 view-if: justice_minister_party = "SPM"
-on-arrival: justice_minister_party = "MNLP"!; justice_minister = "Scotte"; leverage += 8;
+on-arrival: justice_minister_party = "MNLP"; justice_minister = "Scotte"; leverage += 8;
 tags: drop_mins_1928
 go-to: ministries
 
