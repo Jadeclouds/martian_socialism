@@ -23,6 +23,6 @@ on-arrival: left_dissent -= 5; progressist_dissent -= 5; romanticist_dissent -= 
 The {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} is, in its own way, a big-tent party. As a result, its various wings often fall into the trap of petty squabbling, worrying more about imposing their specific vision on the membership than fighting for the broader Marsist cause. Nevertheless, during an election campaign, it is vital to project absolute strength and self-reliance to attract undecided voters. Furthermore, we expect these ideological rifts to widen even more once we enter government; cooling internal tensions now is a vital preemptive move.
 
 @focus_on_campaign
-on-arrival: miners_spm += 5*(1 - dissent); indipendent_capitalist_class_spm += 5*(1 - dissent)
+on-arrival: technicians_spm += 5*(1 - dissent); indipendent_capitalist_class_spm += 5*(1 - dissent)
 
 Given that election season is underway, the core focus of our local chapters must be grassroots campaigning. We need to hit the ground running, mobilizing directly among the populace to secure every possible vote.
