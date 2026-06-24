@@ -5,7 +5,6 @@ priority: -1
 view-if: (year = next_election_year and month >= next_election_month) or (year > next_election_year)
 on-departure: month_actions += 1; in_election = 0; next_election_year = next_election_year + 3; n_elections += 1; next_election_time = time + 36;
 set-jump: post_election_1928
-face-image: img/Rothe_Wahlen_1903.jpg
 
 = Elections, [+ month : month +] [+ year +]
 
@@ -42,6 +41,20 @@ for (var party of Q.parties) {
                     : '<img src="img/steady.png"> ';
     Q['str_votes_change_' + party] = sign2 + Math.abs(Q['change_' + party + '_votes']).toFixed(1);
 }
+
+for (var party of Q.parties) {
+    for (var c of Q.classes) {
+        Q[c + "_change_" + party + '_display'] = Q[c + '_' + party + '_display'] - Q['old_' + c + '_' + party + '_display'];
+        var sign3 = Q[c + "_change_" + party + '_display'] > 0 ? '+' : '';
+        Q['demo_change_' + c + '_' + party + '_display'] = sign3 + parseFloat(Q[c + "_change_" + party + '_display']).toFixed(0);
+        Q['old_' + c + '_' + party + '_display'] = Q[c + '_' + party + '_display'];
+    }
+}
+    
+for (var party of Q.parties) {
+    Q[party + '_last_election_votes'] = parseFloat(Q[party + '_votes']).toFixed(1);
+    Q['previous_' + party + '_last_election_votes'] = parseFloat(parseFloat(Q[party + '_last_election_votes']).toFixed(1));
+}    
 
 Q.largest_party = 'PEC';
 if (Q.spm_r >= Q.pec_r && Q.spm_r >= Q.mnlp_r) {
