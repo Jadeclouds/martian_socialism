@@ -538,12 +538,15 @@ table {
 
 /* Styles for parties */
 .seat.plfm {
-    fill: #D3C24D;
+    fill: #540808;
 }
 .seat.spm {
     fill: #ED7158;
     stroke: var(--border-color);
     stroke-width: 1px;
+}
+.seat.mnlp {
+    fill: #D3C24D;
 }
 .seat.p {
     fill: #12DB95;
