@@ -5,6 +5,7 @@ priority: -1
 view-if: (year = next_election_year and month >= next_election_month) or (year > next_election_year)
 on-departure: month_actions += 1; in_election = 0; next_election_year = next_election_year + 3; n_elections += 1; next_election_time = time + 36;
 set-jump: post_election_1928
+face-image: img/Rothe_Wahlen_1903.jpg
 
 = Elections, [+ month : month +] [+ year +]
 
@@ -18,7 +19,6 @@ on-arrival: {!
 // election threshold constitutional reform
 // banning parties
 var new_party_sum = 0;
-
 for (var party of Q.parties) {
     Q['old_' + party + '_r'] = Q[party + '_r'];
     Q[party + '_r'] = Q[party + '_votes'];
@@ -26,13 +26,12 @@ for (var party of Q.parties) {
     if (Q.use_decimals) {
         Q[party + '_r_disp'] = Q[party+'_r'].toFixed(1);
     }  else {
-            Q[party + '_r_disp'] = Q[party+'r'];
+            Q[party + '_r_disp'] = Q[party+'_r'];
     }
-    Q['change' + party + '_r'] = Q[party + 'r'] - Q['old' + party + 'r'];
-    var sign = Q['change' + party + '_r'] > 0 ? '+'  : '';
-    Q['strchange' + party] = sign + Q['change_' + party + '_r'];//.toFixed(1);
-} 
-
+    Q['change_' + party + '_r'] = Q[party + '_r'] - Q['old_' + party + '_r'];
+    var sign = Q['change_' + party + '_r'] > 0 ? '+'  : '';
+    Q['str_change_' + party] = sign + Q['change_' + party + '_r'];//.toFixed(1);
+}
 Q.largest_party = 'PEC';
 if (Q.spm_r >= Q.pec_r && Q.spm_r >= Q.mnlp_r) {
     Q.largest_party = 'SPM';
@@ -125,37 +124,37 @@ data = data.concat([
         "id": "spm",
         "legend": "SPM",
         "name": "SPM",
-        "seats": Math.round(Q.spm_r*3),
+        "seats": Math.round(Q.spm_r*5),
     },
     {
         "id": "p",
         "legend": "Phobos",
         "name": "Phobos",
-        "seats": Math.round(Q.p_r*3),
+        "seats": Math.round(Q.p_r*5),
     },
     {
         "id": "ffm",
         "legend": "FfM",
         "name": "FfM",
-        "seats": Math.round(Q.ffm_r*3),
+        "seats": Math.round(Q.ffm_r*5),
     },
     {
         "id": "mnlp",
         "legend": "MNLP",
         "name": "MNLP",
-        "seats": Math.round(Q.mnlp_r*3),
+        "seats": Math.round(Q.mnlp_r*5),
     },
     {
         "id": "other",
         "legend": "Other",
         "name": "Other",
-        "seats": Math.round(Q.other_r*3),
+        "seats": Math.round(Q.other_r*5),
     },
     {
         "id": "pec",
         "legend": "PEC",
         "name": "PEC",
-        "seats": Math.round(Q.pec_r*3),
+        "seats": Math.round(Q.pec_r*5),
     },
 ]);
 
