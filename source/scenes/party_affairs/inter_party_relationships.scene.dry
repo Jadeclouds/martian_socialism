@@ -31,15 +31,15 @@ subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; plfm_relation += 5*(1 - dissent)
-go-to: plfm_goodwill if mlnp_relation > 40 or plfm_in_government = 1; plfm_not_friendly if plfm_relation < 41  
+go-to: plfm_goodwill if mlnp_relation > 40 or (plfm_in_government = 1 and spm_in_government = 1); plfm_not_friendly if plfm_relation < 41 and ((plfm_in_government = 0 and spm_in_government = 0))
 
 @plfm_goodwill
 
-The {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} considers us a moderate partner, but, even if radical fringes are worried about their policies getting toned down, the party overall considers cooperation inevitable.
+The {!<span style="color: #540808;"><strong>PLFM</strong></span>!} considers us a moderate partner, but, even if radical fringes are worried about their policies getting toned down, the party overall considers cooperation inevitable.
 
 @plfm_not_friendly
 
-The {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} considers us traitors to both the Marsist and Socialist cause. Perhaps this will change if we try harder...
+The {!<span style="color: #540808;"><strong>PLFM</strong></span>!} considers us traitors to both the Marsist and Socialist cause. Perhaps this will change if we try harder...
 
 @right
 subtitle: -1 resources
