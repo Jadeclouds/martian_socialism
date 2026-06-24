@@ -15,7 +15,11 @@ The Planetary Elections elections are to be held now.
 
 @post_election_1928
 
+@post_election_1928
 on-arrival: {!
+// set old results
+// election threshold constitutional reform
+// banning parties
 var new_party_sum = 0;
 for (var party of Q.parties) {
     Q['old_' + party + '_r'] = Q[party + '_r'];
@@ -27,22 +31,16 @@ for (var party of Q.parties) {
             Q[party + '_r_disp'] = Q[party+'_r'];
     }
     Q['change_' + party + '_r'] = Q[party + '_r'] - Q['old_' + party + '_r'];
-        var sign = Q['change_' + party + '_r'] > 0 ? '+'  : '';
-        Q['change_' + party + '_r'] = Math.abs(Q['change_' + party + '_r']);
+    var sign = Q['change_' + party + '_r'] > 0 ? '+'  : '';
     Q['str_change_' + party] = sign + Q['change_' + party + '_r'];//.toFixed(1);
 }
-
 Q.largest_party = 'PEC';
-if (Q.spm_r > Q.mnlp_r && Q.spm_r > Q.mnlp_r) {
+if (Q.spm_r >= Q.pec_r && Q.spm_r >= Q.mnlp_r) {
     Q.largest_party = 'SPM';
 }
-if (Q.mnlp_r > Q.pec_r && Q.mnlp_r > Q.spm_r) {
-    Q.largest_party = 'MNLP';
-}
 
-Q.largest_marsist_party = 'MNLP';
-if (Q.spm_r > Q.mnlp_r) {
-    Q.largest_marsist_party = 'SPM';
+if (Q.mnlp_r >= Q.pec_r && Q.mnlp_r >= Q.spm_r) {
+    Q.largest_party = 'MNLP';
 }
 
 // coalitions
@@ -51,10 +49,6 @@ Q.grand_marsist_coalition = Q.spm_r + Q.mnlp_r + Q.plfm_r + Q.ffm_r + Q.p_r;
 Q.left_marsist_coalition = Q.spm_r + Q.plfm_r;
 Q.earth_coalition = Q.pec_r;
 Q.earth_toleration_coalition = Q.mnlp_r + Q.pec_r;
-
-if (Q.p_lrx_charge == 1) {
-    Q.left_marsist_coalition += Q.p_r;
-}
 
 Q.leverage = Q.spm_r;
 
@@ -77,9 +71,32 @@ Q.interior_minister_party = 'I';
 Q.justice_minister_party = 'I';
 Q.labor_minister_party = 'I';
 Q.reichswehr_minister_party = 'I';
-Q.economic_minister_party = 'I';
+Q.economic_minister_party = I;
 Q.finance_minister_party = 'I';
 Q.agriculture_minister_party = 'I';
+
+// reset KPD goals
+Q.kpd_goals_seen = 0;
+Q.kpd_ultimatum_seen = 0;
+Q.welfare_goal = 0;
+Q.agriculture_goal = 0;
+Q.economy_goal = 0;
+Q.finance_goal = 0;
+Q.labor_goal = 0;
+Q.foreign_goal = 0;
+Q.interior_goal = 0;
+Q.reichswehr_goal = 0;
+
+Q.welfare_goal_completed = 0;
+Q.agriculture_goal_completed = 0;
+Q.economy_goal_completed = 0;
+Q.finance_goal_completed = 0;
+Q.labor_goal_completed = 0;
+Q.foreign_goal_completed = 0;
+Q.interior_goal_completed = 0;
+Q.reichswehr_goal_completed = 0;
+
+Q.strike_term_seen = 0;
 
 var election_result = {'date': new Date(Q.year, Q.month - 1)};
 for (var party of Q.parties) {
@@ -87,52 +104,59 @@ for (var party of Q.parties) {
 }
 Q.election_records.push(election_result);
 !}
-
 on-display: {!
 data = [
     {
         "id": "plfm",
         "legend": "PLFM",
         "name": "PLFM",
-        "seats": Math.round(Q.plfm_r*2),
+        "seats": Math.round(Q.plfm_r*5),
     }
 ];
+if (Q.sapd_formed && Q.sapd_r) {
+    data.push({
+            "id": "sapd",
+            "legend": "SAPD",
+            "name": "SAPD",
+            "seats": Math.round(Q.sapd_r*5),
+            });
+}
 data = data.concat([
     {
         "id": "spm",
         "legend": "SPM",
         "name": "SPM",
-        "seats": Math.round(Q.spm_r*2),
+        "seats": Math.round(Q.spm_r*5),
     },
     {
         "id": "p",
         "legend": "Phobos",
         "name": "Phobos",
-        "seats": Math.round(Q.p_r*2),
+        "seats": Math.round(Q.p_r*5),
     },
     {
         "id": "ffm",
         "legend": "FfM",
         "name": "FfM",
-        "seats": Math.round(Q.ffm_r*2),
+        "seats": Math.round(Q.ffm_r*5),
     },
     {
         "id": "mnlp",
         "legend": "MNLP",
         "name": "MNLP",
-        "seats": Math.round(Q.mnlp_r*2),
+        "seats": Math.round(Q.mnlp_r*5),
     },
     {
         "id": "other",
         "legend": "Other",
         "name": "Other",
-        "seats": Math.round(Q.other_r*2),
+        "seats": Math.round(Q.other_r*5),
     },
     {
         "id": "pec",
         "legend": "PEC",
         "name": "PEC",
-        "seats": Math.round(Q.pec_r*2),
+        "seats": Math.round(Q.pec_r*5),
     },
 ]);
 
