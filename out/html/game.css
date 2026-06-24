@@ -1,12 +1,12 @@
 body {
-  --bg-color: #a37678;
+  --bg-color: #e8cfd0;
   --border-color: #000;
-  --content-bg-color: #a37678;
+  --content-bg-color: #e8cfd0;
   --text-color: #431;
   --link-color: #900;
   --link-hover-color: rgba(0, 0, 0, 0.05);
   --unavailable-bg-color: rgba(0, 0, 0, 0.1);
-  --unavailable-color: #574141;
+  --unavailable-color: #8a797a;
   --tab-bg-color: #dedede;
   --tab-color: #ddd;
   --tab-hover-color: #ececec;
