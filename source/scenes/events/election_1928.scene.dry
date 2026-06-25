@@ -229,7 +229,7 @@ subtitle: {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} + {!<spa
 view-if: marsist_coalition >= 50
 choose-if: mnlp_relation >= 30
 unavailable-subtitle: {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} + {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}: [+ marsist_coalition +]% - Our relationship with the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} is not high enough.
-on-arrival: leverage += 5; in_marsist_coalition = 1; spm_in_government = 1; marsists_govern = 1;
+on-arrival: in_marsist_coalition = 1; spm_in_government = 1; marsists_govern = 1; labor_minister_party = "MNLP"; labor_minister = "Coopez"; interior_minister_party = "MNLP"; interior_minister = "Marte"; economic_minister_party = "MNLP"; economic_minister = "Jonels"; justice_minister_party = "MNLP"; justice_minister = "Scotte"; foreign_minister_party = "MNLP"; foreign_minister = "Wison"; infrastructure_minister_party = "MNLP"; infrastructure_minister = "Coxand"; education_minister_party = "MNLP"; education_minister = "Hallee"; agriculture_minister_party = "MNLP"; agriculture_minister = "Grobenn";
 
 We have enough votes to form a Marsist Coalition! It consists of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} and the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}. This is the historic moderate Marsist front.
 
@@ -264,6 +264,9 @@ We have convinced the parties to form a Grand Marsist Coalition! It consists of 
 
 Who should be the new Prime Minister?
 
+
+
+
 @ministries
 
 We can pick from any number of ministries. Controlling a ministry allows us to directly effect policy in that area. Since certain ministries are viewed as natural fits for the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!}, negotiating for them will be easier. Likewise, ministries that naturally fit the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} will be harder to negotiate for. 
@@ -290,14 +293,14 @@ unavailable-subtitle: Our coalition partners won't allow us to get more ministri
 tags: mins_1928
 choose-if: leverage >= 4
 view-if: interior_minister_party != "SPM"
-on-arrival: leverage -= 4; labor_minister_party = "SPM"; interior_minister = "Prichy"
+on-arrival: leverage -= 4; interior_minister_party = "SPM"; interior_minister = "Prichy"
 go-to: ministries
 
 Petev Prichy of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} has been appointed as Interior minister.
 
 @economic
 title: Economic & Finance Ministry
-subtitle: The Interior ministry is considered a natural fit for the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}.
+subtitle: The Economic & Finance ministry is considered a natural fit for the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}.
 unavailable-subtitle: Our coalition partners won't allow us to get more ministries.
 tags: mins_1928
 choose-if: leverage >= 12
@@ -316,26 +319,26 @@ view-if: justice_minister_party != "SPM"
 on-arrival: leverage -= 8; justice_minister_party = "SPM"; justice_minister = "Powell"
 go-to: ministries
 
-Jamy Powell of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} has been appointed as Economic minister.
+Jamy Powell of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} has been appointed as Justice minister.
 
 @foreign
 title: Foreign Ministry
-subtitle: The Interior ministry is considered a natural fit for the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}.
+subtitle: The Foreign ministry is considered a natural fit for the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}.
 unavailable-subtitle: Our coalition partners won't allow us to get more ministries.
 tags: mins_1928
 choose-if: leverage >= 12
 view-if: foreign_minister_party != "SPM"
-on-arrival: leverage -= 12; foreign_minister_party = "MSP"; foreign_minister = "Rookson"
+on-arrival: leverage -= 12; foreign_minister_party = "SPM"; foreign_minister = "Rookson"
 go-to: ministries
 
-Licia Rookson of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} has been appointed as Economic minister.
+Licia Rookson of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} has been appointed as Foreign minister.
 
 @infrastructure
 title: Infrastructure & Energy Ministry
 unavailable-subtitle: Our coalition partners won't allow us to get more ministries.
 choose-if: leverage >= 8 
-view-if: agriculture_minister_party != "SPM"
-on-arrival: leverage -= 8; infrastructure_minister_party = "MSP"; infrastructure_minister = "Heson"
+view-if: infrastructure_minister_party != "SPM"
+on-arrival: leverage -= 8; infrastructure_minister_party = "SPM"; infrastructure_minister = "Heson"
 go-to: ministries
 tags: mins_1928
 
@@ -346,8 +349,8 @@ title: Education & Culture Ministry
 unavailable-subtitle: Our coalition partners won't allow us to get more ministries.
 tags: mins_1928
 choose-if: leverage >= 8
-view-if: reichswehr_minister_party != "SPM"
-on-arrival: leverage -= 8; education_minister_party = "SPD"; education_minister = "Gonzal"
+view-if: education_minister_party != "SPM"
+on-arrival: leverage -= 8; education_minister_party = "SPM"; education_minister = "Gonzal"
 go-to: ministries
 
 Fronio Gonzal of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} has been appointed as Education & Culture minister.
@@ -357,11 +360,11 @@ title: Agriculture & Food Procurement Ministry
 unavailable-subtitle: Our coalition partners won't allow us to get more ministries.
 tags: mins_1928
 choose-if: leverage >= 8
-view-if: reichswehr_minister_party != "SPM"
-on-arrival: leverage -= 8; agriculture_minister_party = "SPD"; agriculture_minister = "Alell"
+view-if: agriculture_minister_party != "SPM"
+on-arrival: leverage -= 8; agriculture_minister_party = "SPM"; agriculture_minister = "Alell"
 go-to: ministries
 
-Joshua Alell of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} has been appointed as Education & Culture minister.
+Joshua Alell of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} has been appointed as Agriculture & Food Procurement minister.
 
 @no_more
 title: No more ministries.
@@ -389,7 +392,7 @@ go-to: ministries
 @drop_economic
 title: Drop the Economic & Finance Ministry.
 view-if: economic_minister_party = "SPM"
-on-arrival: interior_minister_party = "MNLP"; interior_minister = "Jonels"; leverage += 12;
+on-arrival: economic_minister_party = "MNLP"; economic_minister = "Jonels"; leverage += 12;
 tags: drop_mins_1928
 go-to: ministries
 
@@ -409,14 +412,14 @@ go-to: ministries
 
 @drop_infrastructure
 title: Drop the Infrastructure & Energy Ministry.
-view-if: agriculture_minister_party = "SPM"
+view-if: infrastructure_minister_party = "SPM"
 on-arrival: infrastructure_minister_party = "MNLP"; infrastructure_minister = "Coxand"; leverage += 8;
 tags: drop_mins_1928
 go-to: ministries
 
 @drop_education
 title: Drop the Education & Culture Ministry.
-view-if: agriculture_minister_party = "SPM"
+view-if: education_minister_party = "SPM"
 on-arrival: education_minister_party = "MNLP"; education_minister = "Hallee"; leverage += 8;
 tags: drop_mins_1928
 go-to: ministries
