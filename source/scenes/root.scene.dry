@@ -319,11 +319,7 @@ Q.science = 0;
 Q.education_science = 0;
 
 // Tax rates relative to 1928 baseline
-Q.lower_tax_rates = 0;
-Q.upper_tax_rates = 0;
-Q.tariffs = 0;
-
-Q.electoral_threshold = 0;
+Q.water_tax_status = 0;
 
 // our conduct in the government, and the conduct of our coalition opponents.
 // did the SPD vote against the previous government in a vote of no confidence?
