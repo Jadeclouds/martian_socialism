@@ -465,7 +465,7 @@ For more information about the game, see the "Library" page on the top left. If 
 - @2442_hard: Begin (hard difficulty)
 
 @2442_easy
-on-arrival: difficulty = -1; resources += 1; ; budget += 2; budget_growth += 1;
+on-arrival: difficulty = -1; resources = 5; ; budget = 4; budget_growth = 3;
 go-to: 2442_main
 
 @2442_normal
@@ -473,7 +473,7 @@ on-arrival: difficulty = 0;
 go-to: 2442_main
 
 @2442_hard
-on-arrival: difficulty = -1; resources -= 1; ; budget -= 1;
+on-arrival: difficulty = -1; resources = 3; dues = 3; budget = 2;
 go-to: 2442_main
 
 @2442_main
