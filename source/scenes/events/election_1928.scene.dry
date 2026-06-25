@@ -269,7 +269,7 @@ Who should be the new Prime Minister?
 
 @ministries
 
-[? if has_seen_minister_system == 1: We can pick from any number of ministries. Controlling a ministry allows us to directly effect policy in that area. Since certain ministries are viewed as natural fits for the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!}, negotiating for them will be easier. Likewise, ministries that naturally fit the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} will be harder to negotiate for. ?]
+[? if has_seen_minister_system == 0: We can pick from any number of ministries. Controlling a ministry allows us to directly effect policy in that area. Since certain ministries are viewed as natural fits for the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!}, negotiating for them will be easier. Likewise, ministries that naturally fit the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} will be harder to negotiate for. ?]
 
  
 
