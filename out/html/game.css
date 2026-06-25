@@ -505,14 +505,14 @@ img {
   a.card {
     width: 100px;
     height: 125px;
-    border: 8px solid var(--card-border-color);
+    border: 3px solid var(--card-border-color);
     margin-bottom: 0.5em;
     position: relative;
   }
   div.blank-card {
     width: 100px;
     height: 125px;
-    border: 8px solid var(--card-border-color);
+    border: 3px solid var(--card-border-color);
     margin-bottom: 0.5em;
   }
   .card-in-hand, .pinned-card, .deck {
