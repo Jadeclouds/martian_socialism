@@ -6,7 +6,7 @@ go-to: post_event if started = 1; start_menu if started = 0
 new-page: true
 go-to: start_menu_2
 
-= Social Democracy: An Alternate History
+= Red Planet
 
 @start_menu_2
 
@@ -36,9 +36,9 @@ Q.old_demographics = 0;
 Q.use_decimals = 0;
 
 // party resources
-Q.resources = 2;
+Q.resources = 4;
 // party dues
-Q.dues = 2;
+Q.dues = 4;
 
 // the state of the party
 // overall dissent reduces every increase in party support.
@@ -128,25 +128,8 @@ Q.pro_republic = 59;
 
 Q.emergency_rule = 0;
 
-// minimum percentage of votes to be represented in the Reichstag
-Q.electoral_threshold = 0;
-// constitutional reform level
-Q.constitutional_reform = 0;
-// constructive vote of no confidence
-Q.constructive_vonc = 0;
-// reduction in presidential powers
-Q.presidential_powers = 0;
-// allows banning of non-constitutional parties
-Q.constitutional_protection = 0;
-Q.kpd_banned = 0;
-Q.nsdap_banned = 0;
-
-// coups and capital strikes happen when you upset the right or the capitalists too much with your policies. they're an additional check on your policies, when purely electoral checks don't suffice.
-// when coup_progress reaches 10 or capital_strike_progress reaches 10, there's a special event that launches the coup.
-Q.coup_progress = 0;
-Q.capital_strike_progress = 0;
-
-Q.budget = 4;
+Q.budget = 3;
+Q.budget_growth = 2;
 
 // Proportion of different social groups 
 //This is their political representation. Not their actual numbers!!! Should the system become more democratic, these are bound to change
@@ -478,14 +461,19 @@ This is the story of a far future, about the future of humanity, and, of course,
 For more information about the game, see the "Library" page on the top left. If this is your first time playing the game, it is strongly recommended that you read at least some of this information.
 
 - @2442_easy: Begin (easy difficulty)
+- @2442_normal: Begin (normal difficulty)
 - @2442_hard: Begin (hard difficulty)
 
 @2442_easy
-on-arrival: difficulty = -1; resources = 2; dues = 2; budget = 2;
+on-arrival: difficulty = -1; resources += 1; ; budget += 2; budget_growth += 1;
+go-to: 2442_main
+
+@2442_normal
+on-arrival: difficulty = 0;
 go-to: 2442_main
 
 @2442_hard
-on-arrival: difficulty = 1; resources = 0; dues = 0; budget = 0;
+on-arrival: difficulty = -1; resources -= 1; ; budget -= 1;
 go-to: 2442_main
 
 @2442_main
