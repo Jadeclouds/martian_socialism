@@ -269,7 +269,9 @@ Who should be the new Prime Minister?
 
 @ministries
 
-We can pick from any number of ministries. Controlling a ministry allows us to directly effect policy in that area. Since certain ministries are viewed as natural fits for the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!}, negotiating for them will be easier. Likewise, ministries that naturally fit the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} will be harder to negotiate for. 
+[? if mnlp_tolerate_nondemocrats == 1: We can pick from any number of ministries. Controlling a ministry allows us to directly effect policy in that area. Since certain ministries are viewed as natural fits for the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!}, negotiating for them will be easier. Likewise, ministries that naturally fit the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} will be harder to negotiate for. ?]
+
+ 
 
 - #mins_1928
 - #drop_mins_1928
@@ -281,7 +283,7 @@ unavailable-subtitle: Our coalition partners won't allow us to get more ministri
 tags: mins_1928
 choose-if: leverage >= 4
 view-if: labor_minister_party != "SPM"
-on-arrival: leverage -= 4; labor_minister_party = "SPM"; labor_minister = "Bertson"
+on-arrival: leverage -= 4; labor_minister_party = "SPM"; labor_minister = "Bertson"; mnlp_tolerate_nondemocrats = 1
 go-to: ministries
 
 Lyna Bertson of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} has been appointed as Labor minister.
@@ -293,7 +295,7 @@ unavailable-subtitle: Our coalition partners won't allow us to get more ministri
 tags: mins_1928
 choose-if: leverage >= 4
 view-if: interior_minister_party != "SPM"
-on-arrival: leverage -= 4; interior_minister_party = "SPM"; interior_minister = "Prichy"
+on-arrival: leverage -= 4; interior_minister_party = "SPM"; interior_minister = "Prichy"; mnlp_tolerate_nondemocrats = 1
 go-to: ministries
 
 Petev Prichy of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} has been appointed as Interior minister.
@@ -305,7 +307,7 @@ unavailable-subtitle: Our coalition partners won't allow us to get more ministri
 tags: mins_1928
 choose-if: leverage >= 12
 view-if: economic_minister_party != "SPM"
-on-arrival: leverage -= 12; economic_minister_party = "SPM"; economic_minister = "Baking"
+on-arrival: leverage -= 12; economic_minister_party = "SPM"; economic_minister = "Baking"; mnlp_tolerate_nondemocrats = 1
 go-to: ministries
 
 Dave Baking of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} has been appointed as Economic minister.
@@ -316,7 +318,7 @@ unavailable-subtitle: Our coalition partners won't allow us to get more ministri
 tags: mins_1928
 choose-if: leverage >= 8
 view-if: justice_minister_party != "SPM"
-on-arrival: leverage -= 8; justice_minister_party = "SPM"; justice_minister = "Powell"
+on-arrival: leverage -= 8; justice_minister_party = "SPM"; justice_minister = "Powell"; mnlp_tolerate_nondemocrats = 1
 go-to: ministries
 
 Jamy Powell of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} has been appointed as Justice minister.
@@ -328,7 +330,7 @@ unavailable-subtitle: Our coalition partners won't allow us to get more ministri
 tags: mins_1928
 choose-if: leverage >= 12
 view-if: foreign_minister_party != "SPM"
-on-arrival: leverage -= 12; foreign_minister_party = "SPM"; foreign_minister = "Rookson"
+on-arrival: leverage -= 12; foreign_minister_party = "SPM"; foreign_minister = "Rookson"; mnlp_tolerate_nondemocrats = 1
 go-to: ministries
 
 Licia Rookson of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} has been appointed as Foreign minister.
@@ -338,7 +340,7 @@ title: Infrastructure & Energy Ministry
 unavailable-subtitle: Our coalition partners won't allow us to get more ministries.
 choose-if: leverage >= 8 
 view-if: infrastructure_minister_party != "SPM"
-on-arrival: leverage -= 8; infrastructure_minister_party = "SPM"; infrastructure_minister = "Heson"
+on-arrival: leverage -= 8; infrastructure_minister_party = "SPM"; infrastructure_minister = "Heson"; mnlp_tolerate_nondemocrats = 1
 go-to: ministries
 tags: mins_1928
 
@@ -350,7 +352,7 @@ unavailable-subtitle: Our coalition partners won't allow us to get more ministri
 tags: mins_1928
 choose-if: leverage >= 8
 view-if: education_minister_party != "SPM"
-on-arrival: leverage -= 8; education_minister_party = "SPM"; education_minister = "Gonzal"
+on-arrival: leverage -= 8; education_minister_party = "SPM"; education_minister = "Gonzal"; mnlp_tolerate_nondemocrats = 1
 go-to: ministries
 
 Fronio Gonzal of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} has been appointed as Education & Culture minister.
@@ -361,7 +363,7 @@ unavailable-subtitle: Our coalition partners won't allow us to get more ministri
 tags: mins_1928
 choose-if: leverage >= 8
 view-if: agriculture_minister_party != "SPM"
-on-arrival: leverage -= 8; agriculture_minister_party = "SPM"; agriculture_minister = "Alell"
+on-arrival: leverage -= 8; agriculture_minister_party = "SPM"; agriculture_minister = "Alell"; mnlp_tolerate_nondemocrats = 1
 go-to: ministries
 
 Joshua Alell of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} has been appointed as Agriculture & Food Procurement minister.
@@ -369,6 +371,7 @@ Joshua Alell of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!
 @no_more
 title: No more ministries.
 subtitle: [? if leverage >= 8 : We still have some more leverage to gain ministries. ?][? if leverage < 8 : We do not have much leverage left. ?]
+on-arrival: mnlp_tolerate_nondemocrats = 0
 tags: mins_1928
 
 This coalition arrangement is tolerable to all.
