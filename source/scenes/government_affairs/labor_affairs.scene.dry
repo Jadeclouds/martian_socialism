@@ -26,12 +26,12 @@ While introducing a minimum wage is an overwhelmingly popular measure among the 
 - @create_national_contracts: We could settle on National Collective Labour Agreements?
 - @root: Actually, what about something else?
 
-create_minimum_wage
+@ create_minimum_wage
 on-arrival: left_strength += 5; left_dissent -= 5; miners_spm += 6*(1-dissent); technicians_spm += 3*(1-dissent); indipendent_capitalist_class_spm -= 6; capitalist_class_spm -= 3; indipendent_capitalist_class_mnlp -= 3 if mnlp_in_government = 1; coalition_dissent += 2 if mnlp_in_government = 1; mnlp_relation -= 8; minimum_wage_introduced = 1
 
 Our decision to establish a minimum wage is resented among the capitalist class. {!<span style="color: #D3C24D;"><strong>Liberals</span>!} accuse our administration of short-sighted economic vandalism, warning that we are crippling the Martian economy's competitiveness. However, our core working-class base is deeply satisfied, flooding party offices with praise and viewing the legislation as a monumental victory for labor on the Red Planet.
 
-create_national_contracts
+@ create_national_contracts
 subtitle: The {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} is much more open to this option. 
 on-arrival: reformist_strength += 5; left_dissent += 5; technicians_spm += 3*(1-dissent); researchers_spm += 3*(1-dissent); indipendent_capitalist_class_spm -= 3*(1-dissent); coalition_dissent += 1 if mnlp_in_government = 1; mnlp_relation -= 6; national_contracts_introduced = 1
 
