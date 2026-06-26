@@ -10,7 +10,7 @@ body {
   --tab-bg-color: #dedede;
   --tab-color: #ddd;
   --tab-hover-color: #ececec;
-  --card-border-color: #401717; 
+  --card-border-color: #8a797a; 
   --card-bg-color: #ddd; 
   font-family: "Minion Pro", Georgia, serif;
   background-color: var(--bg-color);
