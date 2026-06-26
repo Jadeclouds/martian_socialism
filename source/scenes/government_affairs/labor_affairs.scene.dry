@@ -4,7 +4,7 @@ is-card: true
 tags: govt_affairs, cabinet
 on-arrival: labor_affairs_timer = 6; month_actions += 1; labor_affairs_seen = 1
 view-if: spm_in_government = 1 and labor_minister_party = "SPM" and labor_affairs_timer = 0
-card-image: img/portraits/gov_ministry_of_labor.jpg
+card-image: img/gov_ministry_of_labor.jpg
 #subtitle: Addressing labor unrest and strikes.
 
 = Labor Ministry
