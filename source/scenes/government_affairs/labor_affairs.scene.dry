@@ -1,45 +1,38 @@
-title: Labor Affairs
+title: Labor Ministry
 new-page: true
 is-card: true
 tags: govt_affairs, cabinet
 on-arrival: labor_affairs_timer = 6; month_actions += 1; labor_affairs_seen = 1
-view-if: spd_in_government = 1 and labor_minister_party = "SPD" and labor_affairs_timer = 0 and strike_term_seen = 0
-card-image: img/portraits/WissellRudolf.jpg
+view-if: spm_in_government = 1 and labor_minister_party = "SPM" and labor_affairs_timer = 0
+card-image: img/portraits/gov_ministry_of_labor.jpg
 #subtitle: Addressing labor unrest and strikes.
 
-= Labor Affairs
+= Labor Ministry
 
-The industrial Ruhr region is aflame with labor unrest. The employers have started a major lockout to force the workers to take more cuts to wages and benefits.  There is a need for the Labor Ministry to arbitrate in conflicts between employers and workers.
+The Ministry of Labor is one of the oldest civilian institutions on Mars, dating back to 2237. Originally established under the "Right to Work" act as a mere bureaucratic organ to gather data on employment trends, it began its first data collection work in 2238. Over the subsequent two centuries, however, the ministry was forced to expand far beyond its original scope, eventually absorbing critical functions such as labor dispute mediation and state compensation programs.
 
-- @support_labor: Support labor in their demands.
-- @support_employers: Support the employers in their demands.
-- @balance: Try to strike a compromise between the sides.
+On Mars, labor rights are fundamentally intertwined with metabolic survival. Because the physical inputs of life such as oxygen, radiation scrubbing, and clean water are historically managed by corporate entities or state-chartered monopolies, the right to withdraw one's labor is effectively an existential hazard. If a strike breaks out in the mining zones, management can threaten to restrict air rations under the guise of "resource conservation." Thus, what began as a simple data collection office has evolved into a vital, legally mandated shield, enforcing the separation of survival infrastructure from contract disputes.
+
+- @minimum_wage_choices: We should discuss our policies regarding the minimum wage.
 - @easy_discard
 #- @cancel_advisor_action
 
-@support_labor
-subtitle: Popular among the workers, this will alienate the bourgeoisie.
-on-arrival: labor_strength += 5; labor_dissent -= 5; left_dissent -= 5; workers_spd += 6*(1-dissent); coalition_dissent += 1; dvp_relation -= 4; capital_strike_progress += 1 if dvp_relation <= 30; capital_strike_progress += 1 if unemployed > 15; capital_strike_progress += 1 if unemployed > 24; labor_goal_completed += 1; inflation += 0.1; pro_labor += 1; strike_term_seen += 1; economic_growth -= 0.1;
+@minimum_wage_choices
+subtitle: Mars officially has no minimum wage, and this has been a long-time request amongst workers.
 
-Supporting labor is always popular in the SPD, although many of our coalition partners represent employers, and they are less enthused.
+While introducing a minimum wage is an overwhelmingly popular measure among the working class, the bourgeoisie is deeply hostile to the concept, and {!<span style="color: #D3C24D;"><strong>liberal</span>!} economists warn that artificially raising wages could trigger an inflationary spiral. Ironically, independent Marsian industrialists and small business owners are far more terrified of this legislation than the massive trans-planetary conglomerates; unlike the mega-corporations trading directly with Earth, these domestic enterprises operate on razor-thin profit margins that leave little room for increased overhead.
 
-@support_employers
-subtitle: Popular among the bourgeoisie, much less so among the workers.
-on-arrival: labor_dissent += 8; workers_spd -= 3; coalition_dissent -= 1 if coalition_dissent > 0; dvp_relation += 5; z_relation += 5; workers_kpd += 3; kpd_coalition_dissent += 1; kpd_relation -= 8; capital_strike_progress -= 1 if capital_strike_progress > 1; capital_strike_progress -= 1 if capital_strike_progress > 8; pro_labor -= 1; strike_term_seen += 1
+- @create_minimum_wage: Introduce a minimum wage.
+- @create_national_contracts: We could settle on National Collective Labour Agreements?
+- @root: Actually, what about something else?
 
-The more radical workers despise our suppression of their strikes, recalling the days of Friedrich Ebert.
+create_minimum_wage
+on-arrival: left_strength += 5; left_dissent -= 5; miners_spm += 6*(1-dissent); technicians_spm += 3*(1-dissent); indipendent_capitalist_class_spm -= 6; capitalist_class_spm -= 3; indipendent_capitalist_class_mnlp -= 3 if mnlp_in_government = 1; coalition_dissent += 2 if mnlp_in_government = 1; mnlp_relation -= 8; minimum_wage_introduced = 1
 
-@balance
-subtitle: Both sides need to share the pain in the current crisis.
-on-arrival: labor_dissent += 4; workers_spd -= 2; kpd_coalition_dissent += 1; kpd_relation -= 5; strike_term_seen += 1
+Our decision to establish a minimum wage is resented among the capitalist class. {!<span style="color: #D3C24D;"><strong>Liberals</span>!} accuse our administration of short-sighted economic vandalism, warning that we are crippling the Martian economy's competitiveness. However, our core working-class base is deeply satisfied, flooding party offices with praise and viewing the legislation as a monumental victory for labor on the Red Planet.
 
-Many workers are unhappy at our compromises, but they will learn to accept that we are all in a shared struggle against economic forces.
+create_national_contracts
+subtitle: The {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} is much more open to this option. 
+on-arrival: reformist_strength += 5; left_dissent += 5; technicians_spm += 3*(1-dissent); researchers_spm += 3*(1-dissent); indipendent_capitalist_class_spm -= 3*(1-dissent); coalition_dissent += 1 if mnlp_in_government = 1; mnlp_relation -= 6; national_contracts_introduced = 1
 
-
-
-# options: support the workers in their demands, pushing back against the employers.
-# this is the approach favored by the unions. While they do not get everything they desire, an agreement favorable to the workers is reached. The employer associations and their bourgeois allies accuse us of overstepping our bounds.
-# try to make some compromise between the sides. Both sides need to share the pain in the current crisis.
-# whatever it takes, end the strikes and unrest as soon as possible.
-# this is not our business to intervene.
-# We are the party of labor, and it is not our business to intervene? There is incredulity in the ranks. The workers are less likely to trust us in the future.
+Settling on national contracts is a far more moderate policy that leaves most factions unsatisfied, yet stops short of provoking outright fury. Capitalists are already maneuvering to influence the upcoming contract negotiations, hoping to ensure that very little structurally changes, while some {!<span style="color: #D3C24D;"><strong>Liberals</span>!} praise the decision as a pragmatic mechanism to curb 'poor work'. Meanwhile, our working-class base is deeply disappointed by our failure to push for a more radical overhaul, with many concluding that this compromise will have no significant effect on their daily survival.
