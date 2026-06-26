@@ -190,17 +190,17 @@ go-to: coalition_menu
 
 {!<tr><td><div class="box" style='background-color:#ED7158; outline: 2px; outline-style: solid;'> </div> !} **SPM:** {!</td><td>!} **[+ spm_r +]%** {!</td><td>!} **[+ str_change_spm +]** {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#D3C24D; outline: 2px; outline-style: solid;'> </div> !} **MNLP:** {!</td><td>!} **[+ mnlp_r +]%** {!</td><td>!} **[+ str_change_mnlp +]** {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#D3C24D'> </div> !} MNLP: {!</td><td>!} [+ mnlp_r +]% {!</td><td>!} [+ str_change_mnlp +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#540808; outline: 2px; outline-style: solid;'> </div> !} **PLFM:** {!</td><td>!} **[+ plfm_r +]%** {!</td><td>!} **[+ str_change_plfm +]** {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#540808'> </div> !} PLFM: {!</td><td>!} [+ plfm_r +]% {!</td><td>!} [+ str_change_plfm +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#5C3F1A; outline: 2px; outline-style: solid;'> </div> !} **FfM:** {!</td><td>!} **[+ ffm_r +]%** {!</td><td>!} **[+ str_change_ffm +]** {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#5C3F1A'> </div> !} FfM: {!</td><td>!} [+ ffm_r +]% {!</td><td>!} [+ str_change_ffm +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#12DB95; outline: 2px; outline-style: solid;'> </div> !} **P:** {!</td><td>!} **[+ p_r +]%** {!</td><td>!} **[+ str_change_p +]** {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#12DB95'> </div> !} P: {!</td><td>!} [+ p_r +]% {!</td><td>!} [+ str_change_p +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#a0a0a0'> </div> !} Others: {!</td><td>!} [+ other_r +] % {!</td><td>!} [+ str_change_other +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#22275C; outline: 2px; outline-style: solid;'> </div> !} **PEC:** {!</td><td>!} **[+ pec_r +]%** {!</td><td>!} **[+ str_change_pec +]** {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#22275C'> </div> !} PEC: {!</td><td>!} [+ pec_r +]% {!</td><td>!} [+ str_change_pec +] {!</td></tr>!}
 
 **Potential coalitions:**
 
