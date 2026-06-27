@@ -22,16 +22,20 @@ subtitle: Mars officially has no minimum wage, and this has been a long-time req
 
 While introducing a minimum wage is an overwhelmingly popular measure among the working class, the bourgeoisie is deeply hostile to the concept, and {!<span style="color: #D3C24D;">liberal</span>!} economists warn that artificially raising wages could trigger an inflationary spiral. Ironically, independent Marsian industrialists and small business owners are far more terrified of this legislation than the massive trans-planetary conglomerates; unlike the mega-corporations trading directly with Earth, these domestic enterprises operate on razor-thin profit margins that leave little room for increased overhead.
 
-- @create_minimum_wage: Introduce a minimum wage.
-- @create_national_contracts: We could settle on National Collective Labour Agreements?
+- @create_minimum_wage: Introduce a Minimum Wage.
+- @create_national_contracts: We could settle on Planetary Collective Labour Agreements?
 - @root: Actually, what about something else?
 
 @ create_minimum_wage
-on-arrival: left_strength += 5; left_dissent -= 5; miners_spm += 6*(1-dissent); technicians_spm += 3*(1-dissent); indipendent_capitalist_class_spm -= 6; capitalist_class_spm -= 3; indipendent_capitalist_class_mnlp -= 3 if mnlp_in_government = 1; coalition_dissent += 2 if mnlp_in_government = 1; mnlp_relation -= 8; minimum_wage_introduced = 1
+unavailable-subtitle: We already introduced a Minimum Wage.
+choose-if: minimum_wage_introduced = 0
+on-arrival: left_strength += 5; left_dissent -= 5; miners_spm += 6*(1-dissent); technicians_spm += 3*(1-dissent); indipendent_capitalist_class_spm -= 6; capitalist_class_spm -= 3; indipendent_capitalist_class_mnlp -= 4 if mnlp_in_government = 1; indipendent_capitalist_class_pec -= 4 if mnlp_in_government = 1; coalition_dissent += 2 if mnlp_in_government = 1 and national_contracts_introduced = 0; coalition_dissent += 1 if mnlp_in_government = 1 and national_contracts_introduced = 1; mnlp_relation -= 8; minimum_wage_introduced = 1
 
 Our decision to establish a minimum wage is resented among the capitalist class. {!<span style="color: #D3C24D;">Liberals</span>!} accuse our administration of short-sighted economic vandalism, warning that we are crippling the Martian economy's competitiveness. However, our core working-class base is deeply satisfied, flooding party offices with praise and viewing the legislation as a monumental victory for labor on the Red Planet.
 
 @ create_national_contracts
+unavailable-subtitle: We already introduced Planetary Collective Labour Agreements or a better alternative.
+choose-if: minimum_wage_introduced = 0 and national_contracts_introduced = 0
 subtitle: The {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} is much more open to this option. 
 on-arrival: reformist_strength += 5; left_dissent += 5; technicians_spm += 3*(1-dissent); researchers_spm += 3*(1-dissent); indipendent_capitalist_class_spm -= 3*(1-dissent); coalition_dissent += 1 if mnlp_in_government = 1; mnlp_relation -= 6; national_contracts_introduced = 1
 
