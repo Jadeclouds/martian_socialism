@@ -23,7 +23,7 @@ Whether or not we are in an electoral campaign, the party is always trying to br
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: miners_spm += 4*(1-dissent); miners_spm -= 2 if spm_in_government == 1 and mnlp_in_government == 1 and plfm_in_government == 0; miners_spm += 2*(1-dissent); if spm_in_government == 1 and mnlp_in_government == 0 and plfm_in_government == 1; resources -= 1; 
+on-arrival: miners_spm += 4*(1-dissent); miners_spm -= 2 if spm_in_government == 1 and mnlp_in_government == 1 and plfm_in_government == 0; miners_spm += 2*(1-dissent) if spm_in_government == 1 and mnlp_in_government == 0 and plfm_in_government == 1; resources -= 1; 
 
 We have increased our campaigning among the miners. [? if spm_in_government == 1 and mnlp_in_government == 1 and plfm_in_government == 0: We are currently in a coalition with {!<span style="color: #D3C24D;">liberal</span>!} parties, and this makes our campaigning efforts more difficult. ?][? if spm_in_government == 1 and mnlp_in_government == 0 and plfm_in_government == 1: We are currently in a coalition with {!<span style="color: #540808;">communist</span>!} parties, and this makes our campaigning efforts easier. ?]
 
@@ -55,7 +55,7 @@ We have increased our campaigning among bureaucrats.
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: indipendent_capitalist_class_spm += 4*(1-dissent); indipendent_capitalist_class_spm -= 2 if spm_in_government == 1 and mnlp_in_government == 0 and plfm_in_government == 1; indipendent_capitalist_class_spm += 2*(1-dissent); if spm_in_government == 1 and mnlp_in_government == 1 and plfm_in_government == 0; resources -= 1; 
+on-arrival: indipendent_capitalist_class_spm += 4*(1-dissent); indipendent_capitalist_class_spm -= 2 if spm_in_government == 1 and mnlp_in_government == 0 and plfm_in_government == 1; indipendent_capitalist_class_spm += 2*(1-dissent) if spm_in_government == 1 and mnlp_in_government == 1 and plfm_in_government == 0; resources -= 1; 
 
 We have increased our campaigning among the indipendent capitalist class. [? if spm_in_government == 1 and mnlp_in_government == 1 and plfm_in_government == 0: We are currently in a coalition with {!<span style="color: #D3C24D;">liberal</span>!} parties, and this makes our campaigning efforts easier. ?][? if spm_in_government == 1 and mnlp_in_government == 0 and plfm_in_government == 1: We are currently in a coalition with {!<span style="color: #540808;">communist</span>!} parties, and this makes our campaigning more difficult. ?]
 
