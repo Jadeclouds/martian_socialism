@@ -1,9 +1,8 @@
 title: Campaigning
 new-page: true
 on-arrival: month_actions += 1
-max-visits: 36
 is-card: true
-card-image: img/flags.jpg
+card-image: img/spm_campaigning.jpg
 frequency: 100
 tags: party_affairs
 
@@ -11,7 +10,7 @@ tags: party_affairs
 
 Whether or not we are in an electoral campaign, the party is always trying to broaden its voter base. Who should we focus our campaign efforts on?
 
-- @workers: The urban working class, our traditional support base.
+- @miners: Marsian Miners, the class most exploited by capitalist oppression.
 - @new_middle: The "new middle class" of government employees and white-collar workers.
 - @old_middle: The "old middle class" of small independent businessmen and artisans.
 - @rural: Rural workers and small farmers, who have felt neglected by us in the past.
