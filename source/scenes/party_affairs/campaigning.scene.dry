@@ -15,7 +15,7 @@ Whether or not we are in an electoral campaign, the party is always trying to br
 - @researchers: Researchers, scientists and local intellectuals.
 - @bureaucrats: Bureaucrats, white collars, and office workers.
 - @indipendent_capitalist_class: The local bourgeoisie and industrialists, who produce and buy on the planet.
-- @capitalist_class: Corporatists, interplanetary conglomerates, and Earth-based industries..
+- @capitalist_class: Corporatists, interplanetary conglomerates, and Earth-based industries.
 - @root: We either don't want to or cannot campaign right now.
 - @easy_discard
 
@@ -23,9 +23,9 @@ Whether or not we are in an electoral campaign, the party is always trying to br
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: miners_spm += 6*(1-dissent); miners_spm -= 2 if unemployed >= 15; resources -= 1; 
+on-arrival: miners_spm += 4*(1-dissent); miners_spm -= 2 if spm_in_government == 1 and mnlp_in_government == 1  and plfm_in_government == 0; resources -= 1; 
 
-We have increased our campaigning among the workers. [? if unemployed >= 15: The high levels of unemployment make our campaign more difficult. ?][? if wtb_adopted = 1 : Adopting the WTB plan gives us a new rallying point around which to attract workers. ?]
+We have increased our campaigning among the miners. [? if spm_in_government == 1 and mnlp_in_government == 1 and plfm_in_government == 0: We are currently in a coalition with {!<span style="color: #ED7158;"><strong>liberal</strong></span>!} parties, and this makes our campaigning efforts more difficult. ?]
 
 @technicians
 subtitle: -1 resources
