@@ -7,6 +7,8 @@ on-arrival: month_actions += 1; international_relations_timer += 9;
 card-image: img/spm_party_foreign_relationships.jpg
 #subtitle: Building ties with our fraternal socialist parties.
 
+= International Relations
+
 The {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} is an official member of the Socialist Fraternal Solar Group, an interplanetary forum where like-minded socialist, social-democratic, and progressive parties from across the solar system gather to coordinate actions, debate theory, and share organizational strategies. Here, we have a unique window to form ties with our fraternal comrades across the stars.
 
 - @europe: Build relationships with the European Socialist-Left Party.
