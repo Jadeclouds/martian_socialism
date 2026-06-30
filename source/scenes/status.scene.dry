@@ -22,7 +22,6 @@ Resources available: [+ resources +]
 
 SPM position: [? if spm_in_government : in government - ?][? if spm_in_government == 0: opposition ?][? if in_marsist_coalition and spm_in_government: Marsist Coalition ?][? if in_grand_marsist_coalition and spm_in_government: Grand Marsist Coalition ?][? if (in_marsist_coalition or in_grand_marsist_coalition) and spm_in_government and largest_marsist_party == "MSP": (Senior Coalition Partner) ?][? if (in_marsist_coalition or in_grand_marsist_coalition) and spm_in_government and largest_marsist_party == "MNLP": (Junior Coalition Partner) ?]
 
-[? if spm_in_government and not in_spm_majority: Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
 
 Internal dissent: [+ dissent_percent : dissent +]
 
@@ -31,6 +30,10 @@ Internal dissent: [+ dissent_percent : dissent +]
 Commissioner: [+ president +]
 
 Prime Minister: [+ chancellor +] ([+ chancellor_party +])
+
+[? if spm_in_government and not in_spm_majority: Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
+
+[? if spm_in_government = 1 : Budget: [+ budget +] ?]
 
 Martian Parliament composition:
 
@@ -48,8 +51,6 @@ Martian Parliament composition:
 {!<span style="color: #22275C;"><strong>PEC</strong></span>!}: [+ pec_r +]%
 # Others
 Others: [+ other_r +]%
-
-[? if spm_in_government = 1 : Budget: [+ budget +] ?]
 
 Next election: [+ next_election_month : month +] [+ next_election_year +]
 
