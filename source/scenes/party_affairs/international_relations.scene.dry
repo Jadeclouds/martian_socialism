@@ -3,65 +3,59 @@ new-page: true
 is-card: true
 tags: party_affairs
 view-if: international_relations_timer <= 0
-on-arrival: month_actions += 1; international_relations_timer += 12;
-card-image: img/international.jpg
-max-visits: 4
+on-arrival: month_actions += 1; international_relations_timer += 9;
+card-image: img/spm_party_foreign_relationships.jpg
 #subtitle: Building ties with our fraternal socialist parties.
 
-At the Labor and Socialist International, we can forge contacts with our fraternal socialist parties in Europe and across the world.
-
-- @fr_uk: Build relationships with the French SFIO and British Labour Party to move their governments in Germany's favor.
-- @austria: Learn organization and street fighting from the Austrian SDAPÖ.
-- @scandi: Learn the path of economics and reform from the Scandinavian social democrats.
-- @comintern: Forget the second international - embed a spy in the Comintern's conference.
-- @america: Contact the Socialist party of America.
+The {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} is an official member of the socialist fraternity solar group where many other likeminded socialist, social-democrat and progressive parties from all over the solar system meet, discuss the course of action, and exchange works and ideas. Here we can forge contacts with our fraternal socialist parties in all over the solar system.
+- @europe: Build relationships with the European Socialist-Left Party.
+- @america: We should reach out to the elder Democratic Socialists of America.
+- @south: We can learn much about colonial exploitation from the Southern World All-Socialist Union.
+- @moon: We could contact the Lunar Social Democratic Unity Party.
+- @asteroids: What about Socialist Alternative, the asteroid belt party?
 - @return: We do not need international contacts at the moment.
 - @easy_discard
 - @cancel_advisor_action
 
-@fr_uk
+@europe
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; west_relation += 1; reformist_strength += 5; pacifism += 1; moderate_plan_support += 1
+on-arrival: resources -= 1; earth_relation += 1; reformist_strength += 5; supported_european_socialists = 1
 
-The socialists of France and Britain can influence their governments to be friendlier towards Germany. Hopefully they will reduce our reparations burden.
-
-@austria
-subtitle: -1 resources [? if austrian_parliament_seen and not austrian_civil_war_seen: - We will also help the Austrians oppose their dictatorship. ?]
-choose-if: resources >= 1
-unavailable-subtitle: Not enough resources.
-audio: shuffle music/communist/workers_of_vienna_normalized.mp3
-on-arrival: left_strength += 5; radicalization += 1; rb_militancy += 0.03; resources -= 1; austria_relation += 1; sdapo_strength += 1 if austrian_parliament_seen = 1
-
-Our Reichsbanner can learn much in paramilitary organization and training from the Austrian Republikanischer Schutzbund (Republican Protection Units), the paramilitary branch of the Austrian social democrats.
-
-[? if austrian_parliament_seen and not austrian_civil_war_seen: We are also helping the Austrian Social Democratic Worker's Party build up their resources in preparation for a future struggle, legally and illegally. ?]
-
-
-@scandi
-subtitle: -1 resources
-choose-if: resources >= 1
-unavailable-subtitle: Not enough resources.
-on-arrival: reformist_strength += 8; wtb_support += 1; resources -= 1; moderate_plan_support += 1
-
-The programs of the Nordic socialists involve active government intervention in the economy. We can learn from their economic strategies, and how they moved beyond their working-class base to attract a broader set of constituents.
-
-@comintern
-subtitle: -1 resources
-choose-if: resources >= 1
-unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; kpd_relation += 5*(1-dissent); communist_coalition += 1 if comintern_seen == 0; comintern_seen += 1
-
-The Stalinists of the KPD insists on calling us "social fascists", suggesting that we social democrats are as bad or worse than actual fascists. Needless to say, this is not good for our relationship with the Communists. By observing the Comintern, we can better understand the KPD, enabling us to potentially improve relations, or counter the KPD if it may come to that.
+The European Socialist-Left Party is fundamentally a reformist party, and their contacts try to stir our party to a moderate-marsist and reformist political policy. Also, repairing relationships with Earth parties allows us to repair relationships with the Earth council. 
 
 @america
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1
+on-arrival: resources -= 1; earth_relation += 1; progressist_strength += 5; supported_american_socialists = 1
 
-The Socialist Party of America is tiny and has limited support. There is not much we can do for them, and conversely, not much they can do for us.
+The Democratic Socialists of America is the oldest socialist party still active, founded in 1982, our party cadres feel humbled in the presence of such an old party. The DSA is a fundamentally progressive party. They support our Marsist tendencies, but are also worried about the eventual effects on the Earth working class should our indipendence be badly negotiated. Also, repairing relationships with Earth parties allows us to repair relationships with the Earth council. 
+
+@south
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1; earth_relation += 1; left_strength += 5; supported_south_socialists = 1; plfm_relation += 3*(1-dissent);
+
+The Southern World All-Socialist Union is more of a coalition of socialist parties formed to defend the interests of the global south. Their fanonist positions mean that the party strongly endorses the Marsist cause as a part of the bigger anticolonial struggle. Their politicians also wholeheartedly endorse an agreement with the {!<span style="color: #540808;"><strong>PLFM</strong></span>!}, pushing for an anticolonialist-socialist front.
+
+@moon
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1; moon_relation += 1; reformist_strength += 5; mnlp_relation += 3*(1-dissent);
+
+The Lunar Social Democratic Unity Party is hardly a socialist party, and generally speaking, the special current state of the moon does not allow the formation of significant socialist presence. Past their snob behaviour, the suggestion of the LSDUP is closer cooperation with {!<span style="color: #D3C24D;">liberal</span>!} parties and a reformist course of action. 
+
+@asteroids
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1; asteroids_relation += 1; left_strength += 5; plfm_relation += 3*(1-dissent);
+
+Socialist Alternative is, politically speaking, closer to the {!<span style="color: #540808;"><strong>PLFM</strong></span>!} than to us, and for such reason, talks with them are significantly limited compared to other parties. Nonthenless, this allows us to get closer to the Asteroids mining stations, and some of their members seem eager to extend the cooperation with Mars. 
 
 @reduce
 
