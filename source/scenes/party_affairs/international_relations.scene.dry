@@ -7,7 +7,7 @@ on-arrival: month_actions += 1; international_relations_timer += 9;
 card-image: img/spm_party_foreign_relationships.jpg
 #subtitle: Building ties with our fraternal socialist parties.
 
-The {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} is an official member of the socialist fraternity solar group where many other likeminded socialist, social-democrat and progressive parties from all over the solar system meet, discuss the course of action, and exchange works and ideas. Here we can forge contacts with our fraternal socialist parties in all over the solar system.
+The {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} is an official member of the Socialist Fraternal Solar Group, an interplanetary forum where like-minded socialist, social-democratic, and progressive parties from across the solar system gather to coordinate actions, debate theory, and share organizational strategies. Here, we have a unique window to form ties with our fraternal comrades across the stars.
 
 - @europe: Build relationships with the European Socialist-Left Party.
 - @america: We should reach out to the elder Democratic Socialists of America.
@@ -24,7 +24,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; earth_relation += 1; reformist_strength += 5; supported_european_socialists = 1
 
-The European Socialist-Left Party is fundamentally a reformist party, and their contacts try to stir our party to a moderate-marsist and reformist political policy. Also, repairing relationships with Earth parties allows us to repair relationships with the Earth council. 
+The European Socialist-Left Party is fundamentally a reformist, parliamentary organization. Their delegates gently but consistently try to steer our party away from radical upheaval and toward a moderate, constitutional Marsist path. Pragmatically, repairing relationships with established Earth-bound parties also helps thaw our diplomatic standing with the Earth Council itself.
 
 @america
 subtitle: -1 resources
@@ -32,7 +32,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; earth_relation += 1; progressist_strength += 5; supported_american_socialists = 1
 
-The Democratic Socialists of America is the oldest socialist party still active, founded in 1982, our party cadres feel humbled in the presence of such an old party. The DSA is a fundamentally progressive party. They support our Marsist tendencies, but are also worried about the eventual effects on the Earth working class should our indipendence be badly negotiated. Also, repairing relationships with Earth parties allows us to repair relationships with the Earth council. 
+The Democratic Socialists of America is the oldest active socialist organization in human history. Founded all the way back in 1982, our party cadres feel humbled in the presence of such an ancient institutional legacy. The DSA is a fundamentally progressive party; they sympathize deeply with our Marsist goals, but they worry that a poorly negotiated Martian independence could trigger economic blowback for the Earth working class. Pragmatically, repairing relationships with established Earth-bound parties also helps thaw our diplomatic standing with the Earth Council itself.
 
 @south
 subtitle: -1 resources
@@ -40,7 +40,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; earth_relation += 1; left_strength += 5; supported_south_socialists = 1; plfm_relation += 3*(1-dissent);
 
-The Southern World All-Socialist Union is more of a coalition of socialist parties formed to defend the interests of the global south. Their fanonist positions mean that the party strongly endorses the Marsist cause as a part of the bigger anticolonial struggle. Their politicians also wholeheartedly endorse an agreement with the {!<span style="color: #540808;"><strong>PLFM</strong></span>!}, pushing for an anticolonialist-socialist front.
+The Southern World All-Socialist Union is a fierce anti-imperialist coalition formed to defend the historic interests of Earth's global south. Guided by Fanonist theory, they enthusiastically endorse the Marsist cause as the next logical frontier of the anti-colonial struggle. Their representatives wholeheartedly urge us to form a united anti-colonial socialist front alongside the radical {!<span style="color: #540808;"><strong>PLFM</strong></span>!}. Pragmatically, repairing relationships with established Earth-bound parties also helps thaw our diplomatic standing with the Earth Council itself.
 
 @moon
 subtitle: -1 resources
@@ -48,7 +48,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; moon_relation += 1; reformist_strength += 5; mnlp_relation += 3*(1-dissent);
 
-The Lunar Social Democratic Unity Party is hardly a socialist party, and generally speaking, the special current state of the moon does not allow the formation of significant socialist presence. Past their snob behaviour, the suggestion of the LSDUP is closer cooperation with {!<span style="color: #D3C24D;">liberal</span>!} parties and a reformist course of action. 
+The Lunar Social Democratic Unity Party is hardly a socialist party in the traditional sense; the nature of Lunar society leaves little room for a genuine worker movement to breathe. Beneath their distinctly elitist attitude, the LSDUP strongly advises us to pursue close cooperation with local {!<span style="color: #D3C24D;">liberal</span>!} forces and adhere to a strictly cautious, legalistic reformist strategy.
 
 @asteroids
 subtitle: -1 resources
@@ -56,8 +56,8 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; asteroids_relation += 1; left_strength += 5; plfm_relation += 3*(1-dissent);
 
-Socialist Alternative is, politically speaking, closer to the {!<span style="color: #540808;"><strong>PLFM</strong></span>!} than to us, and for such reason, talks with them are significantly limited compared to other parties. Nonthenless, this allows us to get closer to the Asteroids mining stations, and some of their members seem eager to extend the cooperation with Mars. 
+Socialist Alternative is ideologically far closer to the militant syndicalism of the {!<span style="color: #540808;"><strong>PLFM</strong></span>!} than to our own platform, making diplomatic breakthroughs somewhat strained. Nonetheless, opening a dialogue with them allows us to project influence into the critical Asteroid Belt mining stations, where thousands of radicalized workers are eager to build an economic bridge to a free Mars.
 
 @reduce
 
-We do not need the international contacts at the moment.
+We do not require international entanglements at this moment. Our focus must remain entirely on domestic Martian affairs.
