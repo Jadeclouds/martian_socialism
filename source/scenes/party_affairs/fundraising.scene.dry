@@ -15,15 +15,15 @@ Party membership is the structural backbone of any established Marsist party.
 - @easy_discard
 
 @adjust_dues
-subtitle: We can manage the annual cost of a party membership card.
+subtitle: We can manage the annual contribution required to be party members.
 
 While we receive our membership dues at the end of each fiscal year, we have the authority to adjust the subscription rate at any time. 
 
 Our decision here is a delicate balancing act. High dues risk alienating poorer voters and shrinking our membership roll, while lower dues threaten our primary source of yearly funding. We must find a sustainable compromise.
 
-- @reduce: Reduce dues.
+- @reduce: Reduce the party membership card cost.
 - @increase: Increase dues.
-- @root: What about something else?
+- @root: Actually, nevermind. The costs are already balanced.
 
 @reduce
 subtitle: We will gain [+ dues - 1 +] resources per year.
