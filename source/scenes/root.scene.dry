@@ -62,36 +62,6 @@ Q.centrists_resign = 0;
 Q.left_split = 0;
 Q.reformists_resigned = 0;
 
-// crisis_urgency indicates how seriously the SPD is taking the economic crisis - scale from 0 to 10.
-Q.crisis_urgency = 0;
-// nazi_urgency indicates how seriously the SPD takes the nazis - scale from 0 to 10.
-Q.nazi_urgency = 0;
-// radicalization indicates how radical the SPD's rhetoric is - scale from 0 to 10.
-Q.radicalization = 0;
-// Support for the WTB plan and proto-Keynesian works creation plans in general
-Q.wtb_support = 0;
-// Support for Pacifism within the SPD relative to 1928
-Q.pacifism = 0;
-// Support for democratic reform within the SPD relative to 1928
-Q.democratization = 0;
-// Support for a communist coalition relative to 1928
-Q.communist_coalition = 0;
-// economic_plan: have we adopted *any* economic plan?
-// 1 - WTB plan, 2 - AfA-bund plan, 3 - radical plan (mass nationalization of industries)
-Q.economic_plan = 0;
-// have we officially adopted the WTB plan?
-Q.wtb_adopted = 0;
-// have we formed the iron front?
-Q.iron_front_formed = 0;
-// people's party support
-Q.peoples_party_support = 0;
-// support for nationalizations
-Q.nationalization_support = 0;
-Q.nationalization_adopted = 0;
-// moderate economic plan
-Q.moderate_plan_support = 0;
-Q.moderate_plan_adopted = 0;
-
 // organizations
 
 // inter-party relations
@@ -119,14 +89,8 @@ Q.hindenburg_enabled = 0;
 
 // popular opinion
 // national ideology - on a binary scale
-// nationalism vs internationalism or pacifism or non-nationalism
-Q.nationalism = 60;
-// socialism vs capitalism
-Q.socialism = 40;
-// pro-republic vs anti-republic
-Q.pro_republic = 59;
-
-Q.emergency_rule = 0;
+// marsism (+) vs earthism (-)
+Q.marsism = 40;
 
 Q.budget = 3;
 Q.budget_growth = 2;
@@ -139,9 +103,6 @@ Q.researchers = 5
 Q.bureaucrats = 15
 Q.indipendent_capitalist_class = 15
 Q.capitalist_class = 30
-
-// economic expansion timer
-Q.economic_expansion = 0;
 
 Q.classes = ['miners', 'technicians', 'researchers', 'bureaucrats', 'indipendent_capitalist_class', 'capitalist_class'];
 Q.parties = ['spm', 'mnlp', 'pec', 'plfm', 'ffm', 'p'];
@@ -235,21 +196,15 @@ Q.mlnp_in_government = 0;
 Q.p_in_government = 0;
 Q.pec_in_government = 1;
 
-in_marsist_coalition = 0;
-in_grand_marsist_coalition = 0;
-marsists_govern = 0;
+Q.in_marsist_coalition = 0;
+Q.in_grand_marsist_coalition = 0;
+Q.marsists_govern = 0;
 
 //Party opinions regarding issues
-mnlp_tolerate_nondemocrats = 0;
+Q.mnlp_tolerate_nondemocrats = 0;
 
-// if you're in a coalition, this is an incremental counter for how many times dissent has happened from the right.
+// if you're in a coalition, this is an incremental counter for how many times dissent has happened.
 Q.coalition_dissent = 0;
-
-// does the SPD tolerate the government even if it is not a participant?
-Q.spd_toleration = 0;
-
-// is the current government a presidential minority government?
-Q.minority_government = 0;
 
 // ministries - which parties control the ministries?
 Q.foreign_minister = 'XXX';
@@ -269,143 +224,59 @@ Q.education_minister_party = 'I';
 Q.agriculture_minister = 'XXX';
 Q.agriculture_minister_party = 'I';
 
-// Events: what has occurred?
-Q.panzerkreuzer_seen = 0;
-Q.panzerkreuzer_funded = 0;
-Q.panzerkreuzer_failed = 0;
-Q.unemployment_insurance_seen = 0;
-// unemployment insurance event is seen if the unemployment level is at least 4 more than the threshold...
-Q.unemployment_insurance_threshold = 10;
-Q.blutmai = 0;
+// relationships with other space bodies
+Q.earth_relation = 0;
+Q.moon_relation = 0;
+Q.asteroids_relation = 0;
 
-// have we reformed these institutions to be more democratic?
-Q.judicial_reform = 0;
-Q.bureaucratic_reform = 0;
-Q.military_reform = 0;
-Q.womens_rights = 0;
-// level of welfare relative to 1928 (can go negative)
-Q.welfare = 0;
-// level of support for farmers
-Q.agricultural_policy = 0;
-Q.land_reform = 0;
-// works-creation programs (i.e. WTB-plan) - how much have they implemented?
-Q.works_program = 0;
-Q.wtb_implemented = 0;
-// Relations with the Western countries (France, UK).
-Q.west_relation = 0;
-// Relations with the Eastern countries (Poland, Czechoslovakia)
-Q.east_relation = 0;
-// Relations with the Soviet Union
-Q.soviet_relation = 0;
-// How much have we exposed the secret rearmament programs?
-Q.rearmament_exposed = 0;
-// reparations vs baseline: young plan is -1.
-Q.reparations = 0;
-Q.reparations_negotiation = 0;
-// nationalization_progress is part of the left economic plan.
-Q.nationalization_progress = 0;
-// socializations is part of the economic democracy card.
-Q.socializations = 0;
-Q.nationalize_budget = 4;
-// have there been any factory takeovers?
-Q.factory_takeovers = 0;
-// progress on the moderate economic plan
-Q.moderate_plan_progress = 0;
-// European Union negotiation process
-Q.eu = 0;
-Q.eu_progress = 0;
-// science/education
-Q.science = 0;
-Q.education_science = 0;
+// funding of other parties
+Q.supported_european_socialists = 0;
+Q.supported_american_socialists = 0;
+Q.supported_south_socialists = 0;
 
-// Tax rates relative to 1928 baseline
+// Tax statuses
 Q.water_tax_status = 0;
-
-// our conduct in the government, and the conduct of our coalition opponents.
-// did the SPD vote against the previous government in a vote of no confidence?
-Q.spd_no_confidence = 0;
-// was the last SPD government taken down in a vote of no confidence by right-wing coalition partners?
-Q.no_confidence_against_spd = 0;
 
 // Advisors/Leaders
 Q.n_advisors = 3;
 // timer - this decrements by 1 every turn, and is set to 5 whenever an advisor action is used, so that you can only use one advisor action every 5 months.
 // let's just put all of the timers here...
 // most party affairs and government affairs cards are on a timer.
-Q.timers = ['advisor_action', 'confronting_nazis', 'crisis_program',
-            'fundraising', 'ideology',
-            'inter_party_relationships', 'international_relations',
-            'iron_front', 'media', 'enemies',
-            'party_organizations', 'rally', 'reichsbanner',
-            'shuffle_leadership', 'streetfighting', 'peoples_party',
-            'party_disunity',
+Q.timers = ['advisor_action', 'fundraising', 'ideology', 'inter_party_relationships', 'international_relations', 'media', 'enemies', 'party_organizations', 'rally', 'shuffle_leadership', 'party_disunity',
             // govt
-            'agricultural_policy', 'domestic_enemies', 'fiscal_policy',
-            'foreign_policy', 'judiciary', 'labor_affairs', 'military_policy',
-            'police', 'prussian_affairs', 'shuffle_cabinet', 'social_welfare',
-            'homosexual_rights', 'economic_policy', 'coalition_affairs',
-            'war_guilt', 'womens_rights', 'economic_democracy',
-            'dealing_with_toleration',
-            'constitutional_reform', 'labor_rights',
-            'education_science', 'curriculum',
+             'prime_minister_policy', 'interior_policy', 'labor_policy', 'economic_policy', 'justice_policy', 'foreign_policy', 'infrastructure_policy', 'education_policy', 'agricultural_policy', 'coalition_affairs',
             // events
-            'emergency_cuts', 'unemployment_insurance',
-            'sa_ban', 'sh_ban', 'papen_chancellor',
-            'kpd_policy', 'kpd_ultimatum', 'popular_front_dispute',
-            'high_inflation', 'banking_crisis', 'march_on_berlin',
-            'understanding_enemy', 'schleichers_schemes'];
+];
 Q.advisor_action_timer = 0;
-// party affairs timers
-Q.confronting_nazis_timer = 0;
-Q.crisis_program_timer = 0;
+// Initialize party affairs timers
+Q.advisor_action_timer = 0;
 Q.fundraising_timer = 0;
 Q.ideology_timer = 0;
 Q.inter_party_relationships_timer = 0;
 Q.international_relations_timer = 0;
-Q.iron_front_timer = 0;
 Q.media_timer = 0;
 Q.enemies_timer = 0;
-Q.party_organizations_timer =  0;
+Q.party_organizations_timer = 0;
 Q.rally_timer = 0;
-Q.reichsbanner_timer = 0;
 Q.shuffle_leadership_timer = 0;
-Q.streetfighting_timer = 0;
-Q.peoples_party_timer = 0;
-// n_elections is the number of elections that have happened since the start of the game.
-Q.n_elections = 0;
-// number of elections without a clear majority.
-Q.no_majority_elections = 0;
+Q.party_disunity_timer = 0;
+
+// Initialize government policy timers
+Q.prime_minister_policy_timer = 0;
+Q.interior_policy_timer = 0;
+Q.labor_policy_timer = 0;
+Q.economic_policy_timer = 0;
+Q.justice_policy_timer = 0;
+Q.foreign_policy_timer = 0;
+Q.infrastructure_policy_timer = 0;
+Q.education_policy_timer = 0;
+Q.agricultural_policy_timer = 0;
+Q.coalition_affairs_timer = 0;
 // elections are not on a timer, but rather there is an indicator for whether you're in an electoral cycle.
 Q.in_election = 1;
 Q.next_election_year = 2442;
 Q.next_election_month = 7;
 Q.next_election_time = 7;
-// government affairs timers
-Q.agricultural_policy_timer = 0;
-Q.domestic_enemies_timer = 0;
-Q.economic_policy_timer = 0;
-Q.fiscal_policy_timer = 0;
-Q.foreign_policy_timer = 0;
-Q.judiciary_timer = 0;
-Q.labor_affairs_timer = 0;
-Q.military_policy_timer = 0;
-Q.police_timer = 0;
-Q.prussian_affairs_timer = 0;
-Q.shuffle_cabinet_timer = 0;
-Q.social_welfare_timer = 0;
-Q.war_guilt_timer = 0;
-Q.womens_rights_timer = 0;
-Q.homosexual_rights_timer = 0;
-Q.economic_democracy_timer = 0;
-Q.coalition_affairs_timer = 0;
-// event timers
-Q.emergency_cuts_timer = 0;
-Q.unemployment_insurance_timer = 0;
-Q.sa_ban_timer = 0;
-Q.sh_ban_timer = 0;
-Q.kpd_ultimatum_timer = 0;
-Q.march_on_berlin_timer = 0;
-
 
 // all the initial advisors are centrists.
 Q.wels_advisor = 1; // Otto Wels
