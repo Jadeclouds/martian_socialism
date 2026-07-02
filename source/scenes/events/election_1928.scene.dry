@@ -194,7 +194,6 @@ There are some potential coalition arrangements.
 
 - @marsist_coalition
 - @grand_marsist_coalition
-- @earth_toleration_coalition
 
 @marsist_coalition
 title: We can form a Marsist Coalition.
@@ -399,17 +398,6 @@ view-if: agriculture_minister_party = "SPM"
 on-arrival: agriculture_minister_party = "MNLP"; agriculture_minister = "Grobenn"; leverage += 8;
 tags: drop_mins_1928
 go-to: ministries
-
-@earth_toleration_coalition
-title: We won't form a coalition; the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} will tolerate the {!<span style="color: #22275C;"><strong>PEC</strong></span>!}, as usual.
-subtitle: {!<span style="color: #22275C;"><strong>PEC</strong></span>!} + {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} (Toleration): [+ earth_toleration_coalition +]%
-view-if: earth_toleration_coalition >= 50
-choose-if: mnlp_relation <= 29 or (marsist_coalition <= 50 and (mnlp_relation <= 39 or mnlp_tolerate_nondemocrats == 0 or plfm_relation <= 39 or ffm_relation <= 19 or p_relation <= 29)) or grand_marsist_coalition <= 50
-unavailable-subtitle: {!<span style="color: #22275C;"><strong>PEC</strong></span>!} + {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}: [+ earth_toleration_coalition +]% - [? if mnlp_relation >= 30: Our relationship with the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} is not low enough for them to consider tolerating such an agreement. ?][? if marsist_coalition >= 50 or (grand_marsist_coalition >= 50 and mnlp_relation >= 40 and mnlp_tolerate_nondemocrats == 1 and plfm_relation >= 40 and ffm_relation >= 20 and p_relation >= 30): The {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} considers other agreements simply more preferable. ?]
-on-arrival: pec_in_government = 1; mnlp_in_government = 1; labor_minister_party = "I"; labor_minister = "XXX"; interior_minister_party = "I"; interior_minister = "XXX"; economic_minister_party = "I"; economic_minister = "XXX"; justice_minister_party = "I"; justice_minister = "XXX"; foreign_minister_party = "I"; foreign_minister = "XXX"; infrastructure_minister_party = "I"; infrastructure_minister = "XXX"; education_minister_party = "I"; education_minister = "XXX"; agriculture_minister_party = "I"; agriculture_minister = "XXX"; left_dissent += 10 if (marsist_coalition >= 50 and mnlp_relation >= 30) or (grand_marsist_coalition >= 50 and mnlp_relation >= 40 and mnlp_tolerate_nondemocrats == 1 and plfm_relation >= 40 and ffm_relation >= 20 and p_relation >= 30); reformist_dissent += 10 if (marsist_coalition >= 50 and mnlp_relation >= 30) or (grand_marsist_coalition >= 50 and mnlp_relation >= 40 and mnlp_tolerate_nondemocrats == 1 and plfm_relation >= 40 and ffm_relation >= 20 and p_relation >= 30); progressist_dissent += 10 if (marsist_coalition >= 50 and mnlp_relation >= 30) or (grand_marsist_coalition >= 50 and mnlp_relation >= 40 and mnlp_tolerate_nondemocrats == 1 and plfm_relation >= 40 and ffm_relation >= 20 and p_relation >= 30); romanticist_dissent += 10 if (marsist_coalition >= 50 and mnlp_relation >= 30) or (grand_marsist_coalition >= 50 and mnlp_relation >= 40 and mnlp_tolerate_nondemocrats == 1 and plfm_relation >= 40 and ffm_relation >= 20 and p_relation >= 30); marsism -= 10; miners_spm -= 7; miners_spm -= 8 if (marsist_coalition >= 50 and mnlp_relation >= 30) or (grand_marsist_coalition >= 50 and mnlp_relation >= 40 and mnlp_tolerate_nondemocrats == 1 and plfm_relation >= 40 and ffm_relation >= 20 and p_relation >= 30); technicians_spm -= 4; technicians_spm -= 6 if (marsist_coalition >= 50 and mnlp_relation >= 30) or (grand_marsist_coalition >= 50 and mnlp_relation >= 40 and mnlp_tolerate_nondemocrats == 1 and plfm_relation >= 40 and ffm_relation >= 20 and p_relation >= 30); indipendent_capitalist_class_spm -= 5 if (marsist_coalition >= 50 and mnlp_relation >= 30) or (grand_marsist_coalition >= 50 and mnlp_relation >= 40 and mnlp_tolerate_nondemocrats == 1 and plfm_relation >= 40 and ffm_relation >= 20 and p_relation >= 30); bureaucrats_spm -= 5 if (marsist_coalition >= 50 and mnlp_relation >= 30) or (grand_marsist_coalition >= 50 and mnlp_relation >= 40 and mnlp_tolerate_nondemocrats == 1 and plfm_relation >= 40 and ffm_relation >= 20 and p_relation >= 30); researchers_spm -= 5 if (marsist_coalition >= 50 and mnlp_relation >= 30) or (grand_marsist_coalition >= 50 and mnlp_relation >= 40 and mnlp_tolerate_nondemocrats == 1 and plfm_relation >= 40 and ffm_relation >= 20 and p_relation >= 30); 
-
-The {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} ends up tollerating the {!<span style="color: #22275C;"><strong>PEC</strong></span>!}, as it has always been. Some people consider the Marsist fight to inevitably over. Somewhere, in the red dunes of this barren planet, another light dies... 
-
 
 
 
