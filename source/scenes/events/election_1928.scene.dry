@@ -404,13 +404,11 @@ go-to: ministries
 title: We won't form a coalition; the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} will tolerate the {!<span style="color: #22275C;"><strong>PEC</strong></span>!}, as usual.
 subtitle: {!<span style="color: #22275C;"><strong>PEC</strong></span>!} + {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} (Toleration): [+ earth_toleration_coalition +]%
 view-if: earth_toleration_coalition >= 50
-choose-if: mnlp_relation <= 29
-unavailable-subtitle: {!<span style="color: #22275C;"><strong>PEC</strong></span>!} + {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}: [+ earth_toleration_coalition +]% - Our relationship with the MNLP is not low enough for them to consider tolerating such an agreement.
+choose-if: mnlp_relation <= 29 or marsist_coalition <= 50
+unavailable-subtitle: {!<span style="color: #22275C;"><strong>PEC</strong></span>!} + {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}: [+ earth_toleration_coalition +]% - Our relationship with the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} is not low enough for them to consider tolerating such an agreement.
 on-arrival: pec_in_government = 1; mnlp_in_government = 1; labor_minister_party = "I"; labor_minister = "XXX"; interior_minister_party = "I"; interior_minister = "XXX"; economic_minister_party = "I"; economic_minister = "XXX"; justice_minister_party = "I"; justice_minister = "XXX"; foreign_minister_party = "I"; foreign_minister = "XXX"; infrastructure_minister_party = "I"; infrastructure_minister = "XXX"; education_minister_party = "I"; education_minister = "XXX"; agriculture_minister_party = "I"; agriculture_minister = "XXX"; marsism -= 10; miners_spm -= 7; technicians_spm -= 4; left_dissent += 10 if marsist_coalition >= 50; reformist_dissent += 10 if marsist_coalition >= 50; progressist_dissent += 10 if marsist_coalition >= 50; romanticist_dissent += 10 if marsist_coalition >= 50; miners_spm -= 8 if marsist_coalition >= 50; technicians_spm -= 6 if marsist_coalition >= 50; independent_capitalist_class_spm -= 5 if marsist_coalition >= 50; bureaucrats_spm -= 5 if marsist_coalition >= 50; researchers_spm -= 5 if marsist_coalition >= 50;
 
 The {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} ends up tolerating the {!<span style="color: #22275C;"><strong>PEC</strong></span>!}, as it has always been. Some consider the Marsist fight to be inevitably over. Somewhere, out in the red dunes of this barren planet, another light dies...
-
-
 
 
 
