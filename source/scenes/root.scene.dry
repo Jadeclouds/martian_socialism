@@ -87,10 +87,13 @@ Q.hindenburg_enabled = 0;
 
 // The state of the country
 
-// popular opinion
 // national ideology - on a binary scale
 // marsism (+) vs earthism (-)
 Q.marsism = 40;
+// socialism (+) vs capitalism (-)
+Q.socialism = 25;
+// rule of law (+) vs rule of strength (-)
+Q.rol = 60;
 
 Q.budget = 3;
 Q.budget_growth = 2;
