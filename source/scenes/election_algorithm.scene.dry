@@ -15,6 +15,15 @@ for (var c of Q.classes) {
     }
 }
 
+if (Q.mnlp_r >= Q.pec_r && Q.mnlp_r >= Q.spm_r) {
+    Q.largest_party = 'MNLP';
+}
+
+Q.largest_marsist_party = 'MNLP';
+if (Q.spm_r >= Q.mnlp_r) {
+    Q.largest_party = 'SPM';
+}
+
 // 1. calculate support for each of the parties
 var total_support = 0;
 for (var party of Q.parties) {
