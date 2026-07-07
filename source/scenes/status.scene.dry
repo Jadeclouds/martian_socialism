@@ -31,6 +31,10 @@ Commissioner: [+ president +]
 
 Prime Minister: [+ chancellor +] ([+ chancellor_party +])
 
+[? if spm_in_government and not in_spm_majority: Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
+
+[? if spm_in_government: Budget: [+ budget +] ?]
+
 Martian Parliament composition:
 
 # SPM
