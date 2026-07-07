@@ -35,7 +35,8 @@ Prime Minister: [+ chancellor +] ([+ chancellor_party +])
 
 [? if spm_in_government: Budget: [+ budget +] ?]
 
-[? if spm_in_government: Currently {!<span style="color: #ED7158;"><strong>SPM</strong></span>!}-controlled Ministries: ?] 
+[? if spm_in_government: Currently {!<span style="color: #ED7158;"><strong>SPM</strong></span>!}-controlled Ministries: ?]
+
 [? if labor_minister_party == "SPM": Ministry of {!<strong>Labor</strong>!}, ?] [? if interior_minister_party  == "SPM": Ministry of {!<strong>Interior</strong>!}, ?] [? if economic_minister_party == "SPM": Ministry of {!<strong>Economy & Finance</strong>!}, ?] [? if justice_minister_party == "SPM": Ministry of {!<strong>Justice</strong>!}, ?] [? if foreign_minister_party == "SPM": Ministry of {!<strong>Foreign</strong>!}, ?] [? if infrastructure_minister_party == "SPM": Ministry of {!<strong>Infrastructure & Energy</strong>!}, ?] [? if education_minister_party == "SPM": Ministry of {!<strong>Education & Culture</strong>!}, ?] [? if agriculture_minister_party == "SPM": Ministry of {!<strong>Agriculture & Food Procurement</strong>!}, ?][? if spm_in_government and not in_spm_majority: the remaining ministries are held by our coalition partners. ?][? if spm_in_government and in_spm_majority: we have control over all the ministries. ?]
 
 
@@ -74,7 +75,19 @@ Next election: [+ next_election_month : month +] [+ next_election_year +]
 
 {!<span style="color: #12DB95;"><strong>P</strong></span>!}: [+ p_relation : relationships +]
 
-= Internal Factions of the SPM
+= Party Ideology
+
+{!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}: [+ mnlp_ideology +], [+ mnlp_marsism +]
+
+{!<span style="color: #540808;"><strong>PLFM</strong></span>!}: [+ plfm_ideology +], [+ plfm_marsism +]
+
+{!<span style="color: #5C3F1A;"><strong>FfM</strong></span>!}: [+ ffm_ideology +], [+ ffm_marsism +]
+
+{!<span style="color: #22275C;"><strong>PEC</strong></span>!}: [+ pec_ideology +], [+ pec_marsism +]
+
+{!<span style="color: #12DB95;"><strong>P</strong></span>!}: [+ p_ideology +], [+ p_marsism +]
+
+= Internal Factions of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!}
 
 Leftists strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
 
