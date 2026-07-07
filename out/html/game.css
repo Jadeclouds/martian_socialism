@@ -219,7 +219,6 @@ blockquote + blockquote.attribution {
   font-weight: normal;
 }
 
-
 /* tabs */
 .tab_container {
     background-color: var(--tab-bg-color);
