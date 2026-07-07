@@ -5,11 +5,12 @@ on-arrival: fundraising_timer = 6; month_actions += 1
 frequency: 200
 is-card: true
 card-image: img/spm_party_membership.jpg
+face-image: img/spm_logo.png
 tags: party_affairs
 
 = Party Membership
 
-Party membership is the structural backbone of any established Marsist party. 
+Being a member of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} means far more than simply holding a party card. The party orchestrates a myriad of secondary organizations, committees, and cultural clubs with the most variegated goals, ranging from broadening our mass voter base and securing funds, to fostering theoretical debates and optimizing internal party infrastructure.
 
 - @adjust_dues: We could adjust the cost of our party membership card.
 - @youth_party: Support the {!<span style="color: #ED7158;">Socialist Youth Martian League</span>!}!
