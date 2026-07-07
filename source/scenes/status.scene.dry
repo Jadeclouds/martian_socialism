@@ -33,7 +33,27 @@ Prime Minister: [+ chancellor +] ([+ chancellor_party +])
 
 [? if spm_in_government and not in_spm_majority: Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
 
-[? if spm_in_government = 1 : Budget: [+ budget +] ?]
+[? if spm_in_government: Budget: [+ budget +] ?]
+
+[? if spm_in_government: Cabinet composition: ?]
+
+[? if spm_in_government: Labor: [+ labor_minister_party +] ?]
+
+[? if spm_in_government: Interior: [+ interior_minister_party +] ?]
+
+[? if spm_in_government: Economic & Finance Ministry: [+ economic_minister_party +] ?]
+
+[? if spm_in_government: Justice: [+ justice_minister_party +] ?]
+
+[? if spm_in_government: Foreign: [+ foreign_minister_party +] ?]
+
+[? if spm_in_government: Infrastructure & Energy: [+ infrastructure_minister_party +] ?]
+
+[? if spm_in_government: Education & Culture: [+ education_minister_party +] ?]
+
+[? if spm_in_government: Agriculture & Food Procurement: [+ agriculture_minister_party +] ?]
+
+
 
 Martian Parliament composition:
 
