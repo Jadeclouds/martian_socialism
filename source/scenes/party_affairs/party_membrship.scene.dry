@@ -1,0 +1,58 @@
+title: Party Membership
+new-page: true
+view-if: fundraising_timer <= 0 and (not historical_mode)
+on-arrival: fundraising_timer = 6; month_actions += 1
+frequency: 200
+is-card: true
+card-image: img/spm_party_membership.jpg
+tags: party_affairs
+
+= Party Membership
+
+Party membership is the structural backbone of any established Marsist party. 
+
+- @adjust_dues: We could adjust the cost of our party membership card.
+- @youth_party: Support the {!<span style="color: #ED7158;">Socialist Youth Martian League</span>!}!
+- @mio_party: Help the Martian Indipendence Organization!
+- @easy_discard
+
+@adjust_dues
+subtitle: We can manage the annual contribution required to be party members.
+
+While we receive our membership dues at the end of each fiscal year, we have the authority to adjust the subscription rate at any time. 
+
+Our decision here is a delicate balancing act. High dues risk alienating poorer voters and shrinking our membership roll, while lower dues threaten our primary source of yearly funding. We must find a sustainable compromise.
+
+- @reduce: Reduce the party membership card cost.
+- @increase: Increase the party membership card cost.
+- @root: Actually, nevermind. The costs are already balanced.
+
+@reduce
+subtitle: We will gain [+ dues - 1 +] resources per year.
+choose-if: dues > 1
+on-arrival: dues -= 1; left_dissent -= 8; progressist_dissent -= 8; reformist_dissent -= 8; romanticist_dissent -= 8; month_actions += 1; miners_spm += 3*(1 - dissent)
+
+Our current members deeply appreciate this relief. Lowering financial barriers makes party involvement accessible to the most impoverished elements of the Martian working class.
+
+@increase
+subtitle: We will gain [+ dues + 1 +] resources per year. +1 resource [? if dues >= 4 : Dues are already rather high; increasing them might reduce our membership. ?]
+on-arrival: dues += 1; miners_spm -= 6; technicians_spm -= 3; miners_spm -= 3*dues if dues >= 5; technicians_spm -= 2*dues if dues >= 5; month_actions += 1
+view-if: dues <= 4
+
+Our members grumble bitterly at this development. While the treasury will enjoy an immediate influx of funding, the financial strain pushes our least committed supporters, particularly struggling miners, to let their memberships lapse entirely.
+
+@youth_party
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: left_dissent -= 5; romanticist_dissent -= 5; socialism += 2; resources -= 1
+
+The {!<span style="color: #ED7158;">Socialist Youth Martian League</span>!} is our official youth wing, and currently the largest political youth organization on Mars. Supporting our youth vanguard provides the necessary capital to organize localized agitation campaigns, recruit unaligned students, and educate the upcoming generation of organizers who will hopefully govern the Mars of tomorrow.
+
+@mio_party
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: reformist_dissent -= 5; romanticist_dissent -= 5; marsism += 2; resources -= 1; mnlp_relation += 3*(1 - dissent)
+
+Formed jointly by the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} and the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}, the Martian Independence Organization is an interparliamentary working group explicitly dedicated to the cause of Martian sovereignty and independence. This specialized body functions as a unified legislative front, serving to draft cross-party proposals and present a cohesive opposition to the Earth Council's economic dictates. It is our primary institutional bridge to the moderate independentist movement, providing a platform where social democrats and liberals can synchronize their strategies to loosen Earth's grip on our world.
