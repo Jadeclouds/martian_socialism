@@ -71,13 +71,16 @@ Q.ffm_relation = 15;
 Q.p_relation = 35;
 Q.pec_relation = 10;
 
-Q.kpd_leader = "Thälmann";
-// alternative is the Conciliators as party leader
-Q.kpd_party_leader = "Thälmann";
-Q.z_leader = "Brüning";
-// party leader - can be Ludwig Kaas, Joseph Joos, or Adam Stegerwald after the 1928 December conference. Joos will be most friendly to the SPD.
-Q.z_party_leader = "Marx";
-Q.nsdap_leader = "Hitler";
+Q.mnlp_ideology = "Market Liberalism";
+Q.mnlp_marsism = "Moderate Marsism";
+Q.plfm_ideology = "Marxism-Leninism-Maoism";
+Q.plfm_marsism = "Radical Marsism";
+Q.ffm_ideology  = "National Syndicalism";
+Q.ffm_marsism = "Radical Marsism";
+Q.pec_ideology  = "Colonial Liberalism";
+Q.pec_marsism = "Earthism";
+Q.p_ideology  = "Accellerationism";
+Q.p_marsism = "Marsism";
 
 // hmm... maybe we can play nice with Hindenburg???
 Q.hindenburg_relation = 25;
