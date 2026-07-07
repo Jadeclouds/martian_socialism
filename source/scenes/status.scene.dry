@@ -71,9 +71,9 @@ Next election: [+ next_election_month : month +] [+ next_election_year +]
 
 {!<span style="color: #5C3F1A;"><strong>FfM</strong></span>!}: [+ ffm_relation : relationships +]
 
-{!<span style="color: #22275C;"><strong>PEC</strong></span>!}: [+ pec_relation : relationships +]
-
 {!<span style="color: #12DB95;"><strong>P</strong></span>!}: [+ p_relation : relationships +]
+
+{!<span style="color: #22275C;"><strong>PEC</strong></span>!}: [+ pec_relation : relationships +]
 
 = Party Ideology
 
@@ -83,9 +83,9 @@ Next election: [+ next_election_month : month +] [+ next_election_year +]
 
 {!<span style="color: #5C3F1A;"><strong>FfM</strong></span>!}: [+ ffm_ideology +], [+ ffm_marsism +]
 
-{!<span style="color: #22275C;"><strong>PEC</strong></span>!}: [+ pec_ideology +], [+ pec_marsism +]
-
 {!<span style="color: #12DB95;"><strong>P</strong></span>!}: [+ p_ideology +], [+ p_marsism +]
+
+{!<span style="color: #22275C;"><strong>PEC</strong></span>!}: [+ pec_ideology +], [+ pec_marsism +]
 
 = Internal Factions of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!}
 
