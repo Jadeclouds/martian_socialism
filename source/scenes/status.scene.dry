@@ -35,6 +35,9 @@ Prime Minister: [+ chancellor +] ([+ chancellor_party +])
 
 [? if spm_in_government: Budget: [+ budget +] ?]
 
+[? if spm_in_government: Currently {!<span style="color: #ED7158;"><strong>SPM</strong></span>!}-controlled Ministries: ?] [? if labor_minister_party == "SPM": Ministry of Labor, ?] [? if interior_minister_party  == "SPM": Ministry of Interior, ?] [? if economic_minister_party == "SPM": Ministry of Economy & Finance, ?] [? if justice_minister_party == "SPM": Ministry of Justice, ?] [? if foreign_minister_party == "SPM": Ministry of Foreign, ?] [? if infrastructure_minister_party == "SPM": Ministry of Infrastructure & Energy, ?] [? if education_minister_party == "SPM": Ministry of Education & Culture, ?] [? if agriculture_minister_party == "SPM": Ministry of Agriculture & Food Procurement, ?]
+
+
 Martian Parliament composition:
 
 # SPM
