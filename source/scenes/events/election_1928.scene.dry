@@ -28,19 +28,6 @@ for (var party of Q.parties) {
     var sign = Q['change_' + party + '_r'] > 0 ? '+'  : '';
     Q['str_change_' + party] = sign + Q['change_' + party + '_r'];//.toFixed(1);
 }
-Q.largest_party = 'PEC';
-if (Q.spm_r >= Q.pec_r && Q.spm_r >= Q.mnlp_r) {
-    Q.largest_party = 'SPM';
-}
-
-if (Q.mnlp_r >= Q.pec_r && Q.mnlp_r >= Q.spm_r) {
-    Q.largest_party = 'MNLP';
-}
-
-Q.largest_marsist_party = 'MNLP';
-if (Q.spm_r >= Q.mnlp_r) {
-    Q.largest_party = 'SPM';
-}
 
 // coalitions
 Q.marsist_coalition = Q.spm_r + Q.mnlp_r;
@@ -77,6 +64,21 @@ for (var party of Q.parties) {
     election_result[party] = Q[party + '_r'];
 }
 Q.election_records.push(election_result);
+
+Q.largest_party = 'PEC';
+if (Q.spm_r >= Q.pec_r && Q.spm_r >= Q.mnlp_r) {
+    Q.largest_party = 'SPM';
+}
+
+if (Q.mnlp_r >= Q.pec_r && Q.mnlp_r >= Q.spm_r) {
+    Q.largest_party = 'MNLP';
+}
+
+Q.largest_marsist_party = 'MNLP';
+if (Q.spm_r >= Q.mnlp_r) {
+    Q.largest_party = 'SPM';
+}
+
 !}
 on-display: {!
 data = [
