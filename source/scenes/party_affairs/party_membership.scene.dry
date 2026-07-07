@@ -14,6 +14,7 @@ Party membership is the structural backbone of any established Marsist party.
 - @adjust_dues: We could adjust the cost of our party membership card.
 - @youth_party: Support the {!<span style="color: #ED7158;">Socialist Youth Martian League</span>!}!
 - @mio_party: Help the Martian Indipendence Organization!
+- @mfm_party: We should organize a fundraising with {!<span style="color: #ED7158;">MobilizeForMars</span>!}
 - @easy_discard
 
 @adjust_dues
@@ -56,3 +57,9 @@ unavailable-subtitle: Not enough resources.
 on-arrival: reformist_dissent -= 5; romanticist_dissent -= 5; marsism += 2; resources -= 1; mnlp_relation += 3*(1 - dissent)
 
 Formed jointly by the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} and the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}, the Martian Independence Organization is an interparliamentary working group explicitly dedicated to the cause of Martian sovereignty and independence. This specialized body functions as a unified legislative front, serving to draft cross-party proposals and present a cohesive opposition to the Earth Council's economic dictates. It is our primary institutional bridge to the moderate independentist movement, providing a platform where social democrats and liberals can synchronize their strategies to loosen Earth's grip on our world.
+
+@mfm_party
+subtitle: +1 resources
+on-arrival: left_dissent += 5; progressist_dissent += 5; reformist_strength += 5; resources += 1; socialism -= 2
+
+MobilizeForMars is our primary digital fundraising platform and a foundational cornerstone of our planetary financial infrastructure. The platform allows for the rapid processing of micro-donations, crowd-sourced funding campaigns, and direct monthly contributions from thousands of sympathetic citizens across the planet. However, MobilizeForMars is primarily managed and sponsored by our reformist wing; relying heavily on this crowdfunding model inherently strengthens their institutional position and ideological leverage within the party line.
