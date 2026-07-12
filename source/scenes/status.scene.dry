@@ -87,6 +87,14 @@ Next election: [+ next_election_month : month +] [+ next_election_year +]
 
 {!<span style="color: #22275C;"><strong>PEC</strong></span>!}: [+ pec_ideology +], [+ pec_marsism +]
 
+= Trade Unions
+
+{!<span style="color: #78344B;"><strong>GCLM</strong></span>!}: [+ gclm_union_relation : relationships +]
+
+{!<span style="color: #0086AB;"><strong>MFPE</strong></span>!}: [+ mfpe_union_relation : relationships +]
+
+{!<span style="color: #B88100;"><strong>PMA</strong></span>!}: [+ pma_union_relation : relationships +]
+
 = Internal Factions of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!}
 
 Leftists strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
