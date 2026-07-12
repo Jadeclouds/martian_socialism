@@ -1,0 +1,56 @@
+title: Trade Unions Talks
+new-page: true
+is-card: true
+tags: party_affairs
+view-if: party_organizations_timer <= 0
+on-arrival: month_actions += 1; party_organizations_timer = 6;
+card-image: img/spm_trade_unions.jpg
+
+= Trade Unions Talks
+
+As a socialist party, the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} maintains a profoundly important structural relationship with organized labor. Coordinating our platform directly with the unions allows us to lock down our working-class voter base and maintain street-level leverage.
+
+- @gclm_union_better_relations: We should support the {!<span style="color: #78344B;"><strong>General Confederation of Labourers and Miners</strong></span>!}!
+- @gclm_union_many_money: We can ask the {!<span style="color: #78344B;"><strong>General Confederation of Labourers and Miners</strong></span>!} to support our initiatives.
+- @mpfe_union_better_relations: We can better our relations with the {!<span style="color: #0086AB;"><strong>Martian Federation of Professional Employees</strong></span>!}.
+- @pma_union_better_relations: We can solidify dialogue with the {!<span style="color: #B88100;"><strong>Planetary Manufacturers Association</strong></span>!}.
+- @nothing: The current state of things is preferable.
+- @easy_discard
+
+@gclm_union_better_relations
+choose-if: resources > 0
+unavailable-subtitle: Not enough resources.
+subtitle: -1 resources
+on-arrival: resources -= 1; gclm_union_relation += 5; miners_spm += 1*(1 - dissent); technicians_spm += 1*(1 - dissent); plfm_relation -= 3 
+
+The {!<span style="color: #78344B;"><strong>General Confederation of Labourers and Miners</strong></span>!} is an industrial syndicate primarily composed of miners and technicians. While the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} acts as their chief legislative shield in parliament, we face intense competition from the radical {!<span style="color: #540808;"><strong>PLFM</strong></span>!} for the minds of the most militant workers and in the mines.
+
+@gclm_union_many_money
+choose-if: gclm_union_relation >= 55
+unavailable-subtitle: We do not have good enough relations with the {!<span style="color: #78344B;"><strong>GCLM</strong></span>!}.
+subtitle: +1 resources
+on-arrival: resources += 1; plfm_relation -= 3; reformist_dissent += 5; progressist_dissent += 5; left_strength += 5; indipendent_capitalist_class_spm -= 1
+
+We can draw emergency financial subsidies from the {!<span style="color: #78344B;"><strong>GCLM</strong></span>!} treasury to bankroll our party operations, but this dependency gives their syndicalist leadership sway over our platform. Our moderate factions worry that accepting this cash will embolden radical {!<span style="color: #540808;"><strong>PLFM</strong></span>!} elements trying to filter into our internal committees.
+
+@mpfe_union_better_relations
+choose-if: resources > 0
+unavailable-subtitle: Not enough resources.
+subtitle: -1 resources
+on-arrival: resources -= 1; mpfe_union_relation += 5; bureaucrats_spm += 1*(1 - dissent); researchers_spm += 1*(1 - dissent); p_relation -= 3 
+
+The {!<span style="color: #0086AB;"><strong>Martian Federation of Professional Employees</strong></span>!} represents the white-collar workforce, including researchers, administrators, bureaucrats and planners. Though officially non-partisan and detached from overt party allegiances, the federation traditionally supports Marsist candidates. A vocal minority within their leadership quietly sympathizes with the agenda of {!<span style="color: #12DB95;"><strong>Phobos</strong></span>!}, though it remains completely unofficial.
+
+@pma_union_better_relations
+choose-if: resources > 0
+unavailable-subtitle: Not enough resources.
+subtitle: -1 resources
+on-arrival: resources -= 1; pma_union_relation += 5; indipendent_capitalist_class_spm += 1*(1 - dissent); mnlp_relation -= 3 
+
+The {!<span style="color: #B88100;"><strong>Planetary Manufacturers Association</strong></span>!} represents independent business owners, transport syndicates, and local light-industrial consortia. It functions far more like a corporate trade cartel than a traditional labor union, yet it retains significant tax exemptions under that classification. The association makes no secret of its close ideological alignment with the liberal {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}.
+
+@nothing
+
+We do not fund any party organizations.
+
+- @return: Continue...
