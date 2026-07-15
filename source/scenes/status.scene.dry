@@ -16,7 +16,7 @@ if (Q.economic_growth) {
 
 = Status
 
-[+ month : month +] [+ year +]
+[+ month_mars : month_mars +] [+ year_mars +] (Earth: [+ month : month +] [+ year +])
 
 Resources available: [+ resources +]
 
