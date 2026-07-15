@@ -1,82 +1,36 @@
-title: Media
+title: Media Networks
 new-page: true
 is-card: true
 tags: party_affairs
 view-if: media_timer <= 0
 on-arrival: month_actions += 1; media_timer += 6;
-card-image: img/sangerbund.jpg
-#subtitle: Setting the direction for our newspapers and radio.
+card-image: img/spm_media_networks.jpg
 
-= Media
+= Media Networks
 
-The SPD runs a veritable media empire, with many newspapers throughout every German city and region. We could use the media for various purposes...
+Like most modern parties, the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} cannot rely solely on rallies and physical agitation. To shift planetary consciousness, we must project our brand and message through structured media campaigns and political branding.
 
-- @commercial
-- @campaign
-- @ideological
-- @radio
-- @radio_2
-- @radio_3
-- @radio_4
+- @radio_and_tv
+- @social_media
+- @newspapers
 - @return: We should not do anything with media at the moment.
 - @easy_discard
 - @cancel_advisor_action
 
-@commercial
-title: Make our newspapers more commercialized by broadening their appeal beyond party supporters.
-subtitle: This might upset ideological purists, but it may bring in more funds and perhaps expose the middle class to socialist views.
-on-arrival: resources += 1; commercialized_media += 1; new_middle_spd += 4*(1 - dissent); old_middle_spd += 3*(1-dissent); left_dissent += 10; labor_dissent += 10
+@radio_and_tv
+title: Focus on traditional Radio and Television broadcasts.
+on-arrival: miners_spm += 3*(1 - dissent); technicians_spm += 2*(1-dissent); reformist_dissent += 5
 
-Our commercialized newspapers are able to bring in more funds. However, the left and labor factions express their displeasure.
+Radio networks and local television remain highly prevalent within the dense, impoverished working-class households, communities, and workplaces. Utilizing these channels allows us to speak directly to the most marginalized strata of the Martian population. However, our reformist wing warns that doubling down on analog broadcasts does nothing to expand our appeal to professional middle-class voters.
 
-@campaign
-title: The purpose of our media is to elect more Social Democrats.
-subtitle: Our newspapers will focus on the electoral campaign.
-on-arrival: campaign_media += 1; workers_spd += 4*(1 - dissent); unemployed_spd += 2*(1-dissent);
+@social_media
+title: Launch a massive online social media campaign.
+on-arrival: technicians_spm += 1*(1 - dissent); bureaucrats_spm += 2*(1 - dissent); researchers_spm += 2*(1 - dissent); indipendent_capitalist_class_spm += 1*(1 - dissent); mnlp_relation -= 3; technicians_spm += 1*(1 - dissent) if sponsored_the_youth >= 3; bureaucrats_spm += 1*(1 - dissent) if sponsored_the_youth >= 3; researchers_spm += 2*(1 - dissent) if sponsored_the_youth >= 3; indipendent_capitalist_class_spm += 1*(1 - dissent) if sponsored_the_youth >= 3; mnlp_relation -= 2 if sponsored_the_youth >= 3; socialism += 2 if sponsored_the_youth >= 3
 
-Our campaign media is mostly reaching the workers who are already saturated with Socialist propaganda, but it must be doing *something*, or at least that is what we hope.
+Campaigning across Social Media networks is our primary avenue for capturing the attention of urban professionals, tech workers, and the politically active youth. Because social media is traditionally the undisputed territory of the liberal {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}, they react to our encroachment with mild hostility. [? if sponsored_the_youth >= 3 : Thanks to our heavy investment in the Socialist Youth Martian League, our online campaigns successfully leverage their sharp humor and memes. This makes our messaging incredibly effective at swaying younger voters, further infuriating the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} leadership. ?]
 
-@ideological
-title: We will have vibrant ideological debate within our newspapers.
-subtitle: There will be space for all factions to air their views.
-on-arrival: left_dissent -= 6; labor_dissent -= 6; center_dissent -= 6; reformist_dissent -= 6; neorevisionist_dissent -= 6
+@newspapers
+title: Secure placements in online newspapers and political journals.
+on-arrival: bureaucrats_spm += 1*(1 - dissent); researchers_spm += 1*(1 - dissent); indipendent_capitalist_class_spm += 2*(1 - dissent); left_dissent += 5; rol += 2
 
-This has been our media course historically, and it has successfully paved over the many tensions in our party.
-
-@radio
-title: Why not fund a radio station?
-subtitle: -2 resources
-choose-if: resources >= 2
-unavailable-subtitle: Not enough resources.
-view-if: radio = 0
-on-arrival: radio += 1; resources -= 2; new_middle_spd += 4*(1 - dissent); old_middle_spd += 3*(1 - dissent); workers_spd += 2*(1 - dissent); labor_dissent += 5; socialism += 3*(1 - dissent); nationalism -= 3*(1 - dissent) if pacifism > 1; pro_republic += 3*(1-dissent) if democratization > 1
-
-Our new radio station allows us to connect to people in a more intimate setting than before, spreading the message of socialism along with music and other popular content. Since most proletarians cannot afford family radios right now, we are reaching the middle class, a fact of which our labor comrades are painfully aware.
-
-@radio_2
-title: We must keep on building up our radio network.
-subtitle: -1 resources
-choose-if: resources >= 1
-unavailable-subtitle: Not enough resources.
-view-if: radio > 0 and radio <= 3
-on-arrival: radio += 1; resources -= 1; new_middle_spd += 5*(1 - dissent); old_middle_spd += 3*(1 - dissent); workers_spd += 3*(1 - dissent); socialism += 3*(1 - dissent); nationalism -= 3*(1 - dissent)*(pacifism-2) if pacifism > 2; pro_republic += 3*(1-dissent)*(democratization-2) if democratization > 2
-
-Our new radio network has a mix of popular and political programming, and is proving a success.
-
-@radio_3
-title: We must keep on building up our radio network.
-subtitle: It is now financially self-sufficient, and does not require any more resources.
-view-if: radio > 3 and radio <= 5 and year <= 1931
-on-arrival: radio += 1; new_middle_spd += 5*(1 - dissent); old_middle_spd += 4*(1 - dissent); workers_spd += 4*(1 - dissent); rural_spd += 3*(1 - dissent); unemployed_spd += 2*(1-dissent); socialism += 3*(1 - dissent); nationalism -= 3*(1 - dissent)*(pacifism-2) if pacifism > 2; pro_republic += 3*(1-dissent)*(democratization-2) if democratization > 2
-
-Our radio network has become a successful tool for spreading our message.
-
-@radio_4
-title: We should keep on supporting our radio network.
-subtitle: As radio becomes more common, the novelty is beginning to wear off, and radio is becoming saturated in society. -1 resources
-choose-if: resources >= 1
-unavailable-subtitle: Not enough resources.
-view-if: radio > 3 and (radio >= 6 or year >= 1932) and radio <= 9
-on-arrival: radio += 1; resources -= 1; new_middle_spd += 3*(1 - dissent); old_middle_spd += 2*(1 - dissent); workers_spd += 3*(1 - dissent); rural_spd += 2*(1 - dissent); unemployed_spd += 2*(1-dissent); socialism += 2*(1 - dissent); nationalism -= 2*(1 - dissent)*(pacifism-2) if pacifism > 2; pro_republic += 2*(1-dissent)*(democratization-2) if democratization > 2
-
-We are continuing to invest in our radio stations. Both commercial and political radio are becoming more prevalent, making it harder to spread our message amidst the competition.
+Polished editorial pieces, op-eds, and economic columns in mainstream digital publications are predominantly read by administrators, intellectuals, and independent business owners. While this builds our credibility among the educated elite, our radical left-wing cadres view this outreach to the bourgeoisie with intense frustration.
