@@ -47,7 +47,7 @@ Our members grumble bitterly at this development. While the treasury will enjoy 
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: left_dissent -= 5; romanticist_dissent -= 5; socialism += 2; resources -= 1
+on-arrival: left_dissent -= 5; romanticist_dissent -= 5; socialism += 2; resources -= 1; sponsored_the_youth += 1
 
 The {!<span style="color: #ED7158;">Socialist Youth Martian League</span>!} is our official youth wing, and currently the largest political youth organization on Mars. Supporting our youth vanguard provides the necessary capital to organize localized agitation campaigns, recruit unaligned students, and educate the upcoming generation of organizers who will hopefully govern the Mars of tomorrow.
 
