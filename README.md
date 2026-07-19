@@ -1,4 +1,4 @@
-# Social Democracy: An Alternate History
+# Red Planet
 
 ## Included Libraries
 
@@ -8,10 +8,7 @@
 
 [d3-parliament](https://github.com/geoffreybr/d3-parliament)
 
-## Building the game
+## From a fork of: 
 
-1. Install [dendrynexus](https://github.com/aucchen/dendrynexus)
+Social Democracy: An Alternate History
 
-2. Run `dendrynexus make-html` in this folder.
-
-To update dendrynexus in `package-lock.json`, run `npm install --upgrade https://github.com/aucchen/dendrynexus`
