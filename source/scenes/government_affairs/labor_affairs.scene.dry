@@ -10,8 +10,6 @@ card-image: img/gov_ministry_of_labor.jpg
 
 The Ministry of Labor is one of the oldest civilian institutions on Mars, dating back to 2237. Originally established under the "Right to Work" act as a mere bureaucratic organ to gather data on employment trends, it began its first data collection work in 2238. Over the subsequent two centuries, however, the ministry was forced to expand far beyond its original scope, eventually absorbing critical functions such as labor dispute mediation and state compensation programs.
 
-On Mars, labor rights are fundamentally intertwined with metabolic survival. Because the physical inputs of life such as oxygen, radiation scrubbing, and clean water are historically managed by corporate entities or state-chartered monopolies, the right to withdraw one's labor is effectively an existential hazard. If a strike breaks out in the mining zones, management can threaten to restrict air rations under the guise of "resource conservation." Thus, what began as a simple data collection office has evolved into a vital, legally mandated shield, enforcing the separation of survival infrastructure from contract disputes.
-
 - @minimum_wage_choices: We should discuss our policies regarding the minimum wage.
 - @easy_discard
 #- @cancel_advisor_action
@@ -23,7 +21,7 @@ While introducing a minimum wage is an overwhelmingly popular measure among the 
 
 - @create_minimum_wage: Introduce a Minimum Wage.
 - @create_national_contracts: We could settle on Planetary Collective Labour Agreements?
-- @root: Maybe not doing anything is our best option at the moment.
+- @easy_discard: Maybe not doing anything is our best option at the moment.
 
 @ create_minimum_wage
 unavailable-subtitle: We already introduced a Minimum Wage.
