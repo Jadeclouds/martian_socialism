@@ -1,0 +1,6 @@
+
+# goals completion status
+
+(..0.999) <span style="color: #D42F2F;">Incomplete</span>
+(0.999..49.999) <span style="color: #FFD54F;">Advanced</span>
+(49.999..) <span style="color: #66BB6A;">Complete</span>
