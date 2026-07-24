@@ -1,0 +1,28 @@
+title: Electoral Promises of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!}
+tags: event
+view-if: year = 2442 and month = 8 and spm_in_government = 1
+priority: 2
+max-visits: 1
+
+
+
+- @focus_on_alliances: We will focus on bettering our relationships with other parties.
+- @focus_on_party_stability: We should focus on rallying the full strength of the party.
+- @focus_on_campaign: Intensifying our campaign efforts shall be our focus!
+
+@focus_on_alliances
+on-arrival: plfm_relation += 5*(1 - dissent); mnlp_relation += 5*(1 - dissent)
+
+Our party and the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} are longtime allies, and both organizations are actively working toward local collaboration. In many cities, our members march together, organize joint public rallies, and forge tighter organizational bonds. 
+
+While the {!<span style="color: #540808;"><strong>PLFM</strong></span>!} remains more elusive, our local chapters have successfully collaborated to organize workers and draft joint electoral lists.
+
+@focus_on_party_stability
+on-arrival: left_dissent -= 5; progressist_dissent -= 5; romanticist_dissent -= 5; reformist_dissent -= 5
+
+The {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} is, in its own way, a big-tent party. As a result, its various wings often fall into the trap of petty squabbling, worrying more about imposing their specific vision on the membership than fighting for the broader Marsist cause. Nevertheless, during an election campaign, it is vital to project absolute strength and self-reliance to attract undecided voters. Furthermore, we expect these ideological rifts to widen even more once we enter government; cooling internal tensions now is a vital preemptive move.
+
+@focus_on_campaign
+on-arrival: technicians_spm += 5*(1 - dissent); indipendent_capitalist_class_spm += 5*(1 - dissent)
+
+Given that election season is underway, the core focus of our local chapters must be grassroots campaigning. We need to hit the ground running, mobilizing directly among the populace to secure every possible vote.
