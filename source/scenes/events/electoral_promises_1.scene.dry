@@ -8,38 +8,38 @@ Blah Blah Blah Promises
 
 = Sovereignty & Foreign Policy
 
-Achieve the independence of Mars: [+ promise_status_mars_indipendence : political_goals +]
+**Achieve the independence of Mars**: [+ promise_status_mars_indipendence : political_goals +]
 
-Repeal the Off-World Tariff Act: [+ promise_status_tariff_act : political_goals +]
+**Repeal the Off-World Tariff Act**: [+ promise_status_tariff_act : political_goals +]
 
-Terraform the Planet Into a Liveable World: [+ promise_status_mars_terraform : political_goals +]
-
-= Democracy & Government Operations
-
-Redistribute political power on the Planet: [+ promise_status_political_power : political_goals +]
-
-Establish Local Elections: [+ promise_status_local_elections : political_goals +]
-
-Establish a Planetary State-Controlled Police Force: [+ promise_status_police_force : political_goals +]
+**Terraform the Planet Into a Liveable World**: [+ promise_status_mars_terraform : political_goals +]
 
 = Democracy & Government Operations
 
-Redistribute political power on the Planet: [+ promise_status_political_power : political_goals +]
+**Redistribute political power on the Planet**: [+ promise_status_political_power : political_goals +]
 
-Establish Local Elections: [+ promise_status_local_elections : political_goals +]
+**Establish Local Elections**: [+ promise_status_local_elections : political_goals +]
 
-Establish a Planetary State-Controlled Police Force: [+ promise_status_police_force : political_goals +]
+**Establish a Planetary State-Controlled Police Force**: [+ promise_status_police_force : political_goals +]
+
+= Democracy & Government Operations
+
+**Redistribute political power on the Planet**: [+ promise_status_political_power : political_goals +]
+
+**Establish Local Elections**: [+ promise_status_local_elections : political_goals +]
+
+**Establish a Planetary State-Controlled Police Force**: [+ promise_status_police_force : political_goals +]
 
 = Economics & Cost of Living
  
-Establish a minimum wage: [+ promise_status_minimum_wage : political_goals +]
+**Establish a minimum wage**: [+ promise_status_minimum_wage : political_goals +]
 
-End the Water Tax: [+ promise_status_water_tax : political_goals +]
+**End the Water Tax**: [+ promise_status_water_tax : political_goals +]
 
-Lower the cost of essential goods: [+ promise_status_essential_goods : political_goals +]
+**Lower the cost of essential goods**: [+ promise_status_essential_goods : political_goals +]
 
 = Labor, Security & Industry
  
-Nationalize Mines and Industries: [+ promise_status_nationalization_economy : political_goals +]
+**Nationalize Mines and Industries**: [+ promise_status_nationalization_economy : political_goals +]
 
-Better Security Measures in the Mines: [+ promise_status_security_work : political_goals +]
+**Better Security Measures in the Mines**: [+ promise_status_security_work : political_goals +]
