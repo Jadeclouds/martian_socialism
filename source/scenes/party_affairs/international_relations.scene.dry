@@ -24,7 +24,7 @@ The {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} is an official
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; earth_relation += 1; reformist_strength += 5; supported_european_socialists = 1
+on-arrival: resources -= 1; earth_relation += 1 if spm_in_government == 1; reformist_strength += 5; supported_european_socialists = 1
 
 The European Socialist-Left Party is fundamentally a reformist, parliamentary organization. Their delegates gently but consistently try to steer our party away from radical upheaval and toward a moderate, constitutional Marsist path. Pragmatically, repairing relationships with established Earth-bound parties also helps thaw our diplomatic standing with the Earth Council itself.
 
