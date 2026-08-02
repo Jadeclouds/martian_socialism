@@ -24,7 +24,7 @@ The {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} is an official
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; earth_relation += 1 if spm_in_government == 1; reformist_strength += 5; supported_european_socialists = 1
+on-arrival: resources -= 1; earth_relation += 3 if spm_in_government == 1; reformist_strength += 5; supported_european_socialists = 1
 
 The European Socialist-Left Party is fundamentally a reformist, parliamentary organization. Their delegates gently but consistently try to steer our party away from radical upheaval and toward a moderate, constitutional Marsist path. Pragmatically, repairing relationships with established Earth-bound parties also helps thaw our diplomatic standing with the Earth Council itself.
 
@@ -32,7 +32,7 @@ The European Socialist-Left Party is fundamentally a reformist, parliamentary or
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; earth_relation += 1; progressist_strength += 5; supported_american_socialists = 1
+on-arrival: resources -= 1; earth_relation += 3 if spm_in_government == 1; progressist_strength += 5; supported_american_socialists = 1
 
 The Democratic Socialists of America is the oldest active socialist organization in human history. Founded all the way back in 1982, our party cadres feel humbled in the presence of such an ancient institutional legacy. The DSA is a fundamentally progressive party; they sympathize deeply with our Marsist goals, but they worry that a poorly negotiated Martian independence could trigger economic blowback for the Earth working class. Pragmatically, repairing relationships with established Earth-bound parties also helps thaw our diplomatic standing with the Earth Council itself.
 
@@ -40,7 +40,7 @@ The Democratic Socialists of America is the oldest active socialist organization
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; earth_relation += 1; left_strength += 5; supported_south_socialists = 1; plfm_relation += 3*(1-dissent);
+on-arrival: resources -= 1; earth_relation += 3 if spm_in_government == 1; left_strength += 5; supported_south_socialists = 1; plfm_relation += 3*(1-dissent);
 
 The Southern World All-Socialist Union is a fierce anti-imperialist coalition formed to defend the historic interests of Earth's global south. Guided by Fanonist theory, they enthusiastically endorse the Marsist cause as the next logical frontier of the anti-colonial struggle. Their representatives wholeheartedly urge us to form a united anti-colonial socialist front alongside the radical {!<span style="color: #540808;"><strong>PLFM</strong></span>!}. Pragmatically, repairing relationships with established Earth-bound parties also helps thaw our diplomatic standing with the Earth Council itself.
 
@@ -48,7 +48,7 @@ The Southern World All-Socialist Union is a fierce anti-imperialist coalition fo
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; moon_relation += 1; reformist_strength += 5; mnlp_relation += 3*(1-dissent);
+on-arrival: resources -= 1; moon_relation += 3 if spm_in_government == 1; reformist_strength += 5; mnlp_relation += 3*(1-dissent);
 
 The Lunar Social Democratic Unity Party is hardly a socialist party in the traditional sense; the nature of Lunar society leaves little room for a genuine worker movement to breathe. Beneath their distinctly elitist attitude, the LSDUP strongly advises us to pursue close cooperation with local {!<span style="color: #D3C24D;">liberal</span>!} forces and adhere to a strictly cautious, legalistic reformist strategy.
 
@@ -56,7 +56,7 @@ The Lunar Social Democratic Unity Party is hardly a socialist party in the tradi
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; asteroids_relation += 1; left_strength += 5; plfm_relation += 3*(1-dissent);
+on-arrival: resources -= 1; asteroid_relation += 3 if spm_in_government == 1; left_strength += 5; plfm_relation += 5*(1-dissent); mnlp_relation -= 3
 
 Socialist Alternative is ideologically far closer to the militant syndicalism of the {!<span style="color: #540808;"><strong>PLFM</strong></span>!} than to our own platform, making diplomatic breakthroughs somewhat strained. Nonetheless, opening a dialogue with them allows us to project influence into the critical Asteroid Belt mining stations, where thousands of radicalized workers are eager to build an economic bridge to a free Mars.
 
