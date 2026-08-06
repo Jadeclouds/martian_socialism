@@ -88,7 +88,7 @@ Q.gclm_union_relation = 70;
 Q.mfpe_union_relation = 50;
 Q.pma_union_relation = 25;
 
-// The state of the country
+// The state of the planet
 
 // national ideology - on a binary scale
 // marsism (+) vs earthism (-)
@@ -97,6 +97,14 @@ Q.marsism = 40;
 Q.socialism = 25;
 // rule of law (+) vs rule of strength (-)
 Q.rol = 60;
+
+// planetary relations
+Q.earth_relation = 50;
+Q.moon_relation = 50;
+Q.asteroid_relation = 50;
+
+// status of mars
+Q.mars_status = "Colonial Administration (Earth)";
 
 Q.budget = 3;
 Q.budget_growth = 2;
@@ -229,11 +237,6 @@ Q.education_minister = 'XXX';
 Q.education_minister_party = 'I';
 Q.agriculture_minister = 'XXX';
 Q.agriculture_minister_party = 'I';
-
-// relationships with other space bodies
-Q.earth_relation = 0;
-Q.moon_relation = 0;
-Q.asteroids_relation = 0;
 
 // funding of other parties
 Q.supported_european_socialists = 0;
