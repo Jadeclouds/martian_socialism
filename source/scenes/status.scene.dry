@@ -115,7 +115,13 @@ Reformists strength: [+ reformist_strength : strength +], dissent: [+ reformist_
 
 {!<span style="color: #NHA35M;"><strong>Asteroid Belt</strong></span>!}: [+ asteroid_relation : relationships +]
 
-Currently Mars is: [+ mars_status +]
+Current Status of Mars: [+ mars_status +]
+
+Current Status of Earth: [+ earth_status +]
+
+Current Status of Earth: [+ moon_status +]
+
+Current Status of the Belt: [+ belt_status +]
 
 = International Scene
 
