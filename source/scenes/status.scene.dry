@@ -105,6 +105,28 @@ Romanticists strength: [+ romanticist_strength : strength +], dissent: [+ romant
 
 Reformists strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
 
+@mars
+
+= International Scene
+
+{!<span style="color: #023CA7;"><strong>Earth</strong></span>!}: [+ earth_relation : relationships +]
+
+{!<span style="color: #909090;"><strong>Moon</strong></span>!}: [+ moon_relation : relationships +]
+
+{!<span style="color: #NHA35M;"><strong>Asteroid Belt</strong></span>!}: [+ asteroid_relation : relationships +]
+
+Currently Mars is: [+ mars_status +]
+
+= International Scene
+
+{!<span style="color: #023CA7;"><strong>Earth</strong></span>!}: [+ earth_relation : relationships +]
+
+{!<span style="color: #909090;"><strong>Moon</strong></span>!}: [+ moon_relation : relationships +]
+
+{!<span style="color: #NHA35M;"><strong>Asteroid Belt</strong></span>!}: [+ asteroid_relation : relationships +]
+
+Currently Mars is: [+ mars_status +]
+
 @polls
 on-arrival: {!
 Q.pro_republic_disp = Math.round(Q.pro_republic);
