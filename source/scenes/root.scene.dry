@@ -103,8 +103,11 @@ Q.earth_relation = 50;
 Q.moon_relation = 50;
 Q.asteroid_relation = 50;
 
-// status of mars
+// status of the various bodies
 Q.mars_status = "Colonial Administration (Earth)";
+Q.earth_status = "Confederal Republic (Right Bloc)";
+Q.moon_status = "Special Administrative Region (Earth)";
+Q.asteroid_status = "Colonial Administration (Earth)";
 
 Q.budget = 3;
 Q.budget_growth = 2;
