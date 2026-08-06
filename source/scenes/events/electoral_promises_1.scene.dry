@@ -4,7 +4,9 @@ view-if: year = 2442 and month = 8 and spm_in_government = 1
 priority: 2
 max-visits: 1
 
-Blah Blah Blah many Promises
+The electorate holds us accountable to our platform. Words alone will not satisfy the working masses, they expect concrete progress. During election campaigns, the SPM made explicit promises to the Martian working class and our coalition partners. This ledger tracks the current status of each political goal.
+
+To maintain party credibility and prevent voter apathy or coalition collapse, we must meet specific legislative benchmarks by the end of each Martian Year. Failing to meet these targets will increase internal factional dissent, lower support, and weaken our standing in the coalition.
 
 = Sovereignty & Foreign Policy
 
@@ -35,3 +37,5 @@ Lower the cost of essential goods: [+ promise_status_essential_goods : political
 Nationalize Mines and Industries: [+ promise_status_nationalization_economy : political_goals +]
 
 Better Security Measures in the Mines: [+ promise_status_security_work : political_goals +]
+
+Our voters expect us to have <span style="color: #FFD54F;">Advanced</span> at least {!<strong>2</strong>!} goals and to <span style="color: #66BB6A;">Complete</span> at least {!<strong>1</strong>!} goal before the end of the Martian Year.
