@@ -115,23 +115,15 @@ Reformists strength: [+ reformist_strength : strength +], dissent: [+ reformist_
 
 {!<span style="color: #NHA35M;"><strong>Asteroid Belt</strong></span>!}: [+ asteroid_relation : relationships +]
 
-Current Status of Mars: [+ mars_status +]
+Current Status of {!<span style="color: #993333;"><strong>Earth</strong></span>!}: [+ mars_status +] 
 
-Current Status of Earth: [+ earth_status +]
+Current Status of {!<span style="color: #023CA7;"><strong>Earth</strong></span>!}: [+ earth_status +]
 
-Current Status of Earth: [+ moon_status +]
+Current Status of the {!<span style="color: #909090;"><strong>Moon</strong></span>!}: [+ moon_status +]
 
-Current Status of the Belt: [+ belt_status +]
+Current Status of the {!<span style="color: #NHA35M;"><strong>Asteroid Belt</strong></span>!}: [+ asteroid_status +]
 
-= International Scene
-
-{!<span style="color: #023CA7;"><strong>Earth</strong></span>!}: [+ earth_relation : relationships +]
-
-{!<span style="color: #909090;"><strong>Moon</strong></span>!}: [+ moon_relation : relationships +]
-
-{!<span style="color: #NHA35M;"><strong>Asteroid Belt</strong></span>!}: [+ asteroid_relation : relationships +]
-
-Currently Mars is: [+ mars_status +]
+= XXX
 
 @polls
 on-arrival: {!
