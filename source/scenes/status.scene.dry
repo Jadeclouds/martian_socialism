@@ -25,7 +25,7 @@ Resources available: [+ resources +]
 
 Internal dissent: [+ dissent_percent : dissent +]
 
-[? if spm_in_government: <span style="color: #FFD54F;">Advanced</span> Goals: [+ r_advanced_goals +] ?], [? if spm_in_government: <span style="color: #66BB6A;">Complete</span> Goals: [+ r_complete_goals +] ?]
+[? if spm_in_government: <span style="color: #FFD54F;">Advanced</span> Goals: [+ r_advanced_goals +], <span style="color: #66BB6A;">Complete</span> Goals: [+ r_complete_goals +] ?]
 
 
 = Government
