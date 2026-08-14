@@ -25,8 +25,7 @@ Resources available: [+ resources +]
 
 Internal dissent: [+ dissent_percent : dissent +]
 
-[? if spm_in_government: <span style="color: #FFD54F;">Advanced</span> Goals: [+ r_advanced_goals +] ?]
-[? if spm_in_government: <span style="color: #66BB6A;">Complete</span> Goals: [+ r_complete_goals +] ?]
+[? if spm_in_government: <span style="color: #FFD54F;">Advanced</span> Goals: [+ r_advanced_goals +] ?], [? if spm_in_government: <span style="color: #66BB6A;">Complete</span> Goals: [+ r_complete_goals +] ?]
 
 
 = Government
@@ -119,7 +118,7 @@ Reformists strength: [+ reformist_strength : strength +], dissent: [+ reformist_
 
 {!<span style="color: #NHA35M;"><strong>Asteroid Belt</strong></span>!}: [+ asteroid_relation : relationships +]
 
-Current Status of {!<span style="color: #993333;"><strong>Marz</strong></span>!}: [+ mars_status +] 
+Current Status of {!<span style="color: #993333;"><strong>Mars</strong></span>!}: [+ mars_status +] 
 
 Current Status of the {!<span style="color: #023CA7;"><strong>Earth</strong></span>!}: [+ earth_status +]
 
