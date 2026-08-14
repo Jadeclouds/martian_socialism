@@ -20,10 +20,13 @@ if (Q.economic_growth) {
 
 Resources available: [+ resources +]
 
-SPM position: [? if spm_in_government : in government - ?][? if spm_in_government == 0: opposition ?][? if in_marsist_coalition and spm_in_government: Marsist Coalition ?][? if in_grand_marsist_coalition and spm_in_government: Grand Marsist Coalition ?][? if (in_marsist_coalition or in_grand_marsist_coalition) and spm_in_government and largest_marsist_party == "MSP": (Senior Coalition Partner) ?][? if (in_marsist_coalition or in_grand_marsist_coalition) and spm_in_government and largest_marsist_party == "MNLP": (Junior Coalition Partner) ?]
+{!<span style="color: #ED7158;"><strong>SPM</strong></span>!} position: [? if spm_in_government : in government - ?][? if spm_in_government == 0: opposition ?][? if in_marsist_coalition and spm_in_government: Marsist Coalition ?][? if in_grand_marsist_coalition and spm_in_government: Grand Marsist Coalition ?][? if (in_marsist_coalition or in_grand_marsist_coalition) and spm_in_government and largest_marsist_party == "MSP": (Senior Coalition Partner) ?][? if (in_marsist_coalition or in_grand_marsist_coalition) and spm_in_government and largest_marsist_party == "MNLP": (Junior Coalition Partner) ?]
 
 
 Internal dissent: [+ dissent_percent : dissent +]
+
+[? if spm_in_government: Advanced Goals: [+ r_advanced_goals +] ?]
+[? if spm_in_government: Complete Goals: [+ r_complete_goals +] ?]
 
 = Government
 
@@ -115,9 +118,9 @@ Reformists strength: [+ reformist_strength : strength +], dissent: [+ reformist_
 
 {!<span style="color: #NHA35M;"><strong>Asteroid Belt</strong></span>!}: [+ asteroid_relation : relationships +]
 
-Current Status of {!<span style="color: #993333;"><strong>Earth</strong></span>!}: [+ mars_status +] 
+Current Status of {!<span style="color: #993333;"><strong>Marz</strong></span>!}: [+ mars_status +] 
 
-Current Status of {!<span style="color: #023CA7;"><strong>Earth</strong></span>!}: [+ earth_status +]
+Current Status of the {!<span style="color: #023CA7;"><strong>Earth</strong></span>!}: [+ earth_status +]
 
 Current Status of the {!<span style="color: #909090;"><strong>Moon</strong></span>!}: [+ moon_status +]
 
