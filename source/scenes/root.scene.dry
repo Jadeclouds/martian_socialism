@@ -38,9 +38,9 @@ Q.old_demographics = 0;
 Q.use_decimals = 0;
 
 // party resources
-Q.resources = 6;
+Q.resources = 5;
 // party dues
-Q.dues = 6;
+Q.dues = 5;
 
 // the state of the party
 // overall dissent reduces every increase in party support.
@@ -53,8 +53,8 @@ Q.left_strength = 15;
 Q.left_dissent = 15;
 Q.progressist_strength = 30;
 Q.progressist_dissent = 5;
-Q.romanticist_strength = 15;
-Q.romanticist_dissent = 15;
+Q.romanticist_strength = 10;
+Q.romanticist_dissent = 10;
 Q.reformist_strength = 25;
 Q.reformist_dissent = 0;
 
@@ -111,6 +111,9 @@ Q.asteroid_status = "Colonial Administration (Earth)";
 
 Q.budget = 3;
 Q.budget_growth = 2;
+
+Q.r_complete_goals = 0;
+Q.r_advanced_goals = 0;
 
 // Proportion of different social groups 
 //This is their political representation. Not their actual numbers!!! Should the system become more democratic, these are bound to change
