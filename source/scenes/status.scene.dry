@@ -126,6 +126,10 @@ Current Status of the {!<span style="color: #909090;"><strong>Moon</strong></spa
 
 Current Status of the {!<span style="color: #NHA35M;"><strong>Asteroid Belt</strong></span>!}: [+ asteroid_status +]
 
+= Terraforming
+
+Status of the {!<span style="color: #993333;"><strong>Terraforming</strong></span>!} projects: [+ terraforming_project_status +]
+
 = XXX
 
 @polls
