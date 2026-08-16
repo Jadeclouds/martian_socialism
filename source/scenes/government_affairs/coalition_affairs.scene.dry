@@ -19,7 +19,7 @@ How do we reduce tensions with the coalition?
 - @easy_discard
 
 @mnlp_apeal_to_worse
-view-if: mlnp_in_government == 1
+view-if: mnlp_in_government == 1
 on-arrival: mnlp_relation -= 10; coalition_dissent -= 1
 unavailable-subtitle: Our relationship with the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} is not high enough.
 choose-if: mnlp_relation >= 30
@@ -27,7 +27,7 @@ choose-if: mnlp_relation >= 30
 The {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} must face reality: either our moderate coalition holds the center, or the planet devolves into an armed militia war between the {!<span style="color: #22275C;"><strong>PEC</strong></span>!} and the radical {!<span style="color: #540808;"><strong>PLFM</strong></span>!}. Passing pro-worker legislation is the only rational strategy to keep the working masses invested in parliamentary democracy.
 
 @mnlp_budget_cuts
-view-if: mlnp_in_government == 1
+view-if: mnlp_in_government == 1
 on-arrival: capitalist_class_mnlp += 3; indipendent_capitalist_class_mnlp += 3; mnlp_relation += 5; coalition_dissent -= 2; technicians_spm -= 5; miners_spm -= 6; technicians_plfm += 5 if plfm_in_government == 0; miners_plfm += 6 if plfm_in_government == 0; plfm_relation -= 10 if plfm_in_government == 1; technicians_ffm -= 5 if plfm_in_government == 1; miners_ffm -= 6 if plfm_in_government == 1; coalition_dissent += 1 if plfm_in_government == 1; left_dissent += 10; progressist_dissent += 5; budget += 1
 unavailable-subtitle: The {!<span style="color: #540808;"><strong>PLFM</strong></span>!} has promised to bring down the coalition, should this happen.
 choose-if: plfm_relation >= 30 or plfm_in_government = 0 
