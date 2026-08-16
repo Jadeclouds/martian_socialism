@@ -212,7 +212,7 @@ Q.chancellor_party = 'PEC';
 Q.spm_in_government = 0;
 Q.plfm_in_government = 0;
 Q.ffm_in_government = 0;
-Q.mlnp_in_government = 0;
+Q.mnlp_in_government = 0;
 Q.p_in_government = 0;
 Q.pec_in_government = 1;
 
