@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
   --bg-color: #e8cfd0;
   --border-color: #000;
@@ -12,7 +14,7 @@ body {
   --tab-hover-color: #ececec;
   --card-border-color: #8a797a; 
   --card-bg-color: #ddd; 
-  font-family: "Eurostile", "Century Gothic", "Futura", sans-serif;
+  font-family: "SST", "SST Pro", "Helvetica Neue", "Roboto", sans-serif;
   background-color: var(--bg-color);
   padding: 0;
   line-height: 155%;
@@ -168,7 +170,6 @@ blockquote.attribution {
 blockquote + blockquote.attribution {
   margin-top: -1em;
 }
-/* This is mostly copied from undum. */
 #mid_panel {
   margin: 0 16rem;
 }
@@ -227,10 +228,9 @@ blockquote + blockquote.attribution {
     margin-right: -0.6em;
 }
 .tab_button {
-    font-family: "Eurostile", "Century Gothic", "Futura", sans-serif;
+    font-family: "SST", "SST Pro", "Helvetica Neue", "Roboto", sans-serif;
     background-color: var(--tab-color);
     color: var(--text-color);
-    /*float: left;*/
     border: none;
     outline: none;
     padding: 10px;
@@ -241,7 +241,6 @@ blockquote + blockquote.attribution {
 .tab_button:hover {
     background-color: var(--tab-hover-color);
 }
-
 
 .overlay {
     background: rgba(0,0,0,0.7);
@@ -284,10 +283,6 @@ blockquote + blockquote.attribution {
     background-size: cover;
     overflow: hidden;
 }
-/*
- * This is used for overlaying transparencies
- * only transition on fade-in
- * */
 #bg2 {
     z-index: -100;
 }
@@ -300,11 +295,6 @@ blockquote + blockquote.attribution {
 }
 .delete_button {
 }
-
-/*
- * Card stuff for dendrynexus
- * 
- */
 
 ul.decks, ul.hand, ul.pinned-cards {
   list-style: none;
@@ -354,7 +344,6 @@ div.blank-card {
   vertical-align: top;
 }
 
-/* TODO: unavailable card */
 .unavailable-card {
   color: var(--unavailable-color);
   background-color: var(--unavailable-bg-color) !important;
@@ -391,27 +380,20 @@ a.card:focus .card-tooltip, a.card:hover .card-tooltip {
   position: absolute;
 }
 
-/* Unlike cards, face images can have different sizes. */
 .face-figure {
-  /*vertical-align: top;*/
   display: inline-block;
   border: 5px solid var(--card-border-color);
   float: left;
   max-width: 35%;
-  /*max-height: 180px;*/
   margin-right: 1em;
   margin-bottom: 0.5em;
   overflow: hidden;
 }
 .face-img {
-  /*max-width: 150px;*/
   vertical-align: bottom;
   object-fit: cover;
 }
 
-/*
- * sprite stuff- feel free to comment out/remove if not using
- */
 img {
     max-width: 100%;
     max-height: 100%;
@@ -451,7 +433,6 @@ img {
     top: 50%;
 }
 
-/* smaller screens: hide left margin */
 @media screen and (max-width: 1200px) {
   .tools {
       margin-right: 0.4em;
@@ -461,8 +442,6 @@ img {
       margin-right: 0.4em;
   }
 }
-/* mobile: move the stat box to the top if the screen is too small,
- * and reduce font size slightly. */
 @media screen and (max-width: 560px) {
   #page {
       position: static;
@@ -496,7 +475,6 @@ img {
       margin: 0 auto;
   }
 
-  /* cards are smaller on mobile */
   .card-img {
     height: 125px;
     width: 100px;
@@ -521,10 +499,6 @@ img {
   }
 }
 
-
-/* New stuff just for this game */
-
-/* colored box div */
 .box {
   display: inline-block;
   height: 1em;
@@ -535,33 +509,14 @@ table {
     border-spacing: 0.5em;
 }
 
-/* Styles for parties */
-.seat.plfm {
-    fill: #540808;
-}
-.seat.spm {
-    fill: #ED7158;
-    stroke: var(--border-color);
-    stroke-width: 1px;
-}
-.seat.mnlp {
-    fill: #D3C24D;
-}
-.seat.p {
-    fill: #12DB95;
-}
-.seat.ffm {
-    fill: #5C3F1A;
-}
-.seat.bvp {
-    fill: #69A2BE;
-}
-.seat.other {
-    fill: #909090;
-}
-.seat.pec {
-    fill: #22275C;
-}
+.seat.plfm { fill: #540808; }
+.seat.spm { fill: #ED7158; stroke: var(--border-color); stroke-width: 1px; }
+.seat.mnlp { fill: #D3C24D; }
+.seat.p { fill: #12DB95; }
+.seat.ffm { fill: #5C3F1A; }
+.seat.bvp { fill: #69A2BE; }
+.seat.other { fill: #909090; }
+.seat.pec { fill: #22275C; }
 
 .tooltip-text {
     text-decoration: underline;
