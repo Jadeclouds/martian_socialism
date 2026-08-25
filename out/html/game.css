@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
   --bg-color: #e8cfd0;
@@ -14,7 +14,7 @@ body {
   --tab-hover-color: #ececec;
   --card-border-color: #8a797a; 
   --card-bg-color: #ddd; 
-  font-family: "SST", "SST Pro", "Helvetica Neue", "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: var(--bg-color);
   padding: 0;
   line-height: 155%;
@@ -228,7 +228,7 @@ blockquote + blockquote.attribution {
     margin-right: -0.6em;
 }
 .tab_button {
-    font-family: "SST", "SST Pro", "Helvetica Neue", "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-color: var(--tab-color);
     color: var(--text-color);
     border: none;
