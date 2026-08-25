@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
-
 body {
   --bg-color: #e8cfd0;
   --border-color: #000;
@@ -14,7 +12,7 @@ body {
   --tab-hover-color: #ececec;
   --card-border-color: #8a797a; 
   --card-bg-color: #ddd; 
-  font-family: "Michroma", sans-serif;
+  font-family: "Eurostile", "Century Gothic", "Futura", sans-serif;
   background-color: var(--bg-color);
   padding: 0;
   line-height: 155%;
@@ -229,7 +227,7 @@ blockquote + blockquote.attribution {
     margin-right: -0.6em;
 }
 .tab_button {
-    font-family: "Michroma", sans-serif;
+    font-family: "Eurostile", "Century Gothic", "Futura", sans-serif;
     background-color: var(--tab-color);
     color: var(--text-color);
     /*float: left;*/
