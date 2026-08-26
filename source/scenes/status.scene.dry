@@ -22,7 +22,6 @@ Resources available: [+ resources +]
 
 {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} position: [? if spm_in_government : in government - ?][? if spm_in_government == 0: opposition ?][? if in_marsist_coalition and spm_in_government: Marsist Coalition ?][? if in_grand_marsist_coalition and spm_in_government: Grand Marsist Coalition ?][? if (in_marsist_coalition or in_grand_marsist_coalition) and spm_in_government and largest_marsist_party == "MSP": (Senior Coalition Partner) ?][? if (in_marsist_coalition or in_grand_marsist_coalition) and spm_in_government and largest_marsist_party == "MNLP": (Junior Coalition Partner) ?]
 
-
 Internal dissent: [+ dissent_percent : dissent +]
 
 [? if spm_in_government: <span style="color: #FFD54F;">Advanced</span> Goals: [+ r_advanced_goals +], <span style="color: #66BB6A;">Complete</span> Goals: [+ r_complete_goals +] ?]
@@ -98,7 +97,7 @@ Next election: [+ next_election_month : month +] [+ next_election_year +]
 
 {!<span style="color: #B88100;"><strong>PMA</strong></span>!}: [+ pma_union_relation : relationships +]
 
-= Internal Factions of the {!<span style="color: #ED7158;"><strong>SPM</strong></span>!}
+= Internal Factions of the {!<span title="Ciao!" style="color: #ED7158; cursor: pointer;"><strong>SPM</strong></span>!}
 
 Leftists strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
 
