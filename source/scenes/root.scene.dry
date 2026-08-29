@@ -110,6 +110,8 @@ Q.moon_status = "Special Administrative Region (Earth)";
 Q.asteroid_status = "Colonial Administration (Earth)";
 
 Q.terraforming_project_status = "No Active Terraforming Initiative"
+Q.l1shield_status = "Operational"
+Q.l1shield_owner = "Earth Controlled"
 
 Q.budget = 3;
 Q.budget_growth = 2;
