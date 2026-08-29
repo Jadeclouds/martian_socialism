@@ -129,6 +129,8 @@ Current Status of the {!<span style="color: #NHA35M;"><strong>Asteroid Belt</str
 
 Status of the {!<span style="color: #993333;"><strong>Terraforming</strong></span>!} projects: [+ terraforming_project_status +]
 
+L1 Magnetic Shield: [+ l1shield_status +] ([+ l1shield_owner +])
+
 = XXX
 
 @polls
