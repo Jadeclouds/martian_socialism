@@ -1,0 +1,44 @@
+title: Melacus Branch
+is-pinned-card: true
+tags: advisor, left
+card-image: img/adv_melacus.jpg
+view-if: melacus_advisor = 1
+new-page: true 
+
+= Melacus Branch
+
+Melacus is an industrial city built around its central foundry, specializing in the production of low-tech hardware and structural components, from basic bolts and screws to heavy steel and titanium plating.
+
+Predictably, the local party section is dominated by leftist figures, primarily trade unionists and moderate communists. Over time, this branch has forged a strong relationship of goodwill and mutual trust with the local {!<span style="color: #540808;"><strong>PLFM</strong></span>!} section, regularly coordinating on labor strikes and community organizing.
+
+- @work_with_plfm
+- @pushing_leftism
+- @organizing_youth
+- @root: Return to main
+
+@work_with_plfm
+title: Strengthen our bonds with the {!<span style="color: #540808;"><strong>PLFM</strong></span>!}
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer = 0
+subtitle: The local sections of both parties have established a long cooperation that we can exploit.
+on-arrival: advisor_action_timer = 6; plfm_relation += 5
+
+The local !<span style="color: #540808;"><strong>PLFM</strong></span>!} section has long shared close ties with our own branch. Their ongoing cooperation in Melacus creates a strong foundation of trust, gradually bringing both parties closer together on a planetary scale.
+
+@pushing_leftism
+title: Pushing Leftism in the Party
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer = 0
+subtitle: The local section seeks to push leftist rhetoric into the party.
+on-arrival: advisor_action_timer = 6; left_strength += 10; left_dissent -= 5; reformist_dissent += 3
+
+The Melacus branch works to strengthen the party's leftist wing. Naturally, the reformist wing is displeased.
+
+@organizing_youth
+title: Organize the Local Youth
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer = 0
+subtitle: A generation of young radicals awaits direction and a party to call home.
+on-arrival: advisor_action_timer = 6; socialism += 1; left_dissent -= 4; sponsored_the_youth += 1
+
+Local youth flocks to the party, bringing a surge of radical energy, fresh ideas, and modern campaign methods to our ranks.
