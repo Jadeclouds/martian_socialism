@@ -18,21 +18,21 @@ Mass rallies are a vital cornerstone of our political mobilization, serving to e
 - @easy_discard
 
 @marsism
-on-arrival: miners_spm += 2*(1-dissent); technicians_spm += 2*(1-dissent); bureaucrats_spm += 1*(1-dissent); researchers_spm += 1*(1-dissent); indipendent_capitalist_class_spm += 1*(1-dissent); romanticist_strength += 5; progressist_dissent -= 5; miners_spm += 2*(1-dissent) if marsism >= 50; technicians_spm += 1*(1-dissent) if marsism >= 50; bureaucrats_spm += 2*(1-dissent) if marsism >= 50; researchers_spm += 2*(1-dissent) if marsism >= 50; indipendent_capitalist_class_spm += 2*(1-dissent) if marsism >= 50; marsism += 2; marsism += 2 if marsism <= 50;
+on-arrival: miners_spm += 2*(1-dissent); technicians_spm += 2*(1-dissent); bureaucrats_spm += 1*(1-dissent); researchers_spm += 1*(1-dissent); indipendent_capitalist_class_spm += 1*(1-dissent); romanticist_strength += 5; progressist_dissent -= 5; miners_spm += 2*(1-dissent) if marsism >= 50; technicians_spm += 1*(1-dissent) if marsism >= 50; bureaucrats_spm += 2*(1-dissent) if marsism >= 50; researchers_spm += 2*(1-dissent) if marsism >= 50; indipendent_capitalist_class_spm += 2*(1-dissent) if marsism >= 50; marsism += 2; marsism += 1 if marsism <= 50;
 
 Marsism has emerged as a profoundly resonant theme across our entire voter base. [? if marsism >= 50 : As a growing majority of the Martian population begins to adopt a distinct patriotic consciousness, our anti-colonial rhetoric becomes increasingly potent and effective. ?]
 
 @clean_politics
-on-arrival: miners_spm += 2*(1-dissent); technicians_spm += 3*(1-dissent); bureaucrats_spm += 2*(1-dissent); researchers_spm += 2*(1-dissent); left_dissent -= 3; progressist_dissent -= 3; romanticist_dissent -= 3; reformist_dissent -= 3;
+on-arrival: miners_spm += 1*(1-dissent); technicians_spm += 3*(1-dissent); bureaucrats_spm += 2*(1-dissent); researchers_spm += 2*(1-dissent); left_dissent -= 3; progressist_dissent -= 3; romanticist_dissent -= 3; reformist_dissent -= 3;
 
 Clean politics is a universal populist appeal. It successfully helps us mobilize citizens who feel entirely locked out or unrepresented by the current distribution of institutional power in Martian society.
 
 @democracy
-on-arrival: miners_spm += 2*(1-dissent) if rol >= 50; technicians_spm += 2*(1-dissent) if rol >= 50; indipendent_capitalist_class_spm += 2*(1-dissent) if rol >= 50; bureaucrats_spm += 4*(1-dissent); researchers_spm += 4*(1-dissent); reformist_strength += 5; reformist_dissent -= 5; rol += 2; rol += 2 if rol <= 50; 
+on-arrival: miners_spm += 2*(1-dissent) if rol >= 50; technicians_spm += 2*(1-dissent) if rol >= 50; indipendent_capitalist_class_spm += 2*(1-dissent) if rol >= 50; bureaucrats_spm += 4*(1-dissent); researchers_spm += 4*(1-dissent); reformist_strength += 5; reformist_dissent -= 5; rol += 2; rol += 1 if rol <= 50; 
 
 The Rule of Law remains a foundational tenet of our platform, even if radical factions within our party are not entirely opposed to taking a more authoritarian stance to secure the revolution. This message resonates exceptionally well among the highly educated sectors of the populace. [? if rol >= 50 : Mars is currently a high-trust society, meaning that a respect for the legal framework is a concept deeply shared even among the industrial working classes. ?]
 
 @anticapitalism
-on-arrival: miners_spm += 5*(1-dissent); technicians_spm += 3*(1-dissent); bureaucrats_spm += 2*(1-dissent) if socialism >= 50; researchers_spm += 2*(1-dissent) if socialism >= 50; indipendent_capitalist_class_spm -= 3; indipendent_capitalist_class_spm -= 2 if socialism <= 50; left_strength += 5; left_dissent -= 5; socialism += 2; rol += 2 if socialism <= 50; 
+on-arrival: miners_spm += 5*(1-dissent); technicians_spm += 3*(1-dissent); bureaucrats_spm += 2*(1-dissent) if socialism >= 50; researchers_spm += 2*(1-dissent) if socialism >= 50; indipendent_capitalist_class_spm -= 1; indipendent_capitalist_class_spm -= 2 if socialism <= 50; left_strength += 5; left_dissent -= 5; socialism += 2; rol -= 2 if socialism <= 50; 
 
 As a socialist party, full-throated anti-capitalism is the fundamental engine that allows us to electrify the industrial workforce. Predictably, however, an aggressive socialist focus directly alienates our bourgeois voters and induces deep anxiety within our moderate, middle-class voter base. [? if socialism >= 50 : Because the broader cultural tide on Mars is shifting strongly toward socialist ideals, we are capable of attracting massive swaths of the electorate even with a radical economic platform. ?]
