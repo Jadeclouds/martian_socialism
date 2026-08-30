@@ -1,29 +1,30 @@
-on-arrival: {!
-// set up the infrastructure
-Q.sapd_formed = 1;
-Q.parties.push('sapd');
+title: The {!<span style="color: #540808;"><strong>PLFM</strong></span>!} and {!<span style="color: #78344B;"><strong>GCLM</strong></span>!} occupy the Arcadia Spaceport!
+tags: event
+view-if: year = 2442 and month = 8 and spm_in_government = 1
+priority: 1
+max-visits: 1
 
-Q.workers_sapd = 10;
-Q.workers_spd -= 3;
-Q.new_middle_sapd = 1;
-Q.old_middle_sapd = 0;
-Q.rural_sapd = 0;
-Q.unemployed_sapd = 2;
-Q.catholics_sapd = 0;
+Following the historic victory of our Marsist Coalition in the election, many Martians felt that their long-standing struggles had finally been vindicated. Though not part of the ruling coalition, the {!<span style="color: #540808;"><strong>People's Liberation Front for Mars</strong></span>!} has seized on this momentum to push for full Martian independence, establishing a semi-permanent protest camp at Arcadia Spaceport "Valentina Tereshkova." While some of our supporters, particularly on the party's left wing, quietly favor the action, the overall agreement both in the party and the governing coalition is that the camp must be disbanded as soon as possible to avoid escalating tensions with {!<span style="color: #023CA7;"><strong>Earth</strong></span>!}.
 
-Q.workers_other -= 5;
+- @ask_plfm_kindly: We can try persuading the {!<span style="color: #540808;"><strong>PLFM</strong></span>!} to stand down on this issue.
+- @leave_it_to_earth: {!<span style="color: #023CA7;"><strong>Earth</strong></span>!}'s security forces will handle this, as they always do.
+- @do_nothing_actually: Stop {!<span style="color: #023CA7;"><strong>Earth</strong></span>!}'s security forces from interventing.
 
-if (Q.unions_independent) {
-    Q.workers_sapd += 8;
-}
+@ask_plfm_kindly
+choose-if: plfm_relation >= 30 and interior_minister_party = "SPM"
+unavailable-subtitle: [? if plfm_relation < 30: We do not have good enough relations with the {!<span style="color: #540808;"><strong>PLFM</strong></span>!}. ?][? if interior_minister_party != "SPM": We currently do not hold the Interior Ministry. ?]
+on-arrival: left_dissent += 5; mnlp_relation += 5*(1 - dissent); gclm_union_relation -= 5; technicians_spm += 1*(1 - dissent); miners_spm += 1*(1 - dissent)
 
-// update all records
-Q.sapd_r = 0;
-Q.old_sapd_r = 0;
-for (var record of Q.election_records) {
-    record['sapd'] = 0;
-}
-for (var record of Q.party_support_records) {
-    record['sapd'] = 0;
-}
-!}
+Our strong standing with the {!<span style="color: #540808;"><strong>PLFM</strong></span>!} pays off, allowing us to persuade them to end their occupation of the Arcadia Spaceport. We primarily relied on the {!<span style="color: #78344B;"><strong>GCLM</strong></span>!} to support our efforts; once their union members pulled out, the {!<span style="color: #540808;"><strong>PLFM</strong></span>!} reluctantly followed suit.
+
+@leave_it_to_earth
+on-arrival: left_dissent += 10; romanticist_dissent += 5; plfm_relation -= 5; mnlp_relation += 5*(1 - dissent); gclm_union_relation -= 10; technicians_spm -= 2; miners_spm -= 3; earth_relation += 5; marsism -= 2
+
+{!<span style="color: #023CA7;"><strong>Earth</strong></span>!} security forces usually handle these kinds of "problems," and they are expected to step in this time as well. Both the {!<span style="color: #78344B;"><strong>GCLM</strong></span>!} and our party's left wing fiercely protest our decision, arguing that standing aside makes us no different than the {!<span style="color: #22275C;"><strong>PEC</strong></span>!}.
+
+@do_nothing_actually
+choose-if: interior_minister_party = "SPM"
+unavailable-subtitle: We currently do not hold the Interior Ministry.
+on-arrival: left_dissent -= 10; reformist_dissent += 5; plfm_relation += 5*(1 - dissent); mnlp_relation -= 5; gclm_union_relation += 5; technicians_spm += 2*(1 - dissent); miners_spm += 3*(1 - dissent); earth_relation -= 5; marsism += 2; rol -= 3; coalition_dissent += 1
+
+We exploit our position in the Interior Ministry to hold back the {!<span style="color: #023CA7;"><strong>Earth</strong></span>!} security forces. Terrified of upsetting {!<span style="color: #023CA7;"><strong>Earth</strong></span>!}, the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} is furious. The {!<span style="color: #22275C;"><strong>PEC</strong></span>!} issues a formal complaint, but the Space Colonization Ministry itself releases no official statement. Before long, the protesters grow weary and disperse from the Spaceport.
