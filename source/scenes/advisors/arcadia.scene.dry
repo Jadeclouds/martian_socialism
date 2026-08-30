@@ -1,0 +1,52 @@
+title: Arcadia Branch
+is-pinned-card: true
+tags: advisor, progressive
+card-image: img/adv_arcadia.jpg
+view-if: arcadia_advisor = 1
+new-page: true
+
+= Arcadia Branch
+
+
+Arcadia is the capital of Mars and its largest city. Originally established as a central bureaucratic and logistical hub due to its advantageous location, the city expanded into the nerve center of the entire planet. Today, it serves as the permanent seat of the Martian Parliament.
+
+The local {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} branch is the largest and most influential in the party, frequently hosting delegates to train and prepare cadres from other regions. Carrying this heavy responsibility, the branch has adopted a pragmatic, centrist stance, aligning itself firmly with the party's progressive wing.
+
+- @clear_agenda
+- @party_discipline
+- @emergency_fundraising
+- @root: Return to main
+
+@clear_agenda
+title: Clear the Agenda
+subtitle: Clear useless actions from the party agenda.
+choose-if: advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: {!
+Q.advisor_action_timer = 6;
+if (Q.difficulty >= 0) {
+    window.dendryUI.dendryEngine.state.currentHands['main'] = [];
+} else {
+    window.dendryUI.dendryEngine.state.currentHands['main.main_easy'] = [];
+}
+!}
+
+We have forced the party to clear its current agenda to make room for new priorities.
+
+@party_discipline
+title: Enforce Party Discipline
+subtitle: Use our section's influence to curb internal dissent across all factions.
+choose-if: advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6; left_dissent -= 6; progressist_dissent -= 6; reformist_dissent -= 6; romanticist_dissent -= 6
+
+We have leveraged our position to enforce party discipline, bringing line-stepping factions back into fold.
+
+@emergency_fundraising
+title: Emergency Fundraising
+subtitle: Call on our politicians to contribute larger donations this month.
+choose-if: advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6; resources += 2
+
+We have squeezed our elected representatives for extra dues, securing additional resources for party coffers.
