@@ -301,7 +301,7 @@ Q.next_election_time = 7;
 Q.arcadia_advisor = 1; // Arcadia Branch
 
 // Leftist Branches
-melacus_advisor = 1 // Melacus Branch
+Q.melacus_advisor = 1 // Melacus Branch
 
 // Reformist Branches
 Q.sheland_advisor = 1; // Sheland Branch
