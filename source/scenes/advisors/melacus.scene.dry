@@ -23,7 +23,7 @@ choose-if: advisor_action_timer = 0
 subtitle: The local sections of both parties have established a long cooperation that we can exploit.
 on-arrival: advisor_action_timer = 6; plfm_relation += 5
 
-The local !<span style="color: #540808;"><strong>PLFM</strong></span>!} section has long shared close ties with our own branch. Their ongoing cooperation in Melacus creates a strong foundation of trust, gradually bringing both parties closer together on a planetary scale.
+The local {!<span style="color: #540808;"><strong>PLFM</strong></span>!} section has long shared close ties with our own branch. Their ongoing cooperation in Melacus creates a strong foundation of trust, gradually bringing both parties closer together on a planetary scale.
 
 @pushing_leftism
 title: Pushing Leftism in the Party
