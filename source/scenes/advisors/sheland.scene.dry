@@ -17,7 +17,7 @@ The local {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} branch i
 - @root: Return to main
 
 @work_with_mnlp
-title: Strengthen our bonds with the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}.
+title: Strengthen our bonds with the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 choose-if: advisor_action_timer = 0
 subtitle: The local sections of both parties have established a long cooperation that we can exploit.
