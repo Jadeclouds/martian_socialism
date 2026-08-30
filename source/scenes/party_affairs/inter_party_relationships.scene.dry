@@ -9,13 +9,13 @@ card-image: img/spm_infra_party.jpg
 
 = Inter-Party Relationships
 
-The {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} cannot, and should not, govern by itself, we need the support of other parties to reach the democratic compromise that Martians deserve. We can reach out and build additional connections with our historic allies, start talk with minor parties, or perhaps we can decide that for now, the wisest choice is to stand alone.
+The {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} cannot, and should not, govern alone; we require the backing of other parties to achieve the democratic compromises Martians deserve. We can expand our reach by reinforcing ties with historic allies, opening dialogues with minor factions, or determining that it is wiser to stand on our own for now.
 
 - @liberals: Strengthen our bonds with the {!<span style="color: #D3C24D;"><strong>Martian National Liberal Party</strong></span>!}, our historic ally.
-- @left: Work towards repairing relationships with the {!<span style="color: #540808;"><strong>People's Liberation Front for Mars</strong></span>!}.
-- @right: Perhaps we could reach out to the {!<span style="color: #5C3F1A;"><strong>Front for Mars</strong></span>!}...
-- @futurist: What if we worked with {!<span style="color: #12DB95;"><strong>Phobos</strong></span>!}?
-- @spm_alone: The {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} can stand alone for now.
+- @left: Work toward repairing relationships with the {!<span style="color: #540808;"><strong>People's Liberation Front for Mars</strong></span>!}.
+- @right: Reach out to the {!<span style="color: #5C3F1A;"><strong>Front for Mars</strong></span>!}...
+- @futurist: Work with {!<span style="color: #12DB95;"><strong>Phobos</strong></span>!}.
+- @spm_alone: Stand alone for now.
 - @easy_discard
 
 @liberals
@@ -24,30 +24,23 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; mnlp_relation += 5*(1 - dissent)
 
-The {!<span style="color: #D3C24D;"><strong>Martian National Liberal Party</strong></span>!} is an historic ally, and the only other major marsist party. It is expected for us to work together.
+As an historic ally and the only other major Marsist party, the {!<span style="color: #D3C24D;"><strong>Martian National Liberal Party</strong></span>!} is a natural partner for cooperation.
 
 @left
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; plfm_relation += 5*(1 - dissent)
-go-to: plfm_goodwill if mlnp_relation > 40 or (plfm_in_government = 1 and spm_in_government = 1); plfm_not_friendly if plfm_relation < 41 and ((plfm_in_government = 0 and spm_in_government = 0))
+on-arrival: resources -= 1; plfm_relation += 5*(1 - dissent); reformist_dissent += 5
 
-@plfm_goodwill
-
-The {!<span style="color: #540808;"><strong>PLFM</strong></span>!} considers us a moderate partner, but, even if radical fringes are worried about their policies getting toned down, the party overall considers cooperation inevitable.
-
-@plfm_not_friendly
-
-The {!<span style="color: #540808;"><strong>PLFM</strong></span>!} considers us traitors to both the Marsist and Socialist cause. Perhaps this will change if we try harder...
+While the {!<span style="color: #540808;"><strong>People's Liberation Front for Mars</strong></span>!} views us as a moderate partner, and its radical fringes fear having their platform diluted, most of the party considers our cooperation inevitable. The reformists are not happy at our choice of establishing dialogue with such a party. 
 
 @right
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; ffm_relation += 5*(1 - dissent); left_dissent += 10; romanticist_dissent += 10; reformist_dissent += 5; progressist_dissent += 5
+on-arrival: resources -= 1; ffm_relation += 5*(1 - dissent); left_dissent += 8; romanticist_dissent += 8; reformist_dissent += 4; progressist_dissent += 4
 
-{!<span style="color: #5C3F1A;"><strong>Front for Mars</strong></span>!} is a fascist party, and most of our base is vehemently opposed to the idea of working with them, causing widespread unrest in the party. Nonthenless, syndacalism and marsism are shared concepts between the parties, if anything.
+The {!<span style="color: #5C3F1A;"><strong>Front for Mars</strong></span>!} is a fascist organization, and the mere thought of working with them has sparked widespread outrage across our base. Nonetheless, both parties share overlapping roots in syndicalism and Marsist rhetoric.
 
 @futurist
 subtitle: -1 resources
@@ -55,10 +48,10 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; p_relation += 5*(1 - dissent)
 
-The {!<span style="color: #12DB95;"><strong>Phobos</strong></span>!} is an enigmatic party, but they still consider themselves marsists. Pheraps closer cooperation with them will gain us an ally?
+{!<span style="color: #12DB95;"><strong>Phobos</strong></span>!} remains an enigmatic party, yet they still identify as Marsists. Perhaps closer alignment will secure us a useful ally.
 
 @spm_alone
 
-Whether it is because we cannot or will not, we do not make ties with other parties at this moment.
+Whether by choice or circumstance, we refrain from forming new political ties at this time.
 
 - @return: Continue...
