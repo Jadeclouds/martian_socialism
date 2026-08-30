@@ -14,6 +14,8 @@ max-cards: 3
 
 #Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
 
+[? if year = 2442 and month = 8 : Following the embarrassing performance by the {!<span style="color: #22275C;"><strong>PEC</strong></span>!}, {!<span style="color: #023CA7;"><strong>Earth</strong></span>!}'s Space Colonization Ministry has recalled former Party Secretary Katerina Yabula. Demoralized by the setback, the local party administration has begun shifting blame onto terrestrial economic policies. ?]
+
 - @party
 - @govt
 - #advisor
