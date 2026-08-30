@@ -37,9 +37,9 @@ if (Q.ideology && Q.ideology != "progressist") {
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "progressist"; progressist_strength += 10; progressist_dissent -= 10; left_dissent -= 3; reformist_dissent -= 3
+on-departure: ideology = "progressist"; progressist_strength += 10; progressist_dissent -= 10; left_dissent -= 4; reformist_dissent -= 4
 
-The progressists support classical democratic-socialist views. They are skeptical about cooperating too closely with both the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} and the {!<span style="color: #540808;"><strong>PLFM</strong></span>!}, but are pragmatically ready to work with either. They also are the great reconcilers between the party wings.
+The progressives champion classical democratic-socialist values. While cautious about aligning too closely with either the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} or the {!<span style="color: #540808;"><strong>PLFM</strong></span>!}, they remain pragmatically open to working with both. They serve as the party's essential peacemakers between competing wings.
 
 @romanticist_view
 on-arrival: {!
@@ -50,7 +50,7 @@ if (Q.ideology && Q.ideology != "romanticist") {
 go-to: changed if changed = 1
 on-departure: ideology = "romanticist"; romanticist_strength += 10; romanticist_dissent -= 10; p_relation = 3
 
-The romanticists are an intellectual wing of the party that sees Mars as the laboratory of a new humanty. They focus on the concepts of cultural hegemony, active revolution, socio-organic metamorphosis and capitalist realism. Romanticists envision Mars as the perfect home for true utopian communism.
+The romanticists are an intellectual wing of the party that views Mars as a living laboratory for a new paradigm of humanity. They focus on the concepts of cultural hegemony, active revolution, socio-organic metamorphosis and capitalist realism. Romanticists envision Mars as the perfect home for true utopian communism.
 
 @reformist_view
 on-arrival: {!
@@ -61,9 +61,9 @@ if (Q.ideology && Q.ideology != "reformist") {
 go-to: changed if changed = 1
 on-departure: ideology = "reformist"; reformist_strength += 10; reformist_dissent -= 10; mnlp_relation += 3
 
-The reformist wing of the party seeks to work with the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} to organize a bipartisan republic, believing that long-term stability can only be achieved by building durable, shared institutions rather than pursuing ideological dominance. By seeking common ground with Liberals, they hope to establish a stable constitutional framework that moves past revolutionary friction.
+The reformist wing seeks to collaborate with the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!} to establish a bipartisan republic. They believe long-term stability hinges on constructing durable, shared institutions rather than pursuing total ideological dominance, aiming to forge a constitutional framework that moves beyond revolutionary friction.
 
 @changed
 on-arrival: left_dissent += 5; progressist_dissent += 5; romanticist_dissent += 5; reformist_dissent += 5
 
-We have changed ideologies. Many in the party feel unmoored.
+We have shifted our ideological course. Many across the party's ranks feel unmoored by this sudden pivot.
