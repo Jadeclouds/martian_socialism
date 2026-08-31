@@ -9,14 +9,14 @@ Herein contains relevant information about the government and politics of the Ge
 
 @menu
 
-- @program: Party Program Stats
+- @program: Party Program
 - @demographics: Demographics and Political Representation
 - @parties: Parties
 - @factions: Internal factions
 - @figures: Figures and charts
 - @backSpecialScene: Exit library.
 
-@government
+@program
 go-to: menu
 
 = Sovereignty & Foreign Policy
