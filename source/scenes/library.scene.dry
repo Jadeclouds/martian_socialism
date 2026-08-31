@@ -83,7 +83,7 @@ go-to: menu
 {!<span style="color: #22275C;"><strong>PEC</strong></span>!} - *Pro-Earth Camp* - Less a traditional party and more an extension of Earth's power on Mars, the PEC has governed since the establishment of the Martian Parliament, primarily protecting the interests of Earth-aligned business owners and space conglomerates.<br><br>**Current Relations:** [+ pec_relation : relationships +]<br>**Current Ideology:** [+ pec_ideology +]<br>**Current Stance Regarding Independentism:** [+ pec_marsism +]
 
 @factions
-go-to: neorevisionists if neorevisionism > 0; menu if neorevisionism <= 0
+go-to: menu
 
 **Internal factions of the SPD**
 
