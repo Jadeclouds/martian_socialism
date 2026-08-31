@@ -138,63 +138,73 @@ Dissent: [+ neorevisionist_dissent : dissent +]
 title: Figures and Charts
 go-to: menu
 on-display: {!
-data = data.concat([
+var data = [
     {
         "id": "spm",
         "legend": "SPM",
         "name": "SPM",
-        "seats": Math.round(Q.spm_r*3),
+        "seats": Math.round(Q.spm_r * 3)
+    },
+    {
+        "id": "plfm",
+        "legend": "PLFM",
+        "name": "PLFM",
+        "seats": Math.round(Q.plfm_r * 3)
     },
     {
         "id": "p",
         "legend": "Phobos",
         "name": "Phobos",
-        "seats": Math.round(Q.p_r*3),
+        "seats": Math.round(Q.p_r * 3)
     },
     {
         "id": "ffm",
         "legend": "FfM",
         "name": "FfM",
-        "seats": Math.round(Q.ffm_r*3),
+        "seats": Math.round(Q.ffm_r * 3)
     },
     {
         "id": "mnlp",
         "legend": "MNLP",
         "name": "MNLP",
-        "seats": Math.round(Q.mnlp_r*3),
+        "seats": Math.round(Q.mnlp_r * 3)
     },
     {
         "id": "other",
         "legend": "Other",
         "name": "Other",
-        "seats": Math.round(Q.other_r*3),
+        "seats": Math.round(Q.other_r * 3)
     },
     {
         "id": "pec",
         "legend": "PEC",
         "name": "PEC",
-        "seats": Math.round(Q.pec_r*3),
-    },
-]);
-if (d3 && window) {
-    // get screen width
+        "seats": Math.round(Q.pec_r * 3)
+    }
+];
+
+if (typeof d3 !== 'undefined' && typeof window !== 'undefined') {
     var width = 500;
     var height = 500;
-    var screenWidth = document.getElementById('content').offsetWidth;
+    var contentElem = document.getElementById('content');
+    var screenWidth = contentElem ? contentElem.offsetWidth : width;
+
     if (screenWidth < width - 50) {
         width = screenWidth - 50;
         height = width;
-        document.getElementById("reichstag").style.height = screenWidth/2 + "px";
+        var reichstagElem = document.getElementById("reichstag");
+        if (reichstagElem) {
+            reichstagElem.style.height = (screenWidth / 2) + "px";
+        }
     }
+
     var parliament = d3.parliament();
     parliament.width(width).height(height).innerRadiusCoef(0.4);
     parliament.enter.fromCenter(true).smallToBig(true);
     parliament.exit.toCenter(false).bigToSmall(true);
     d3.select("#reichstag").datum(data).call(parliament);
 
-var lines = d3.linegraph(false, false,
-    Q.parties,
-    {
+    var partyColors = {
         'spm': '#ED7158',
         'mnlp': '#D3C24D',
         'plfm': '#540808',
@@ -202,8 +212,9 @@ var lines = d3.linegraph(false, false,
         'p': '#12DB95',
         'pec': '#22275C',
         'other': '#a0a0a0'
-    },
-    {
+    };
+
+    var partyNames = {
         'spm': 'SPM',
         'mnlp': 'MNLP',
         'plfm': 'PLFM',
@@ -211,39 +222,20 @@ var lines = d3.linegraph(false, false,
         'p': 'Phobos',
         'pec': 'PEC',
         'other': 'Others'
+    };
+
+    var lines = d3.linegraph(false, false, Q.parties, partyColors, partyNames);
+    lines.width(width).height(400);
+
+    if (Q.election_records && Q.election_records.length > 0) {
+        d3.select("#election_history").datum(Q.election_records).call(lines);
     }
-);
-lines.width(width).height(400);
 
-if (Q.election_records && Q.election_records.length > 0) {
-    d3.select("#election_history").datum(Q.election_records).call(lines);
-}
-
-// Party support history graph
-if (!Q.historical_mode || Q.game_over) {
-    var lines_2 = d3.linegraph(true, true,
-        Q.parties,
-        {
-            'spm': '#ED7158',
-            'mnlp': '#D3C24D',
-            'plfm': '#540808',
-            'ffm': '#5C3F1A',
-            'p': '#12DB95',
-            'pec': '#22275C',
-            'other': '#a0a0a0'
-        },
-        {
-            'spm': 'SPM',
-            'mnlp': 'MNLP',
-            'plfm': 'PLFM',
-            'ffm': 'FfM',
-            'p': 'Phobos',
-            'pec': 'PEC',
-            'other': 'Others'
-        }
-    );
-    lines_2.width(width).height(400);
-    d3.select("#party_support_history").datum(Q.party_support_records).call(lines_2);
+    if (!Q.historical_mode || Q.game_over) {
+        var lines_2 = d3.linegraph(true, true, Q.parties, partyColors, partyNames);
+        lines_2.width(width).height(400);
+        d3.select("#party_support_history").datum(Q.party_support_records).call(lines_2);
+    }
 }
 !}
 
