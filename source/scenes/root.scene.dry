@@ -49,11 +49,11 @@ Q.dissent_percent = 5;
 
 // factions
 Q.factions = ['left', 'progressist', 'romanticist', 'reformist' ];
-Q.left_strength = 15;
+Q.left_strength = 25;
 Q.left_dissent = 15;
-Q.progressist_strength = 30;
+Q.progressist_strength = 35;
 Q.progressist_dissent = 5;
-Q.romanticist_strength = 10;
+Q.romanticist_strength = 15;
 Q.romanticist_dissent = 10;
 Q.reformist_strength = 25;
 Q.reformist_dissent = 0;
