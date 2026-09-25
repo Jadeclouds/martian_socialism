@@ -585,8 +585,8 @@ table {
 }
 
 .mytooltip-content img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
   border-radius: 4px;
   flex-shrink: 0;
@@ -605,10 +605,8 @@ table {
 }
 
 .mytooltip-sub-text {
-  font-style: italic;
-  font-size: 0.85em;
+  font-size: 11px;
   color: #0a0a0a;
-  opacity: 0.8;
   display: block;
   margin-bottom: 4px;
 }
