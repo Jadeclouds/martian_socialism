@@ -522,3 +522,126 @@ table {
     text-decoration: underline;
     text-decoration-style: dotted;
 }
+
+.mytooltip {
+  position: relative;
+  cursor: pointer;
+  padding: 2px 5px;
+  margin-right: -5px;
+  margin-left: -5px;
+  border-bottom: 0px;
+  transition: color 0.2s;
+  color: var(--mytooltip-color);
+}
+
+.mytooltip:hover {
+  background-color: var(--hover-color, #ded7d719);
+  border-radius: 5px;
+}
+
+.mytooltip:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  bottom: 2px;
+  width: 0;
+  height: 1.5px;
+  background: var(--mytooltip-color);
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mytooltip:hover::after {
+  width: calc(100% - 10px);
+}
+
+.mytooltiptext {
+  position: absolute;
+  z-index: 999999;
+  background: var(--content-bg-color);
+  border-radius: 7px;
+  padding: 12px 20px 12px 14px;
+  font-size: 14px !important;
+  line-height: 135%;
+  font-weight: 500 !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  width: max-content;
+  max-width: 500px;
+  border: 2px solid var(--mytooltip-color);
+  text-transform: none;
+  letter-spacing: normal;
+
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 8px;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+
+.mytooltip:hover .mytooltiptext {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mytooltiptext.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mytooltip-content {
+  display: flex;
+  gap: 1.25em;
+  align-items: center;
+}
+
+.mytooltip-content img {
+  width: 80px;
+  height: auto;
+  max-height: 100px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.mytooltip-text {
+  flex: 1;
+  text-indent: 0;
+  text-align: left;
+  color: var(--text-color);
+}
+
+.mytooltip-main-text {
+  font-size: inherit;
+  font-weight: bold;
+  color: var(--mytooltip-color);
+}
+.mytooltip-sub-text {
+  font-style: italic;
+  display: flex;
+  margin-bottom: -0.95em;
+}
+.mytooltip-ledby {
+  color: var(--mytooltip-color);
+}
+.mytooltip-ideology {
+  font-size: 0.9em;
+}
+.mytooltip-allegiances {
+  display: flex;
+  margin-top: 0.5em;
+  gap: 2px;
+}
+/* Arrow pointing down from tooltip */
+.mytooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 8px solid transparent;
+  border-top-color: inherit;
+}
+
