@@ -44,4 +44,5 @@ const colourList = [
   { words: ["FfM", "ffm"], colour: "#5C3F1A", style: "font-weight: bold;", transform: "FfM" },
   { words: ["P", "p"], colour: "#12DB95", style: "font-weight: bold;", transform: "P" },
   { words: ["PEC", "pec"], colour: "#22275C", style: "font-weight: bold;", transform: "PEC" },
+  { words: ["SOCIAL DEMOCRACY"], colour: "#ED7158", transform: "Social Democracy" },
 ];
