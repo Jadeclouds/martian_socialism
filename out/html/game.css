@@ -522,10 +522,10 @@ table {
     text-decoration: underline;
     text-decoration-style: dotted;
 }
-/* Contenitore della parola con tooltip */
+/* Tooltip container */
 .mytooltip {
   position: relative;
-  display: inline-block; /* Garantisce il posizionamento corretto del tooltip */
+  display: inline-block; /* IMPORTANT */
   cursor: pointer;
   padding: 0 2px;
   transition: color 0.2s, background-color 0.2s;
@@ -538,13 +538,13 @@ table {
   border-radius: 3px;
 }
 
-/* Box del Tooltip che compare al passaggio del mouse */
+/* tooltip box */
 .mytooltip .mytooltiptext {
   position: absolute;
-  z-index: 999999 !important; /* Forza il tooltip ad apparire sopra a tutto */
+  z-index: 999999 !important; /* This basically is forcing the tooltip to be on top */
   
-  /* Sfondo e testo sicuri */
-  background-color: #1e1e24; /* Cambia con il colore di sfondo della tua UI se preferisci */
+  /* Tooltip Colors */
+  background-color: #e8cfd0; /* Background Color */
   color: #ffffff;
   
   border-radius: 8px;
@@ -558,26 +558,26 @@ table {
   max-width: 320px;
   border: 1.5px solid var(--mytooltip-color, #888);
   
-  /* Posizionamento sopra la parola */
+  /* So that it appears on top! */
   bottom: 125%;
   left: 50%;
   transform: translateX(-50%);
   margin-bottom: 6px;
 
-  /* Gestione visibilità */
+  /* Visibility Rules */
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
   transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
 }
 
-/* Mostra il tooltip all'hover */
+/* Rules to Show it */
 .mytooltip:hover .mytooltiptext {
   opacity: 1 !important;
   visibility: visible !important;
 }
 
-/* Layout interno del contenuto */
+/* Internal Layout - add/remove */
 .mytooltip-content {
   display: flex;
   gap: 12px;
@@ -612,15 +612,15 @@ table {
   margin-bottom: 4px;
 }
 
-.mytooltip-ledby, 
 .mytooltip-ideology, 
-.mytooltip-allegiances {
+.mytooltip-marsiststance, 
+.mytooltip-popularity {
   display: block;
   font-size: 0.85em;
   margin-top: 2px;
 }
 
-/* Freccetta rivolta verso il basso */
+/* The cute tooltip arrow lol */
 .mytooltip .mytooltiptext::after {
   content: "";
   position: absolute;
