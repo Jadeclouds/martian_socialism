@@ -575,10 +575,6 @@ table {
 .mytooltip:hover .mytooltiptext {
   opacity: 1 !important;
   visibility: visible !important;
-  
-  position: relative;
-  display: inline-block;
-  overflow: visible !important;
 }
 
 /* Internal Layout - add/remove */
