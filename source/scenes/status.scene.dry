@@ -45,7 +45,7 @@ Prime Minister: [+ chancellor +] ([+ chancellor_party +])
 Martian Parliament composition:
 
 # SPM
-{!<span style="color: #ED7158;"><strong>SPM</strong></span>!}: [+ spm_r +]%
+SPM: [+ spm_r +]%
 # MNLP
 {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}: [+ mnlp_r +]%
 # PLFM
