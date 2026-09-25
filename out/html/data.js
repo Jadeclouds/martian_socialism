@@ -10,7 +10,7 @@ const tooltipList = [
     searchString: ["MNLP", "mnlp"],
     mainText: "Martian National Liberal Party",
     subText: "A big-tent center-left to center-right party formed soon after the establishment of the Martian Parliament to represent the interests of Mars's middle and upper classes, as well as moderate independentists.",
-    img: "img/parties/img/mnlp_logo.png",
+    img: "img/mnlp_logo.png",
     popularity: "<strong>Vote Share:</strong> [+ mnlp_votes +]%",
     ideology: "<strong>Ideology:</strong> [+ mnlp_ideology +]",
   }
