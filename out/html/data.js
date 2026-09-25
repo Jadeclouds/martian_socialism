@@ -21,6 +21,6 @@ const colourList = [
   { words: ["MNLP", "mnlp"], colour: "#D3C24D", style: "font-weight: bold;", transform: "MNLP" },
   { words: ["PLFM", "plfm"], colour: "#540808", style: "font-weight: bold;", transform: "PLFM" },
   { words: ["FfM", "ffm"], colour: "#5C3F1A", style: "font-weight: bold;", transform: "FfM" },
-  { words: ["Phobos"], colour: "#12DB95", style: "font-weight: bold;", transform: "Phobos" },
+  { words: ["P", "p"], colour: "#12DB95", style: "font-weight: bold;", transform: "P" },
   { words: ["PEC", "pec"], colour: "#22275C", style: "font-weight: bold;", transform: "PEC" },
 ];
