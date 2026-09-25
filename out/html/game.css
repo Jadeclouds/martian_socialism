@@ -612,24 +612,17 @@ table {
 }
 
 .mytooltip-ideology {
-  display: block;
-  font-size: 0.85em;
-  color: #0a0a0a;
-  margin-top: 2px;
+  font-size: 0.9em;
 }
-
 .mytooltip-marsiststance {
-  display: block;
-  font-size: 0.85em;
-  color: #0a0a0a;
-  margin-top: 2px;
+  display: flex;
+  margin-top: 0.5em;
+  gap: 2px;
 }
-
 .mytooltip-popularity {
-  display: block;
-  font-size: 0.85em;
-  color: #0a0a0a;
-  margin-top: 2px;
+  display: flex;
+  margin-top: 0.5em;
+  gap: 4px;
 }
 
 /* The cute tooltip arrow lol */
