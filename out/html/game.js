@@ -222,31 +222,7 @@
             ) {
               ledBy = `<br/>Leader: <span class='mytooltip-ledby'>${window.dendryUI.dendryEngine.state.qualities[tooltip.ledBy]}</span>`;
             }
-            if (tooltip.ideology) {
-              ideology = `<br/><span class='mytooltip-ideology'>${
-                window.dendryUI.dendryEngine.state.qualities.hasOwnProperty(
-                  tooltip.ideology,
-                )
-                  ? window.dendryUI.dendryEngine.state.qualities[
-                      tooltip.ideology
-                    ]
-                  : tooltip.ideology
-              }</span>`;
-            }
-            if (tooltip.allegiances) {
-              allegiances = `<br/><span class='mytooltip-allegiances'>`;
-              allegiances +=
-                tooltip.allegiances(
-                  window.dendryUI.dendryEngine.state.qualities,
-                ).length > 1
-                  ? "Allegiances: "
-                  : "Allegiance: ";
-              allegiances += tooltip
-                .allegiances(window.dendryUI.dendryEngine.state.qualities)
-                .join(", ");
-              allegiances += `</span>`;
-            }
-
+            
             return `<span class='mytooltip' style='--mytooltip-color:${textColor}; ${style}' data-tooltip-id='${tooltip.searchString}'>${colour.transform ? colour.transform : innerText}<span class='mytooltiptext'><span class='mytooltip-content'>${imgHtml}<span class='mytooltip-text'><span class='mytooltip-main-text'>${tooltip.mainText}</span>${subText}${ledBy}${ideology}${allegiances}</span></span></span></span>`;
           } else if (colour) {
             return `<span style='color: ${textColor}; ${style}'>${colour.transform ? colour.transform : innerText}</span>`;
