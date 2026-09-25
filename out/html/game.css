@@ -611,8 +611,20 @@ table {
   margin-bottom: 4px;
 }
 
-.mytooltip-ideology, 
-.mytooltip-marsiststance, 
+.mytooltip-ideology {
+  display: block;
+  font-size: 0.85em;
+  color: #0a0a0a;
+  margin-top: 2px;
+}
+
+.mytooltip-marsiststance {
+  display: block;
+  font-size: 0.85em;
+  color: #0a0a0a;
+  margin-top: 2px;
+}
+
 .mytooltip-popularity {
   display: block;
   font-size: 0.85em;
