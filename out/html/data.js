@@ -14,7 +14,7 @@ const tooltipList = [
   {
     searchString: ["PLFM", "plfm"],
     mainText: "People's Liberation Front for Mars",
-    subText: "The PLFM is the political wing of a broader constellation of radical left militants, drawing its main support from Martian miners. Ranging from moderate cells to uncompromising radicals, the PLFM generally adheres to MLM principles and rallies around Mao Zedong's *On Guerrilla Warfare*.",
+    subText: "The PLFM is the political wing of a broader constellation of radical left militants, drawing its main support from Martian miners. Ranging from moderate cells to uncompromising radicals, the PLFM generally adheres to MLM principles and rallies around Mao Zedong's 'On Guerrilla Warfare'.",
     img: "img/plfm_logo.png",
   },
   {
