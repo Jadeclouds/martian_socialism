@@ -4,14 +4,15 @@ const tooltipList = [
     mainText: "Socialist Party of Mars",
     subText: "This is us: a democratic socialist party representing the Martian working class. Born out of the earliest labor struggles on Mars, we have long been the most popular socialist party on the Red Planet.",
     img: "img/spm_logo.png",
-    popularity: "{!<strong>Vote Share:</strong>!} spm_votes",
+    popularity: "<strong>Vote Share:</strong> [+ spm_votes +]%",
   },
   {
     searchString: ["MNLP", "mnlp"],
     mainText: "Martian National Liberal Party",
+    subText: "A big-tent center-left to center-right party formed soon after the establishment of the Martian Parliament to represent the interests of Mars's middle and upper classes, as well as moderate independentists.",
     img: "img/parties/logo_mnlp.svg",
-    popularity: "{!<strong>Vote Share:</strong>!} mnlp_votes",
-    ideology: "{!<strong>Ideology:</strong>!} mnlp_ideology",
+    popularity: "<strong>Vote Share:</strong> [+ mnlp_votes +]%",
+    ideology: "<strong>Ideology:</strong> [+ mnlp_ideology +]",
   }
 ];
 
