@@ -607,6 +607,7 @@ table {
 .mytooltip-sub-text {
   font-style: italic;
   font-size: 0.85em;
+  color: #0a0a0a;
   opacity: 0.8;
   display: block;
   margin-bottom: 4px;
@@ -617,6 +618,7 @@ table {
 .mytooltip-popularity {
   display: block;
   font-size: 0.85em;
+  color: #0a0a0a;
   margin-top: 2px;
 }
 
