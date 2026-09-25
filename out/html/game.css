@@ -585,8 +585,8 @@ table {
 }
 
 .mytooltip-content img {
-  width: 48px;
-  height: 48px;
+  width: 75px;
+  height: 75px;
   object-fit: contain;
   border-radius: 4px;
   flex-shrink: 0;
