@@ -34,6 +34,12 @@ const tooltipList = [
     mainText: "Pro-Earth Camp",
     subText: "Less a traditional party and more an extension of Earth's power on Mars, the PEC has governed since the establishment of the Martian Parliament, primarily protecting the interests of Earth-aligned business owners and space conglomerates.",
     img: "img/pec_logo.png",
+  },
+
+  {
+    searchString: ["SOCIAL DEMOCRACY"],
+    mainText: "Social Democracy",
+    subText: "Social democracy is a political, social, and economic philosophy that promotes socialist-oriented reforms, aimed at greater social justice, within a fully liberal-democratic political system and a capitalist-oriented mixed economy.",
   }
 ];
 
