@@ -164,14 +164,14 @@ Others: [+ other_votes +]%
 
 **Detailed results for each demographic**
 
-Miners: --SPM: [+ miners_spm_display +]%, \u200BMNLP: [+ miners_mnlp_display +]%, \u200BPLFM: [+ miners_plfm_display +]%, \u200BFfM: [+ miners_ffm_display +]%, \u200BPEC: [+ miners_pec_display +]%, \u200BP: [+ miners_p_display +]%, Other: [+ miners_other_display +]%
+Miners: SPM: [+ miners_spm_display +]%, MNLP: [+ miners_mnlp_display +]%, PLFM: [+ miners_plfm_display +]%, FfM: [+ miners_ffm_display +]%, PEC: [+ miners_pec_display +]%, P: [+ miners_p_display +]%, Other: [+ miners_other_display +]%
 
-Technicians: \u200BSPM: [+ technicians_spm_display +]%, \u200BMNLP: [+ technicians_mnlp_display +]%, \u200BPLFM: [+ technicians_plfm_display +]%, \u200BFfM: [+ technicians_ffm_display +]%, \u200BPEC: [+ technicians_pec_display +]%, \u200BP: [+ technicians_p_display +]%, Other: [+ technicians_other_display +]%
+Technicians: SPM: [+ technicians_spm_display +]%, MNLP: [+ technicians_mnlp_display +]%, PLFM: [+ technicians_plfm_display +]%, FfM: [+ technicians_ffm_display +]%, PEC: [+ technicians_pec_display +]%, P: [+ technicians_p_display +]%, Other: [+ technicians_other_display +]%
 
-Researchers: \u200BSPM: [+ researchers_spm_display +]%, \u200BMNLP: [+ researchers_mnlp_display +]%, \u200BPLFM: [+ researchers_plfm_display +]%, \u200BFfM: [+ researchers_ffm_display +]%, \u200BPEC: [+ researchers_pec_display +]%, \u200BP: [+ researchers_p_display +]%, Other: [+ researchers_other_display +]%
+Researchers: SPM: [+ researchers_spm_display +]%, MNLP: [+ researchers_mnlp_display +]%, PLFM: [+ researchers_plfm_display +]%, FfM: [+ researchers_ffm_display +]%, PEC: [+ researchers_pec_display +]%, P: [+ researchers_p_display +]%, Other: [+ researchers_other_display +]%
 
-Bureaucrats: \u200BSPM: [+ bureaucrats_spm_display +]%, \u200BMNLP: [+ bureaucrats_mnlp_display +]%, \u200BPLFM: [+ bureaucrats_plfm_display +]%, \u200BFfM: [+ bureaucrats_ffm_display +]%, \u200BPEC: [+ bureaucrats_pec_display +]%, \u200BP: [+ bureaucrats_p_display +]%, Other: [+ bureaucrats_other_display +]%
+Bureaucrats: SPM: [+ bureaucrats_spm_display +]%, MNLP: [+ bureaucrats_mnlp_display +]%, PLFM: [+ bureaucrats_plfm_display +]%, FfM: [+ bureaucrats_ffm_display +]%, PEC: [+ bureaucrats_pec_display +]%, P: [+ bureaucrats_p_display +]%, Other: [+ bureaucrats_other_display +]%
 
-Independent Capitalist Class: \u200BSPM: [+ indipendent_capitalist_class_spm_display +]%, \u200BMNLP: [+ indipendent_capitalist_class_mnlp_display +]%, \u200BPLFM: [+ indipendent_capitalist_class_plfm_display +]%, \u200BFfM: [+ indipendent_capitalist_class_ffm_display +]%, \u200BPEC: [+ indipendent_capitalist_class_pec_display +]%, \u200BP: [+ indipendent_capitalist_class_p_display +]%, Other: [+ indipendent_capitalist_class_other_display +]%
+Independent Capitalist Class: SPM: [+ indipendent_capitalist_class_spm_display +]%, MNLP: [+ indipendent_capitalist_class_mnlp_display +]%, PLFM: [+ indipendent_capitalist_class_plfm_display +]%, FfM: [+ indipendent_capitalist_class_ffm_display +]%, PEC: [+ indipendent_capitalist_class_pec_display +]%, P: [+ indipendent_capitalist_class_p_display +]%, Other: [+ indipendent_capitalist_class_other_display +]%
 
-Capitalist Class: \u200BSPM: [+ capitalist_class_spm_display +]%, \u200BMNLP: [+ capitalist_class_mnlp_display +]%, \u200BPLFM: [+ capitalist_class_plfm_display +]%, \u200BFfM: [+ capitalist_class_ffm_display +]%, \u200BPEC: [+ capitalist_class_pec_display +]%, \u200BP: [+ capitalist_class_p_display +]%, Other: [+ capitalist_class_other_display +]%
+Capitalist Class: SPM: [+ capitalist_class_spm_display +]%, MNLP: [+ capitalist_class_mnlp_display +]%, PLFM: [+ capitalist_class_plfm_display +]%, FfM: [+ capitalist_class_ffm_display +]%, PEC: [+ capitalist_class_pec_display +]%, P: [+ capitalist_class_p_display +]%, Other: [+ capitalist_class_other_display +]%
