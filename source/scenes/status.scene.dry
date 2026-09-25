@@ -47,7 +47,7 @@ Martian Parliament composition:
 # SPM
 spm: [+ spm_r +]%
 # MNLP
-mmlp: [+ mnlp_r +]%
+mnlp: [+ mnlp_r +]%
 # PLFM
 plfm: [+ plfm_r +]%
 # FfM
