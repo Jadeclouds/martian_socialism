@@ -161,8 +161,101 @@
   
   // This function allows you to modify the text before it's displayed.
   // E.g. wrapping chat-like messages in spans.
-  window.displayText = function(text) {
-      return text;
+  window.displayText =   function applyWholesome(str) {
+    const allWords = new Set([
+      ...tooltipList.map((t) => t.searchString).flat(),
+      ...colourList.map((c) => c.words).flat(),
+    ]);
+
+    const regex = new RegExp(`\\b(${[...allWords].join("|")})\\b`, "g");
+
+    return str.replace(
+      /(<(?:span|strong)[^>]*>.*?<\/(?:span|strong)>|<[^>]+>|[^<]+)/g,
+      (segment) => {
+        if (segment.startsWith("<")) return segment;
+
+        return segment.replace(regex, (match) => {
+          const tooltip = tooltipList.find((t) =>
+            t.searchString.includes(match),
+          );
+          const colour = colourList.find((c) => c.words.includes(match));
+          let textColor;
+          if (colour && colour.colour) {
+            textColor = colour.colour;
+          } else {
+            textColor = "inherit";
+          }
+
+          // skip if preceded by zero-width space
+          const zwspIndex = segment.indexOf("\u200B" + match);
+          if (zwspIndex !== -1) {
+            return match;
+          }
+
+          // find if just before the match there was "--"
+          const matchStart = segment.lastIndexOf(
+            "--",
+            segment.indexOf(match) - 2,
+          );
+          if (matchStart !== -1 && matchStart === segment.indexOf(match) - 2) {
+            return match;
+          }
+
+          let style = colour && colour.style ? colour.style : "";
+          let innerText = match;
+
+          if (tooltip) {
+            const imgHtml = tooltip.img
+              ? `<img src='${tooltip.img}' alt='${innerText} image'/>`
+              : "";
+            const subText = tooltip.subText
+              ? `<br/><span class='mytooltip-sub-text'>${tooltip.subText}</span>`
+              : "";
+            let ledBy = "";
+            let ideology = "";
+            let allegiances = "";
+            if (
+              tooltip.ledBy &&
+              window.dendryUI.dendryEngine.state.qualities.hasOwnProperty(
+                tooltip.ledBy,
+              )
+            ) {
+              ledBy = `<br/>Leader: <span class='mytooltip-ledby'>${window.dendryUI.dendryEngine.state.qualities[tooltip.ledBy]}</span>`;
+            }
+            if (tooltip.ideology) {
+              ideology = `<br/><span class='mytooltip-ideology'>${
+                window.dendryUI.dendryEngine.state.qualities.hasOwnProperty(
+                  tooltip.ideology,
+                )
+                  ? window.dendryUI.dendryEngine.state.qualities[
+                      tooltip.ideology
+                    ]
+                  : tooltip.ideology
+              }</span>`;
+            }
+            if (tooltip.allegiances) {
+              allegiances = `<br/><span class='mytooltip-allegiances'>`;
+              allegiances +=
+                tooltip.allegiances(
+                  window.dendryUI.dendryEngine.state.qualities,
+                ).length > 1
+                  ? "Allegiances: "
+                  : "Allegiance: ";
+              allegiances += tooltip
+                .allegiances(window.dendryUI.dendryEngine.state.qualities)
+                .join(", ");
+              allegiances += `</span>`;
+            }
+
+            return `<span class='mytooltip' style='--mytooltip-color:${textColor}; ${style}' data-tooltip-id='${tooltip.searchString}'>${colour.transform ? colour.transform : innerText}<span class='mytooltiptext'><span class='mytooltip-content'>${imgHtml}<span class='mytooltip-text'><span class='mytooltip-main-text'>${tooltip.mainText}</span>${subText}${ledBy}${ideology}${allegiances}</span></span></span></span>`;
+          } else if (colour) {
+            return `<span style='color: ${textColor}; ${style}'>${colour.transform ? colour.transform : innerText}</span>`;
+          }
+
+          return match;
+        });
+      },
+    );
   };
 
   // This function allows you to do something in response to signals.
