@@ -2,10 +2,8 @@ const tooltipList = [
   {
     searchString: ["SPM", "spm"],
     mainText: "Socialist Party of Mars",
-    subText: "Socialist and Democratic",
-    img: "img/parties/logo_spm.svg",
-    ledBy: "spm_leader",       // Pulls $Q.spm_leader dynamically from Dendry state
-    ideology: "spm_ideology",   // Pulls $Q.spm_ideology dynamically from Dendry state
+    subText: "This is us: a democratic socialist party representing the Martian working class. Born out of the earliest labor struggles on Mars, we have long been the most popular socialist party on the Red Planet.",
+    img: "img/parties/spm_logo.jpg",
   },
   {
     searchString: ["MNLP", "mnlp"],
