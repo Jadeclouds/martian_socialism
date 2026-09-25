@@ -20,7 +20,7 @@ if (Q.economic_growth) {
 
 Resources available: [+ resources +]
 
-{!<span style="color: #ED7158;"><strong>SPM</strong></span>!} position: [? if spm_in_government : in government - ?][? if spm_in_government == 0: opposition ?][? if in_marsist_coalition and spm_in_government: Marsist Coalition ?][? if in_grand_marsist_coalition and spm_in_government: Grand Marsist Coalition ?][? if (in_marsist_coalition or in_grand_marsist_coalition) and spm_in_government and largest_marsist_party == "MSP": (Senior Coalition Partner) ?][? if (in_marsist_coalition or in_grand_marsist_coalition) and spm_in_government and largest_marsist_party == "MNLP": (Junior Coalition Partner) ?]
+SPM position: [? if spm_in_government : in government - ?][? if spm_in_government == 0: opposition ?][? if in_marsist_coalition and spm_in_government: Marsist Coalition ?][? if in_grand_marsist_coalition and spm_in_government: Grand Marsist Coalition ?][? if (in_marsist_coalition or in_grand_marsist_coalition) and spm_in_government and largest_marsist_party == "MSP": (Senior Coalition Partner) ?][? if (in_marsist_coalition or in_grand_marsist_coalition) and spm_in_government and largest_marsist_party == "MNLP": (Junior Coalition Partner) ?]
 
 Internal dissent: [+ dissent_percent : dissent +]
 
@@ -47,15 +47,15 @@ Martian Parliament composition:
 # SPM
 SPM: [+ spm_r +]%
 # MNLP
-{!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}: [+ mnlp_r +]%
+MNLP: [+ mnlp_r +]%
 # PLFM
-{!<span style="color: #540808;"><strong>PLFM</strong></span>!}: [+ plfm_r +]%
+PLFM: [+ plfm_r +]%
 # FfM
-{!<span style="color: #5C3F1A;"><strong>FfM</strong></span>!}: [+ ffm_r +]%
+FfM: [+ ffm_r +]%
 # P
-{!<span style="color: #12DB95;"><strong>P</strong></span>!}: [+ p_r +]%
+P: [+ p_r +]%
 # PEC
-{!<span style="color: #22275C;"><strong>PEC</strong></span>!}: [+ pec_r +]%
+PEC: [+ pec_r +]%
 # Others
 Others: [+ other_r +]%
 
@@ -67,27 +67,27 @@ Next election: [+ next_election_month : month +] [+ next_election_year +]
 
 = Inter-party Relations
 
-{!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}: [+ mnlp_relation : relationships +]
+MNLP: [+ mnlp_relation : relationships +]
 
-{!<span style="color: #540808;"><strong>PLFM</strong></span>!}: [+ plfm_relation : relationships +]
+PLFM: [+ plfm_relation : relationships +]
 
-{!<span style="color: #5C3F1A;"><strong>FfM</strong></span>!}: [+ ffm_relation : relationships +]
+FfM: [+ ffm_relation : relationships +]
 
-{!<span style="color: #12DB95;"><strong>P</strong></span>!}: [+ p_relation : relationships +]
+P: [+ p_relation : relationships +]
 
-{!<span style="color: #22275C;"><strong>PEC</strong></span>!}: [+ pec_relation : relationships +]
+PEC: [+ pec_relation : relationships +]
 
 = Party Ideology
 
-{!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}: [+ mnlp_ideology +], [+ mnlp_marsism +]
+MNLP: [+ mnlp_ideology +], [+ mnlp_marsism +]
 
-{!<span style="color: #540808;"><strong>PLFM</strong></span>!}: [+ plfm_ideology +], [+ plfm_marsism +]
+PLFM: [+ plfm_ideology +], [+ plfm_marsism +]
 
-{!<span style="color: #5C3F1A;"><strong>FfM</strong></span>!}: [+ ffm_ideology +], [+ ffm_marsism +]
+FfM: [+ ffm_ideology +], [+ ffm_marsism +]
 
-{!<span style="color: #12DB95;"><strong>P</strong></span>!}: [+ p_ideology +], [+ p_marsism +]
+P: [+ p_ideology +], [+ p_marsism +]
 
-{!<span style="color: #22275C;"><strong>PEC</strong></span>!}: [+ pec_ideology +], [+ pec_marsism +]
+PEC: [+ pec_ideology +], [+ pec_marsism +]
 
 = Trade Unions
 
