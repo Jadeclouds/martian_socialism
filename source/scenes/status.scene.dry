@@ -20,7 +20,7 @@ if (Q.economic_growth) {
 
 Resources available: [+ resources +]
 
-SPM position: [? if spm_in_government : in government - ?][? if spm_in_government == 0: opposition ?][? if in_marsist_coalition and spm_in_government: Marsist Coalition ?][? if in_grand_marsist_coalition and spm_in_government: Grand Marsist Coalition ?][? if (in_marsist_coalition or in_grand_marsist_coalition) and spm_in_government and largest_marsist_party == "MSP": (Senior Coalition Partner) ?][? if (in_marsist_coalition or in_grand_marsist_coalition) and spm_in_government and largest_marsist_party == "MNLP": (Junior Coalition Partner) ?]
+SPM position: [? if spm_in_government : in government - ?][? if spm_in_government == 0: opposition ?][? if in_marsist_coalition and spm_in_government: Marsist Coalition ?][? if in_grand_marsist_coalition and spm_in_government: Grand Marsist Coalition ?][? if (in_marsist_coalition or in_grand_marsist_coalition) and spm_in_government and largest_marsist_party == "SPM": (Senior Coalition Partner) ?][? if (in_marsist_coalition or in_grand_marsist_coalition) and spm_in_government and largest_marsist_party == "MNLP": (Junior Coalition Partner) ?]
 
 Internal dissent: [+ dissent_percent : dissent +]
 
@@ -37,7 +37,7 @@ Prime Minister: [+ chancellor +] ([+ chancellor_party +])
 
 [? if spm_in_government: Budget: [+ budget +] ?]
 
-[? if spm_in_government: Currently {!<span style="color: #ED7158;"><strong>SPM</strong></span>!}-controlled Ministries: ?]
+[? if spm_in_government: Currently SPM controlled Ministries: ?]
 
 [? if labor_minister_party == "SPM": Ministry of {!<strong>Labor</strong>!}, ?] [? if interior_minister_party  == "SPM": Ministry of {!<strong>Interior</strong>!}, ?] [? if economic_minister_party == "SPM": Ministry of {!<strong>Economy & Finance</strong>!}, ?] [? if justice_minister_party == "SPM": Ministry of {!<strong>Justice</strong>!}, ?] [? if foreign_minister_party == "SPM": Ministry of {!<strong>Foreign</strong>!}, ?] [? if infrastructure_minister_party == "SPM": Ministry of {!<strong>Infrastructure & Energy</strong>!}, ?] [? if education_minister_party == "SPM": Ministry of {!<strong>Education & Culture</strong>!}, ?] [? if agriculture_minister_party == "SPM": Ministry of {!<strong>Agriculture & Food Procurement</strong>!}, ?][? if spm_in_government and not in_spm_majority: the remaining ministries are held by our coalition partners. ?][? if spm_in_government and in_spm_majority: we have control over all the ministries. ?]
 
@@ -45,17 +45,17 @@ Prime Minister: [+ chancellor +] ([+ chancellor_party +])
 Martian Parliament composition:
 
 # SPM
-SPM: [+ spm_r +]%
+spm: [+ spm_r +]%
 # MNLP
-MNLP: [+ mnlp_r +]%
+mmlp: [+ mnlp_r +]%
 # PLFM
-PLFM: [+ plfm_r +]%
+plfm: [+ plfm_r +]%
 # FfM
-FfM: [+ ffm_r +]%
+ffm: [+ ffm_r +]%
 # P
-P: [+ p_r +]%
+p: [+ p_r +]%
 # PEC
-PEC: [+ pec_r +]%
+pec: [+ pec_r +]%
 # Others
 Others: [+ other_r +]%
 
@@ -67,27 +67,27 @@ Next election: [+ next_election_month : month +] [+ next_election_year +]
 
 = Inter-party Relations
 
-MNLP: [+ mnlp_relation : relationships +]
+mnlp: [+ mnlp_relation : relationships +]
 
-PLFM: [+ plfm_relation : relationships +]
+plfm: [+ plfm_relation : relationships +]
 
-FfM: [+ ffm_relation : relationships +]
+ffm: [+ ffm_relation : relationships +]
 
-P: [+ p_relation : relationships +]
+p: [+ p_relation : relationships +]
 
-PEC: [+ pec_relation : relationships +]
+pec: [+ pec_relation : relationships +]
 
 = Party Ideology
 
-MNLP: [+ mnlp_ideology +], [+ mnlp_marsism +]
+mnlp: [+ mnlp_ideology +], [+ mnlp_marsism +]
 
-PLFM: [+ plfm_ideology +], [+ plfm_marsism +]
+plfm: [+ plfm_ideology +], [+ plfm_marsism +]
 
-FfM: [+ ffm_ideology +], [+ ffm_marsism +]
+ffm: [+ ffm_ideology +], [+ ffm_marsism +]
 
-P: [+ p_ideology +], [+ p_marsism +]
+p: [+ p_ideology +], [+ p_marsism +]
 
-PEC: [+ pec_ideology +], [+ pec_marsism +]
+pec: [+ pec_ideology +], [+ pec_marsism +]
 
 = Trade Unions
 
@@ -144,21 +144,21 @@ Q.socialism_disp = Math.round(Q.socialism);
 
 (if the election were to be held now):
 
-SPM: [+ spm_votes +]%
+spm: [+ spm_votes +]%
 
 # [? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
 
-MNLP: [+ mnlp_votes +]%
+mnlp: [+ mnlp_votes +]%
 
-PLFM: [+ plfm_votes +]%
+plfm: [+ plfm_votes +]%
 
 # [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ ddp_votes +]%
 
-FfM: [+ ffm_votes +]%
+ffm: [+ ffm_votes +]%
 
-P: [+ p_votes +]%
+p: [+ p_votes +]%
 
-PEC: [+ pec_votes +]%
+pec: [+ pec_votes +]%
 
 Others: [+ other_votes +]%
 
