@@ -525,12 +525,12 @@ table {
 /* Tooltip container */
 .mytooltip {
   position: relative;
-  display: inline-block; /* IMPORTANT */
+  display: inline;       /* Change from inline-block to inline */
   cursor: pointer;
-  padding: 0 2px;
+  padding: 0;            /* Change from 0 2px to 0 to remove side gaps */
   transition: color 0.2s, background-color 0.2s;
   color: var(--mytooltip-color, inherit);
-  border-bottom: 1.5px dotted var(--mytooltip-color, currentColor);
+  border-bottom: 1px dotted var(--mytooltip-color, currentColor);
 }
 
 .mytooltip:hover {
