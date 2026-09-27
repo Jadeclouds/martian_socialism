@@ -39,7 +39,22 @@ const tooltipList = [
   {
     searchString: ["SOCIAL DEMOCRACY"],
     mainText: "Social Democracy",
-    subText: "Social democracy is a political, social, and economic philosophy that promotes socialist-oriented reforms, aimed at greater social justice, within a fully liberal-democratic political system and a capitalist-oriented mixed economy.",
+    subText: "Social democracy is a political, social, and economic philosophy within the socialist tradition that supports political and economic democracy, social justice, and state regulation of a mixed economy. Institutional scholarship typically characterized the tradition by its alternating policy cycles: 'right-wing' periods prioritizing macroeconomic stability, fiscal moderation, and public-private partnerships, contrasted with 'left-wing' periods driven by labor organizations seeking expansion of universal public services and welfare guarantees.",
+    img: "img/social_democracy_ideology.png",
+  },
+  
+  {
+    searchString: ["LIBERALISM"],
+    mainText: "Liberalism",
+    subText: "Liberalism is a political and moral philosophy based on individual rights, liberty, consent of the governed, private property, and equality before the law. The ideology is primarily divided into social liberalism, which advocates for civil rights alongside state-supported social programs, and market liberalism, which emphasizes free trade, deregulation, and constitutional limits on state authority.",
+    img: "img/liberalism_ideology.png",
+  },
+  
+  {
+    searchString: ["MARKET LIBERALISM"],
+    mainText: "Liberalism",
+    subText: "This ideology is a variant of Liberalism<br><br>Market liberalism is a political and economic ideology and variant of Liberalism that emphasizes individual liberty, private property rights, deregulated markets, and minimal state intervention. Market liberalism advocates for the free movement of capital, fiscal restraint, privatization of state enterprises, and strict constitutional limitations on regulatory oversight in economic affairs.",
+    img: "img/market_liberalism_ideology.png",
   }
 ];
 
@@ -51,4 +66,6 @@ const colourList = [
   { words: ["P", "p"], colour: "#12DB95", style: "font-weight: bold;", transform: "P" },
   { words: ["PEC", "pec"], colour: "#22275C", style: "font-weight: bold;", transform: "PEC" },
   { words: ["SOCIAL DEMOCRACY", "Social Democracy"], colour: "#ED7158", style: "font-weight: bold;", transform: "Social Democracy" },
+  { words: ["LIBERALISM", "Liberalism"], colour: "#D3C24D", style: "font-weight: bold;", transform: "Liberalism" },
+  { words: ["MARKET LIBERALISM", "Market Liberalism"], colour: "#D3C24D", style: "font-weight: bold;", transform: "Market Liberalism" },
 ];
