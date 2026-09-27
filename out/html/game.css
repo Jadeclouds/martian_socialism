@@ -582,7 +582,7 @@ table {
 
 .mytooltip {
   position: relative !important;
-  display: inline-block; 
+  display: inline;       
   cursor: pointer;
   padding: 0;
   color: var(--mytooltip-color, inherit);
@@ -653,13 +653,13 @@ table {
   font-weight: bold;
   font-size: 14px;
   color: var(--mytooltip-color, #fff);
-  display: block;
+  display: inline;       
 }
 
 .mytooltip-sub-text {
   font-size: 11px;
   color: #0a0a0a;
-  display: block;
+  display: inline;       
   margin-bottom: 4px;
 
 }
