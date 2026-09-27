@@ -592,11 +592,10 @@ table {
   flex-shrink: 0;
 }
 
-.mytooltip-text {
-  flex: 1;
-  text-align: left;
+.mytooltip .mytooltiptext {
+  left: 0 !important;
+  transform: none !important;
 }
-
 .mytooltip-main-text {
   font-weight: bold;
   font-size: 14px;
@@ -625,13 +624,13 @@ table {
   gap: 4px;
 }
 
-/* The cute tooltip arrow lol */
+/* Move arrow to the left side under the word */
 .mytooltip .mytooltiptext::after {
   content: "";
   position: absolute;
   top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 16px !important;
+  transform: none !important;
   border-width: 6px;
   border-style: solid;
   border-color: var(--mytooltip-color, #888) transparent transparent transparent;
