@@ -161,7 +161,7 @@
   
   // This function allows you to modify the text before it's displayed.
   // E.g. wrapping chat-like messages in spans.
-  window.displayText =   function applyWholesome(str) {
+  window.displayText = function applyWholesome(str) {
     const allWords = new Set([
       ...tooltipList.map((t) => t.searchString).flat(),
       ...colourList.map((c) => c.words).flat(),
