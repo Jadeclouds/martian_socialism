@@ -573,65 +573,66 @@ table {
 
 /* Rules to Show it */
 .mytooltip:hover .mytooltiptext {
-  opacity: 1 !important;
-  visibility: visible !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 /* Internal Layout - add/remove */
 .mytooltip-content {
-  display: flex;
-  gap: 12px;
-  align-items: center;
+  display: flex;
+  gap: 12px;
+  align-items: center;
 }
 
 .mytooltip-content img {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  border-radius: 4px;
-  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 4px;
+  flex-shrink: 0;
 }
 
-.mytooltip .mytooltiptext {
-  left: 0 !important;
-  transform: none !important;
+.mytooltip-text {
+  flex: 1;
+  text-align: left;
 }
+
 .mytooltip-main-text {
-  font-weight: bold;
-  font-size: 14px;
-  color: var(--mytooltip-color, #fff);
-  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--mytooltip-color, #fff);
+  display: block;
 }
 
 .mytooltip-sub-text {
-  font-size: 11px;
-  color: #0a0a0a;
-  display: block;
-  margin-bottom: 4px;
+  font-size: 11px;
+  color: #0a0a0a;
+  display: block;
+  margin-bottom: 4px;
 }
 
 .mytooltip-ideology {
-  font-size: 0.9em;
+  font-size: 0.9em;
 }
 .mytooltip-marsiststance {
-  display: flex;
-  margin-top: 0.5em;
-  gap: 2px;
+  display: flex;
+  margin-top: 0.5em;
+  gap: 2px;
 }
 .mytooltip-popularity {
-  display: flex;
-  margin-top: 0.5em;
-  gap: 4px;
+  display: flex;
+  margin-top: 0.5em;
+  gap: 4px;
 }
 
-/* Move arrow to the left side under the word */
+/* The cute tooltip arrow lol */
 .mytooltip .mytooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 16px !important;
-  transform: none !important;
-  border-width: 6px;
-  border-style: solid;
-  border-color: var(--mytooltip-color, #888) transparent transparent transparent;
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: var(--mytooltip-color, #888) transparent transparent transparent;
 }
