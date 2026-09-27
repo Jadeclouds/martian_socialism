@@ -606,7 +606,7 @@ table {
 
   width: max-content;
   max-width: 320px;
-  background-color: #f0f0f0; 
+  background-color: #e8cfd0; /* Background Color of the mod, not dynamic */
   color: #111111;
   border: 1.5px solid var(--mytooltip-color, #0d2b7d);
   border-radius: 8px;
@@ -619,7 +619,7 @@ table {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
 .mytooltip:hover .mytooltiptext {
@@ -628,6 +628,43 @@ table {
   pointer-events: auto;
 }
 
+/* Internal Layout of the tooltip */
+
+.mytooltip-content {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.mytooltip-content img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.mytooltip-text {
+  flex: 1;
+  text-align: left;
+}
+
+.mytooltip-main-text {
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--mytooltip-color, #fff);
+  display: block;
+}
+
+.mytooltip-sub-text {
+  font-size: 11px;
+  color: #0a0a0a;
+  display: block;
+  margin-bottom: 4px;
+
+}
+
+/* Bottom Arrow */
 .mytooltip .mytooltiptext::after {
   content: "";
   position: absolute;
