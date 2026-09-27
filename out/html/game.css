@@ -571,68 +571,45 @@ table {
   transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
 }
 
-/* Rules to Show it */
-.mytooltip:hover .mytooltiptext {
-  opacity: 1 !important;
-  visibility: visible !important;
+/* Allow text column to overflow */
+#content, .content, #main-text, .page {
+  overflow: visible !important;
 }
 
-/* Internal Layout - add/remove */
-.mytooltip-content {
-  display: flex;
-  gap: 12px;
-  align-items: center;
+/* Tooltip container */
+.mytooltip {
+  position: relative;
+  display: inline;
 }
 
-.mytooltip-content img {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  border-radius: 4px;
-  flex-shrink: 0;
+/* The Popup Box */
+.mytooltip .mytooltiptext {
+  position: absolute;
+  z-index: 999999 !important; /* Ensures it renders ABOVE the left sidebar */
+  
+  /* Center over the word */
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  /* Sizing and appearance */
+  width: max-content;
+  max-width: 320px;
+  background-color: #f0f0f0; /* adjust to match your light box background */
+  color: #111;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
 }
 
-.mytooltip-text {
-  flex: 1;
-  text-align: left;
-}
-
-.mytooltip-main-text {
-  font-weight: bold;
-  font-size: 14px;
-  color: var(--mytooltip-color, #fff);
-  display: block;
-}
-
-.mytooltip-sub-text {
-  font-size: 11px;
-  color: #0a0a0a;
-  display: block;
-  margin-bottom: 4px;
-}
-
-.mytooltip-ideology {
-  font-size: 0.9em;
-}
-.mytooltip-marsiststance {
-  display: flex;
-  margin-top: 0.5em;
-  gap: 2px;
-}
-.mytooltip-popularity {
-  display: flex;
-  margin-top: 0.5em;
-  gap: 4px;
-}
-
-/* The cute tooltip arrow lol */
+/* The centered arrow */
 .mytooltip .mytooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  border-width: 6px;
-  border-style: solid;
-  border-color: var(--mytooltip-color, #888) transparent transparent transparent;
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: #0d2b7d transparent transparent transparent; /* arrow color */
 }
