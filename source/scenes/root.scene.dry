@@ -71,15 +71,15 @@ Q.ffm_relation = 15;
 Q.p_relation = 35;
 Q.pec_relation = 10;
 
-Q.mnlp_ideology = "Market Liberalism";
+Q.mnlp_ideology = "MARKET LIBERALISM";
 Q.mnlp_marsism = "Moderate Marsism";
-Q.plfm_ideology = "Marxism-Leninism-Maoism";
+Q.plfm_ideology = "MARXISM LENINISM MAOISM";
 Q.plfm_marsism = "Radical Marsism";
-Q.ffm_ideology  = "National Syndicalism";
+Q.ffm_ideology  = "NATIONAL SYNDACALISM";
 Q.ffm_marsism = "Radical Marsism";
-Q.pec_ideology  = "Colonial Liberalism";
+Q.pec_ideology  = "COLONIAL LIBERALISM";
 Q.pec_marsism = "Earthism";
-Q.p_ideology  = "Accellerationism";
+Q.p_ideology  = "ACCELLERATIONISM";
 Q.p_marsism = "Marsism";
 
 // relations with unions
