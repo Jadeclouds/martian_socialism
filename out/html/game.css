@@ -522,35 +522,15 @@ table {
     text-decoration: underline;
     text-decoration-style: dotted;
 }
-/* Tooltip container */
-.mytooltip {
-  position: relative;
-  display: inline;       /* Change from inline-block to inline */
-  cursor: pointer;
-  padding: 0;            /* Change from 0 2px to 0 to remove side gaps */
-  transition: color 0.2s, background-color 0.2s;
-  color: var(--mytooltip-color, inherit);
-  border-bottom: 1px dotted var(--mytooltip-color, currentColor);
-}
 
-.mytooltip:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 3px;
-}
-
-/* =========================================================
-   TOOLTIP SYSTEM (Consolidated & Reformatted)
-   ========================================================= */
-
-/* 1. Unify layout containers to allow tooltips to overflow past margins */
+/* Tooltips stuff */
 #content, .content, #main-text, .page, #game, .stats {
   overflow: visible !important;
 }
 
-/* 2. Hovered Word Anchor */
 .mytooltip {
   position: relative !important;
-  display: inline-block; /* Required over inline so position: relative functions properly */
+  display: inline; 
   cursor: pointer;
   padding: 0;
   color: var(--mytooltip-color, inherit);
@@ -576,7 +556,7 @@ table {
   
   /* Size */
   width: max-content;
-  width: 600px;
+  width: 450px;
   max-width: 90vw;        /* Prevents it from going off-screen on small screens */
   
   /* Theme Styling */
