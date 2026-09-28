@@ -1,0 +1,10 @@
+title: Achievements
+on-arrival: {!
+  document.getElementById('achievement-container').innerHTML = AchievementSystem.renderGrid();
+!}
+
+# Achievements
+
+<div id="achievement-container"></div>
+
+- @main_menu: Back to Main Menu
