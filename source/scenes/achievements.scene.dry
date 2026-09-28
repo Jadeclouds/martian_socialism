@@ -7,4 +7,4 @@ on-arrival: {!
 
 <div id="achievement-container"></div>
 
-- @main_menu: Back to Main Menu
+- @root: Back
