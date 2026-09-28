@@ -33,6 +33,27 @@ new-page: true
 
 Note that your achievement progress is stored in your browser. Switching browsers or devices will reset it!
 
-<div data-widget="achievement-gallery" data-props='{"scope":"ever"}'></div>
+<div class="achievement-grid">
+  <div class="ach-card unlocked">
+    <div class="ach-card-img-container">
+      <img src="img/ach_spm.png" alt="Test">
+    </div>
+    <div class="ach-card-info">
+      <h4>Arbeiter von Mars</h4>
+      <p>Achieve a victory with the SPM.</p>
+    </div>
+    <div class="ach-badge">🎖️</div>
+  </div>
+  
+  <div class="ach-card locked">
+    <div class="ach-card-img-container">
+      <img src="img/ach_cdu.png" alt="Test">
+    </div>
+    <div class="ach-card-info">
+      <h4>You Shouldn't Be Here!</h4>
+      <p>Form a conservative coalition.</p>
+    </div>
+  </div>
+</div>
 
 - @prevScene: Back
