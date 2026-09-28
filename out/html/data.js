@@ -55,13 +55,6 @@ const tooltipList = [
     mainText: "Market Liberalism",
     subText: "This ideology is a variant of <strong>Liberalism</strong><br><br>Market liberalism, commonly referred to as liberism or right-liberalism, is a political philosophy centered on individual liberty, private property, and free markets. It advocates for minimal state intervention in the economy, emphasizing fiscal discipline, extensive deregulation, the privatization of state assets, and strict constitutional limits on government economic authority.",
     img: "img/market_liberalism_ideology.png",
-  },
-  
-  {
-    searchString: ["MARXISM LENINISM MAOISM"],
-    mainText: "Marxism-Leninism-Maoism",
-    subText: "This ideology is a variant of <strong>Communism</strong><br><br>Marxism–Leninism–Maoism (MLM) is a revolutionary communist ideology that synthesizes classical Marxist analysis, Leninist party organization, and Maoist strategy. Formally developed in the late 20th century, its proponents consider it the final stage of Marxist philosophy, asserting that its principles are universally applicable rather than limited to specific historical conditions. MLM rejects reformist politics in favor of armed struggle, emphasizing a Protracted People's War, the active revolutionary role of the peasantry alongside urban workers, anti-imperialism, and continuous class struggle to prevent capitalist restoration following a socialist revolution.",
-    img: "img/market_liberalism_ideology.png",
   }
 ];
 
