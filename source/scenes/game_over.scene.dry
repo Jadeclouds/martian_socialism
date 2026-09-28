@@ -33,6 +33,6 @@ new-page: true
 
 Note that your achievement progress is stored in your browser. Switching browsers or devices will reset it!
 
-[+ AchievementSystem.renderGrid() +]
+<script src="lib/achievements.js"></script>
 
 - @prevScene: Back
