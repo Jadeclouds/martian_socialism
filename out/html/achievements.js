@@ -47,7 +47,6 @@ window.AchievementSystem = {
             <h4>${ach.title}</h4>
             <p>${ach.desc}</p>
           </div>
-          ${isUnlocked ? '<div class="ach-badge">🎖️</div>' : ''}
         </div>
       `;
     }
