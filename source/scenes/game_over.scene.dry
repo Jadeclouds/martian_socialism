@@ -1,6 +1,5 @@
 title: Game Over
 new-page: true
-set-bg: img/3rd_October_2017.jpg
 go-to: eg_menu
 on-arrival: {!
     this.achieve('game_completed');
@@ -18,9 +17,7 @@ on-arrival: {!
 title: Playthrough Achievements
 view-if: achievement_game_completed == 1 and not achievements_this_playthrough_seen
 on-arrival: achievements_this_playthrough_seen = 1
-tags: endings
 go-to: eg_menu
-role: ending
 
 = Completed Achievements in this Playthrough
 
