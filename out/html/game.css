@@ -576,8 +576,9 @@ table {
   
   /* Size */
   width: max-content;
-  max-width: 500px;
-
+  width: 600px;
+  max-width: 90vw;        /* Prevents it from going off-screen on small screens */
+  
   /* Theme Styling */
   background-color: #e8cfd0;
   color: #111111;
