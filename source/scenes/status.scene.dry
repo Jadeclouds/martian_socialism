@@ -67,6 +67,9 @@ Next election: [+ next_election_month : month +] [+ next_election_year +]
 
 = Inter-party Relations
 
+<div style="display: flex; gap: 0.5em;margin-top:1.1em;margin-bottom: -0.75em;"><div style="flex: 0 0 18%;"><img src="img/mnlp_logo_mini.png"></div><div style="flex: 1 1 82%;"><p style="font-weight:bold; margin-top:-0.1em; margin-bottom:0.25em;">mnlp: [+ mnlp_relation : relationships +]</p><p style="white-space:nowrap; overflow:visible; text-overflow:ellipsis;max-width:95%;"> [+ mnlp_ideology +], [+ mnlp_marsism +]</p></div></div>
+
+
 mnlp: [+ mnlp_relation : relationships +]
 
 plfm: [+ plfm_relation : relationships +]
