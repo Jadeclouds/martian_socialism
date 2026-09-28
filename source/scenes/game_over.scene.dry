@@ -10,7 +10,6 @@ on-arrival: {!
 
 @eg_menu
 
-- #endings
 - @end_game: End game.
 
 @achievements_this_playthrough
