@@ -32,8 +32,6 @@ game-over: true
 @achievements
 title: Achievements
 new-page: true
-tags: shell-achievements
-role: main-menu-item
 
 = Achievements
 
