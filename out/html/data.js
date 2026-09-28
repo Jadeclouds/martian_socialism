@@ -60,10 +60,9 @@ const tooltipList = [
   {
     searchString: ["MARXISM LENINISM MAOISM"],
     mainText: "Marxism-Leninism-Maoism",
-    subText: "This ideology is a variant of <strong>Communism</strong><br><br>Marxism–Leninism–Maoism (MLM) is a revolutionary communist ideology that synthesizes classical Marxist analysis, Leninist party organization, and Maoist strategy. Formally developed in the late 20th century, its proponents consider it the final stage of Marxist philosophy, asserting that its principles are universally applicable rather than limited to specific historical conditions. MLM rejects reformist politics in favor of armed struggle, emphasizing a Protracted People's War, the active revolutionary role of the peasantry alongside urban workers, anti-imperialism, and continuous class struggle to prevent capitalist restoration following a socialist revolution.",
+    subText: "This ideology is a variant of <strong>Communism</strong><br><br>Marxism–Leninism–Maoism (MLM) is a political philosophy that synthesizes classical Marxist analysis, Leninist party organization, and Maoist strategy. Formally developed in the late 20th century, its proponents consider it the final stage of Marxist philosophy, asserting that its principles are universally applicable rather than limited to specific historical conditions. MLM emphasizes anti-imperialism and continuous class struggle to prevent capitalist restoration following a socialist revolution.",
     img: "img/maoism_ideology.png",
   }
-
 ];
 
 const colourList = [
@@ -76,5 +75,5 @@ const colourList = [
   { words: ["SOCIAL DEMOCRACY", "Social Democracy"], colour: "#ED7158", style: "font-weight: bold;", transform: "Social Democracy" },
   { words: ["LIBERALISM", "Liberalism"], colour: "#D3C24D", style: "font-weight: bold;", transform: "Liberalism" },
   { words: ["MARKET LIBERALISM", "Market Liberalism"], colour: "#D3C24D", style: "font-weight: bold;", transform: "Market Liberalism" },
-  { words: ["MARXISM LENINISM MAOISM", "Marxism Leninism Maoism"], colour: "#D3C24D", style: "font-weight: bold;", transform: "Marxism–Leninism–Maoism" },
+  { words: ["MARXISM LENINISM MAOISM", "Marxism Leninism Maoism"], colour: "#540808", style: "font-weight: bold;", transform: "Marxism–Leninism–Maoism" },
 ];
