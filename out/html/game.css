@@ -538,51 +538,19 @@ table {
   border-radius: 3px;
 }
 
-/* tooltip box */
-.mytooltip .mytooltiptext {
-  position: absolute;
-  z-index: 999999 !important; /* This basically is forcing the tooltip to be on top */
-  
-  /* Tooltip Colors */
-  background-color: #e8cfd0; /* Background Color */
-  color: #0a0a0a;
-  
-  border-radius: 8px;
-  padding: 12px 16px;
-  font-size: 13px !important;
-  line-height: 1.4;
-  font-weight: normal !important;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
-  
-  width: max-content;
-  max-width: 750px;
-  border: 3px solid var(--mytooltip-color, #888);
-  
-  /* So that it appears on top! */
-  bottom: 125%;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 6px;
+/* =========================================================
+   TOOLTIP SYSTEM (Consolidated & Reformatted)
+   ========================================================= */
 
-  /* Visibility Rules */
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
-}
-
-/* Allow text column to overflow */
-#content, .content, #main-text, .page {
-  overflow: visible !important;
-}
-
+/* 1. Unify layout containers to allow tooltips to overflow past margins */
 #content, .content, #main-text, .page, #game, .stats {
   overflow: visible !important;
 }
 
+/* 2. Hovered Word Anchor */
 .mytooltip {
   position: relative !important;
-  display: inline;       
+  display: inline-block; /* Required over inline so position: relative functions properly */
   cursor: pointer;
   padding: 0;
   color: var(--mytooltip-color, inherit);
@@ -595,18 +563,23 @@ table {
   border-radius: 3px;
 }
 
+/* 3. Popup Box */
 .mytooltip .mytooltiptext {
   position: absolute !important;
-  z-index: 999999 !important; 
+  z-index: 999999 !important; /* Forces popup above all sidebars and panels */
   
+  /* Centered positioning directly above the hovered word */
   bottom: 125%;
   left: 50%;
   transform: translateX(-50%);
   margin-bottom: 8px;
-
+  
+  /* Size */
   width: max-content;
-  max-width: 320px;
-  background-color: #e8cfd0; /* Background Color of the mod, not dynamic */
+  max-width: 500px;
+
+  /* Theme Styling */
+  background-color: #e8cfd0;
   color: #111111;
   border: 1.5px solid var(--mytooltip-color, #0d2b7d);
   border-radius: 8px;
@@ -616,6 +589,7 @@ table {
   font-weight: normal !important;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
 
+  /* Hover Visibility Toggle */
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
