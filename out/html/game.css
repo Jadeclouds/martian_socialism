@@ -638,9 +638,8 @@ table {
 .ach-card.locked { opacity: .8; }
 .ach-title {
   font-size: 1.35em;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: .04em;
-  text-transform: uppercase;
   color: #5a1a1a;
   margin-bottom: 4px;
 }
