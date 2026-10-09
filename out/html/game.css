@@ -652,3 +652,5 @@ table {
 .ach-toast-label { font-size: .75em; text-transform: uppercase;
                    letter-spacing: .08em; opacity: .7; }
 .ach-toast-title { font-weight: 600; }
+
+ @media (max-width: 480px) { .ach-toast { left: 20px; right: 20px; max-width: none; } }
