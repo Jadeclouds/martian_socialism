@@ -1,0 +1,31 @@
+title: "A word for the press, mister President?"
+new-page: true
+view-if: year = 2442 and month = 8 and spm_in_government = 1 and chancellor_party = "SPM"
+max-visits: 1
+tags: event
+
+= "A word for the press, mister President?"
+
+It is custom for the newly elected Prime Minister to deliver an inaugural address marking the start of their term and, by extension, the new parliamentary session. Until now, these speeches have consistently reflected Earth's colonial dominion over our planet; indeed, if there is one trait utterly foreign to the PEC, it is charisma. We now have a golden opportunity to reshape the public's relationship with the premiership, and if there is one thing our entire party agrees on, it is that this chance must not be wasted.
+
+- @first_line_coalition: "I want to start this adress by thanking the new cabinet..."
+- @first_line_party: "I want to start this adress by thanking the SPM leadership..."
+- @first_line_people: "I want to start this adress by thanking fellow Marsians..."
+
+@first_line_coalition
+view-if: spd_in_government and foreign_minister_party = "SPD"
+on-arrival: kellogg_briand_signed = 1
+
+Foreign Minister Breitscheid will sign the treaty, of course. The reaction is generally muted; both pacifists and militarists are skeptical about the efficacy of the treaty.
+
+@first_line_party
+view-if: spd_in_government and foreign_minister_party = "SPD"
+on-arrival: kellogg_briand_signed = 1
+
+Foreign Minister Breitscheid will sign the treaty, of course. The reaction is generally muted; both pacifists and militarists are skeptical about the efficacy of the treaty.
+
+@first_line_people
+view-if: spd_in_government and foreign_minister_party = "SPD"
+on-arrival: kellogg_briand_signed = 1
+
+Foreign Minister Breitscheid will sign the treaty, of course. The reaction is generally muted; both pacifists and militarists are skeptical about the efficacy of the treaty.
