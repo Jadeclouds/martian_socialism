@@ -27,12 +27,12 @@ game-over: true
 
 @achievements
 title: Achievements
+is-special: true
 new-page: true
-
-= Achievements
+on-display: {! Achievements.render('achievements'); !}
 
 Note that your achievement progress is stored in your browser. Switching browsers or devices will reset it!
 
-<script src="lib/achievements.js"></script>
+{!<div id="achievements"></div>!}
 
 - @prevScene: Back
