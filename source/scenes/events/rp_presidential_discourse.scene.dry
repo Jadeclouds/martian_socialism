@@ -13,7 +13,7 @@ It is custom for the newly elected Prime Minister to deliver an inaugural addres
 - @first_line_people: "I want to start this adress by thanking fellow Marsians..."
 
 @first_line_coalition
-on-arrival: kellogg_briand_signed = 1
+on-arrival: {! Achievements.unlock('flawless_opening'); !}
 
 "I want to start this address by thanking the new cabinet, whose collective dedication and willingness to find common ground have made this government possible. We may come from different traditions, but the challenges facing Mars require a unified response. Every minister sitting here today carries the weight of a shared mandate: to prove that democracy on this frontier can deliver stability, compromise, and progress without succumbing to paralyzing division."
 
