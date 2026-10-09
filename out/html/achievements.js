@@ -9,6 +9,8 @@
     // altri achievement qui
   ];
 
+  reset: function () { try { localStorage.removeItem(KEY); } catch (e) {} }
+  
   function load() {
     try { return JSON.parse(localStorage.getItem(KEY)) || {}; }
     catch (e) { return {}; }
