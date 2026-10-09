@@ -15,14 +15,20 @@ It is custom for the newly elected Prime Minister to deliver an inaugural addres
 @first_line_coalition
 on-arrival: kellogg_briand_signed = 1
 
-Foreign Minister Breitscheid will sign the treaty, of course. The reaction is generally muted; both pacifists and militarists are skeptical about the efficacy of the treaty.
+"I want to start this address by thanking the new cabinet, whose collective dedication and willingness to find common ground have made this government possible. We may come from different traditions, but the challenges facing Mars require a unified response. Every minister sitting here today carries the weight of a shared mandate: to prove that democracy on this frontier can deliver stability, compromise, and progress without succumbing to paralyzing division."
+
+Political analysts immediately note the calculated institutional tone. On the evening news, commentators frame the opening as a clear olive branch to the moderate coalition partner. Sharper critics dismiss it as a defensive maneuver, suggesting the Prime Minister is preemptively conceding ground to fragile parliamentary factions before major legislative battles even begin.
 
 @first_line_party
 on-arrival: kellogg_briand_signed = 1
 
-Foreign Minister Breitscheid will sign the treaty, of course. The reaction is generally muted; both pacifists and militarists are skeptical about the efficacy of the treaty.
+"I want to start this address by thanking the spm leadership, our parliamentary group, and our tireless activists across every sector. It is our shared vision, forged through years of struggle, that has brought us to this historic podium today. We have not been placed in power merely to manage the existing machinery, but to carry out the core ideological program our movement promised to the working people of Mars."
+
+The partisan focus sparks instant debate across political broadcasts. Pundits interpret the opening as an aggressive assertion of party discipline, aimed squarely at reassuring the spm's left wing that the leadership will not compromise its principles for the sake of office. Coalition observers warn that treating an inaugural address as an internal rally risks alienating key parliamentary allies and signaling a confrontational legislative agenda.
 
 @first_line_people
 on-arrival: kellogg_briand_signed = 1
 
-Foreign Minister Breitscheid will sign the treaty, of course. The reaction is generally muted; both pacifists and militarists are skeptical about the efficacy of the treaty.
+"I want to start this address by thanking fellow Martians: the miners, engineers, atmospheric technicians, and families who endure the harsh red dust every day. This administration belongs to you, not to distant boardrooms across the void or bureaucratic overseers in Geneva. The mandate we exercise today was born in our habitats and mines, and it is to the people of Mars alone that we answer."
+
+Pundits on both sides of the Earth-Mars divide react immediately to the overtly populist framing. Media commentators highlight the speech as a stark departure from past inaugurations, describing it as a direct shot across the bow of Earth's colonial establishment. While local commentators applaud the Prime Minister for channeling growing civic sentiment and asserting Martian self-determination, Earthist pundits warn that the anti-colonial rhetoric will alarm off-world investors and provoke retaliation from Earth-backed institutions.
