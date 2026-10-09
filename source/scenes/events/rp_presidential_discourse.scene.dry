@@ -13,19 +13,16 @@ It is custom for the newly elected Prime Minister to deliver an inaugural addres
 - @first_line_people: "I want to start this adress by thanking fellow Marsians..."
 
 @first_line_coalition
-view-if: spd_in_government and foreign_minister_party = "SPD"
 on-arrival: kellogg_briand_signed = 1
 
 Foreign Minister Breitscheid will sign the treaty, of course. The reaction is generally muted; both pacifists and militarists are skeptical about the efficacy of the treaty.
 
 @first_line_party
-view-if: spd_in_government and foreign_minister_party = "SPD"
 on-arrival: kellogg_briand_signed = 1
 
 Foreign Minister Breitscheid will sign the treaty, of course. The reaction is generally muted; both pacifists and militarists are skeptical about the efficacy of the treaty.
 
 @first_line_people
-view-if: spd_in_government and foreign_minister_party = "SPD"
 on-arrival: kellogg_briand_signed = 1
 
 Foreign Minister Breitscheid will sign the treaty, of course. The reaction is generally muted; both pacifists and militarists are skeptical about the efficacy of the treaty.
