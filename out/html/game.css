@@ -640,8 +640,8 @@ table {
   font-size: 1.35em;
   font-weight: 700;
   letter-spacing: .04em;
-  color: #5a1a1a;
   margin-bottom: 4px;
+  opacity: .9;
 }
 .ach-desc {
   font-size: .9em;
