@@ -636,3 +636,19 @@ table {
 .ach-card img { width: 80px; height: 80px; border-radius: 10px; }
 .ach-card.locked img { filter: grayscale(1) brightness(.85); }
 .ach-card.locked { opacity: .8; }
+
+.ach-toast {
+  position: fixed; right: 20px; bottom: 20px; z-index: 1000;
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 16px 10px 10px; max-width: 320px;
+  background: #f4e4e4; border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.25);
+  opacity: 0; transform: translateY(20px);
+  transition: opacity .35s ease, transform .35s ease;
+  pointer-events: none;
+}
+.ach-toast.show { opacity: 1; transform: translateY(0); }
+.ach-toast img { width: 48px; height: 48px; border-radius: 8px; }
+.ach-toast-label { font-size: .75em; text-transform: uppercase;
+                   letter-spacing: .08em; opacity: .7; }
+.ach-toast-title { font-weight: 600; }
