@@ -3,7 +3,7 @@
 
   var LIST = [
     { id: 'flawless_opening',
-      title: '**Flawless Opening**',
+      title: '<strong>Flawless Opening</strong>',
       desc: 'Complete a perfect Prime Minister inaugural address.',
       icon: 'img/ach_opening.png' }
     // altri achievement qui
