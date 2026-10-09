@@ -1,57 +1,43 @@
-window.AchievementSystem = {
-  // 1. Define all achievements
-  registry: {
-    spm_victory: {
-      title: "Arbeiter von Mars",
-      desc: "Achieve an election victory with the SPM.",
-      icon: "img/achievements/spm_victory.png"
-    },
-    culture_war: {
-      title: "Facts Don't Care",
-      desc: "Engage in culture war actions five times.",
-      icon: "img/achievements/culture_war.png"
-    },
-    cdu_formed: {
-      title: "You Shouldn't Be Here!",
-      desc: "Form a conservative coalition.",
-      icon: "img/achievements/cdu_formed.png"
-    }
-  },
+(function () {
+  var KEY = 'redplanet_achievements';
 
-  // 2. Unlock function
-  unlock: function(key) {
-    if (!this.registry[key]) return;
-    let unlocked = JSON.parse(localStorage.getItem('dendry_achievements') || '{}');
-    
-    if (!unlocked[key]) {
-      unlocked[key] = new Date().toISOString();
-      localStorage.setItem('dendry_achievements', JSON.stringify(unlocked));
-    }
-  },
+  var LIST = [
+    { id: 'flawless_opening',
+      title: 'Flawless Opening',
+      desc: 'Complete a perfect Prime Minister inaugural address.',
+      icon: 'img/ach_opening.png' }
+    // altri achievement qui
+  ];
 
-  // 3. Render function for the gallery
-  renderGrid: function() {
-    let unlocked = JSON.parse(localStorage.getItem('dendry_achievements') || '{}');
-    let html = '<div class="achievement-grid">';
-
-    for (let key in this.registry) {
-      let ach = this.registry[key];
-      let isUnlocked = !!unlocked[key];
-
-      html += `
-        <div class="ach-card ${isUnlocked ? 'unlocked' : 'locked'}">
-          <div class="ach-card-img-container">
-            <img src="${ach.icon}" alt="${ach.title}">
-          </div>
-          <div class="ach-card-info">
-            <h4>${ach.title}</h4>
-            <p>${ach.desc}</p>
-          </div>
-        </div>
-      `;
-    }
-
-    html += '</div>';
-    return html;
+  function load() {
+    try { return JSON.parse(localStorage.getItem(KEY)) || {}; }
+    catch (e) { return {}; }
   }
-};
+  function save(data) {
+    try { localStorage.setItem(KEY, JSON.stringify(data)); } catch (e) {}
+  }
+
+  window.Achievements = {
+    isUnlocked: function (id) { return !!load()[id]; },
+
+    unlock: function (id) {
+      var data = load();
+      if (data[id]) return;            // già sbloccato: non fare nulla
+      data[id] = Date.now();
+      save(data);
+    },
+
+    render: function (containerId) {
+      var el = document.getElementById(containerId);
+      if (!el) return;
+      var data = load();
+      el.innerHTML = LIST.map(function (a) {
+        var done = !!data[a.id];
+        return '<div class="ach-card' + (done ? '' : ' locked') + '">' +
+          '<img src="' + a.icon + '" alt="">' +
+          '<div><div class="ach-title">' + a.title + '</div>' +
+          '<div class="ach-desc">' + a.desc + '</div></div></div>';
+      }).join('');
+    }
+  };
+})();
