@@ -635,7 +635,21 @@ table {
             border-radius: 10px; background: rgba(255,255,255,.4); }
 .ach-card img { width: 80px; height: 80px; border-radius: 10px; }
 .ach-card.locked img { filter: grayscale(1) brightness(.85); }
-.ach-card.locked { opacity: .8; }
+.ach-card.locked { opacity: .8; }ù
+.ach-title {
+  font-size: 1.35em;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: #5a1a1a;
+  margin-bottom: 4px;
+}
+.ach-desc {
+  font-size: .9em;
+  font-weight: 400;
+  opacity: .8;
+}
+.ach-card.locked .ach-title { color: #6b6b6b; }
 
 .ach-toast {
   position: fixed; left: 50%; bottom: 40px; z-index: 1000;
