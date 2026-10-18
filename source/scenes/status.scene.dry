@@ -45,17 +45,17 @@ Prime Minister: [+ chancellor +] ([+ chancellor_party +])
 Martian Parliament composition:
 
 # SPM
-spm: [+ spm_r +]%
+spm: [+ spm_r +]%<br>
 # MNLP
-mnlp: [+ mnlp_r +]%
+mnlp: [+ mnlp_r +]%<br>
 # PLFM
-plfm: [+ plfm_r +]%
+plfm: [+ plfm_r +]%<br>
 # FfM
-ffm: [+ ffm_r +]%
+ffm: [+ ffm_r +]%<br>
 # P
-p: [+ p_r +]%
+p: [+ p_r +]%<br>
 # PEC
-pec: [+ pec_r +]%
+pec: [+ pec_r +]%<br>
 # Others
 Others: [+ other_r +]%
 
