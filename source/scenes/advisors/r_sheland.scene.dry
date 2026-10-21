@@ -9,7 +9,7 @@ new-page: true
 
 Sheland, originally Shell-land, is a major metropolis located in the Arcadia Planitia region. Founded as a company town for workers at the local Shell methane refinery, the settlement grew alongside the facility to become one of the most populous urban centers on Mars.
 
-The local {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} branch is among the oldest active political organizations on the planet. While historically rooted in radical leftist ideology, the metropolis's rapid expansion into a commercial and bureaucratic hub has shifted the party's local dynamics. Today, Sheland's {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} serves as the anchor and most influential base for the party's Reformist faction.
+The local spm branch is among the oldest active political organizations on the planet. While historically rooted in radical leftist ideology, the metropolis's rapid expansion into a commercial and bureaucratic hub has shifted the party's local dynamics. Today, Sheland's spm serves as the anchor and most influential base for the party's Reformist faction.
 
 - @work_with_mnlp
 - @pushing_reformism
@@ -17,7 +17,7 @@ The local {!<span style="color: #ED7158;"><strong>SPM</strong></span>!} branch i
 - @root: Return to main
 
 @work_with_mnlp
-title: Strengthen our bonds with the {!<span style="color: #D3C24D;"><strong>MNLP</strong></span>!}
+title: Strengthen our bonds with the mnlp
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 choose-if: advisor_action_timer = 0
 subtitle: The local sections of both parties have established a long cooperation that we can exploit.
