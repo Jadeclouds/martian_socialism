@@ -99,7 +99,7 @@ const colourList = [
   { words: ["MARKET LIBERALISM", "Market Liberalism"], colour: "#D3C24D", style: "font-weight: bold;", transform: "Market Liberalism" },
   { words: ["MARXISM LENINISM MAOISM", "Marxism Leninism Maoism"], colour: "#540808", style: "font-weight: bold;", transform: "Marxism–Leninism–Maoism" },
 
-  { words: ["GCLM", "gclm"], colour: "#540808", style: "font-weight: bold;", transform: "GCLM" },
-  { words: ["MFPE", "mfpe"], colour: "#540808", style: "font-weight: bold;", transform: "MFPE" },
-  { words: ["PMA", "pma"], colour: "#540808", style: "font-weight: bold;", transform: "PMA" },
+  { words: ["GCLM", "gclm"], colour: "#78344B", style: "font-weight: bold;", transform: "GCLM" },
+  { words: ["MFPE", "mfpe"], colour: "#0086AB", style: "font-weight: bold;", transform: "MFPE" },
+  { words: ["PMA", "pma"], colour: "#B88100", style: "font-weight: bold;", transform: "PMA" },
 ];
