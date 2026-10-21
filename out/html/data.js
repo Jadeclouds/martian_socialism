@@ -65,7 +65,7 @@ const tooltipList = [
   },
   
   {
-    searchString: ["glcm"],
+    searchString: ["gclm"],
     mainText: "General Confederation of Labourers and Miners",
     subText: "The General Confederation of Labourers and Miners is an industrial syndicate primarily composed of miners and technicians. While the SPM acts as their chief legislative shield in parliament, we face intense competition from the radical PLFM for the minds of the most militant workers and in the mines.",
     img: "img/gclm_logo.png",
