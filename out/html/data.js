@@ -65,23 +65,23 @@ const tooltipList = [
   },
   
   {
-    searchString: ["GCLM"],
+    searchString: ["glcm"],
     mainText: "General Confederation of Labourers and Miners",
     subText: "The General Confederation of Labourers and Miners is an industrial syndicate primarily composed of miners and technicians. While the SPM acts as their chief legislative shield in parliament, we face intense competition from the radical PLFM for the minds of the most militant workers and in the mines.",
     img: "img/gclm_logo.png",
   },
 
   {
-    searchString: ["MFPE"],
+    searchString: ["mfpe"],
     mainText: "Martian Federation of Professional Employees",
-    subText: "The Martian Federation of Professional Employees represents the white-collar workforce, including researchers, administrators, bureaucrats and planners. Though officially non-partisan and detached from overt party allegiances, the federation traditionally supports Marsist candidates. A vocal minority within their leadership quietly sympathizes with the agenda of p, though it remains completely unofficial.",
+    subText: "The Martian Federation of Professional Employees represents the white-collar workforce, including researchers, administrators, bureaucrats and planners. Though officially non-partisan and detached from overt party allegiances, the federation traditionally supports Marsist candidates. A vocal minority within their leadership quietly sympathizes with the agenda of P, though it remains completely unofficial.",
     img: "img/mfpe_logo.png",
   },
 
   {
     searchString: ["pma"],
     mainText: "Planetary Manufacturers Association",
-    subText: "The Planetary Manufacturers Association represents independent business owners, transport syndicates, and local light-industrial consortia. It functions far more like a corporate trade cartel than a traditional labor union, yet it retains significant tax exemptions under that classification. The association makes no secret of its close ideological alignment with the liberal mnlp.",
+    subText: "The Planetary Manufacturers Association represents independent business owners, transport syndicates, and local light-industrial consortia. It functions far more like a corporate trade cartel than a traditional labor union, yet it retains significant tax exemptions under that classification. The association makes no secret of its close ideological alignment with the liberal MNLP.",
     img: "img/pma_logo.png",
   }
 ];
