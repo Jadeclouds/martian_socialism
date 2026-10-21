@@ -91,7 +91,7 @@ pec: [+ pec_ideology +], [+ pec_marsism +]
 
 = Trade Unions
 
-glcm: [+ gclm_union_relation : relationships +]
+gclm: [+ gclm_union_relation : relationships +]
 
 mfpe: [+ mfpe_union_relation : relationships +]
 
