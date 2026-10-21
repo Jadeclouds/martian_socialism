@@ -62,6 +62,27 @@ const tooltipList = [
     mainText: "Marxism-Leninism-Maoism",
     subText: "This ideology is a variant of <strong>Communism</strong><br><br>Marxism–Leninism–Maoism (MLM) is a political philosophy that synthesizes classical Marxist analysis, Leninist party organization, and Maoist strategy. Formally developed in the late 20th century, its proponents consider it the final stage of Marxist philosophy, asserting that its principles are universally applicable rather than limited to specific historical conditions. MLM emphasizes anti-imperialism and continuous class struggle to prevent capitalist restoration following a socialist revolution.",
     img: "img/maoism_ideology.png",
+  },
+  
+  {
+    searchString: ["GCLM"],
+    mainText: "General Confederation of Labourers and Miners",
+    subText: "The General Confederation of Labourers and Miners is an industrial syndicate primarily composed of miners and technicians. While the SPM acts as their chief legislative shield in parliament, we face intense competition from the radical PLFM for the minds of the most militant workers and in the mines.",
+    img: "img/gclm_logo.png",
+  },
+
+  {
+    searchString: ["MFPE"],
+    mainText: "Martian Federation of Professional Employees",
+    subText: "The Martian Federation of Professional Employees represents the white-collar workforce, including researchers, administrators, bureaucrats and planners. Though officially non-partisan and detached from overt party allegiances, the federation traditionally supports Marsist candidates. A vocal minority within their leadership quietly sympathizes with the agenda of p, though it remains completely unofficial.",
+    img: "img/mfpe_logo.png",
+  },
+
+  {
+    searchString: ["pma"],
+    mainText: "Planetary Manufacturers Association",
+    subText: "The Planetary Manufacturers Association represents independent business owners, transport syndicates, and local light-industrial consortia. It functions far more like a corporate trade cartel than a traditional labor union, yet it retains significant tax exemptions under that classification. The association makes no secret of its close ideological alignment with the liberal mnlp.",
+    img: "img/pma_logo.png",
   }
 ];
 
@@ -72,8 +93,13 @@ const colourList = [
   { words: ["FfM", "ffm"], colour: "#5C3F1A", style: "font-weight: bold;", transform: "FfM" },
   { words: ["P", "p"], colour: "#12DB95", style: "font-weight: bold;", transform: "P" },
   { words: ["PEC", "pec"], colour: "#22275C", style: "font-weight: bold;", transform: "PEC" },
+  
   { words: ["SOCIAL DEMOCRACY", "Social Democracy"], colour: "#ED7158", style: "font-weight: bold;", transform: "Social Democracy" },
   { words: ["LIBERALISM", "Liberalism"], colour: "#D3C24D", style: "font-weight: bold;", transform: "Liberalism" },
   { words: ["MARKET LIBERALISM", "Market Liberalism"], colour: "#D3C24D", style: "font-weight: bold;", transform: "Market Liberalism" },
   { words: ["MARXISM LENINISM MAOISM", "Marxism Leninism Maoism"], colour: "#540808", style: "font-weight: bold;", transform: "Marxism–Leninism–Maoism" },
+
+  { words: ["GCLM", "gclm"], colour: "#540808", style: "font-weight: bold;", transform: "GCLM" },
+  { words: ["MFPE", "mfpe"], colour: "#540808", style: "font-weight: bold;", transform: "MFPE" },
+  { words: ["PMA", "pma"], colour: "#540808", style: "font-weight: bold;", transform: "PMA" },
 ];
